@@ -32151,6 +32151,67 @@ federate%20streamid%3Ajournals%2Fpami%3A:
     methods.
   abstract_cn: 现实应用中的安全与隐私问题促使了对抗鲁棒联邦模型的发展。现有研究主要聚焦于克服通信和计算开销带来的适应性限制。然而，简单地将对抗训练与联邦学习相结合，可能会在训练后期导致鲁棒准确率的意外下降。我们发现，这一现象的根本原因在于，生成的对抗样本会加剧本地客户端之间的数据异质性，从而降低封装式联邦学习的性能。为应对这一问题，我们引入了一种α松弛机制，以放宽联邦对抗训练的原始优化目标，并提出了一种名为“松弛联邦对抗训练”（SFAT）的新框架，用于缓解日益加剧的数据异质性。通过在聚合过程中为各客户端分配松弛项，SFAT实现了加权聚合，从而缓解由本地对抗样本生成所引起的优化偏差。进一步地，我们将方法扩展到更为通用的场景：允许在同一框架内同时支持采用标准训练和对抗训练的客户端，并针对该场景提出了具有层次化聚合策略的SFAT*。理论上，我们分析了所提方法的收敛性，以合理地放松学习目标。实验上，我们在多种基准数据集和真实世界数据集上，结合不同的对抗训练和联邦优化方法，验证了所提方法的合理性与有效性。
   related_code: ''
+- author: Jiahua Dong 0001, Wenqi Liang, Yang Cong, Gan Sun, Lixu Wang, Henghui Ding,
+    Yulun Zhang 0001, Luc Van Gool
+  title: 'Learning From Each Other: Generalized Federated Incremental Semantic Segmentation.'
+  venue: IEEE Trans. Pattern Anal. Mach. Intell.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/pami/DongLCSWDZG26
+  doi: 10.1109/TPAMI.2026.3664293
+  ee: https://doi.org/10.1109/TPAMI.2026.3664293
+  url: https://dblp.org/rec/journals/pami/DongLCSWDZG26
+  abstract: Federated learning (FL) has advanced semantic segmentation through decentralized
+    training to reduce annotation costs. However, most FL-based semantic segmentation
+    methods assume fixed foreground classes, resulting in catastrophic forgetting
+    of old categories when local clients continually collect streaming data of new
+    classes without storing old categories. Moreover, the irregular participation
+    of new local clients with novel classes unseen by others may exacerbate heterogeneous
+    forgetting across clients during global FL training. To resolve the above challenges,
+    we propose a Hierarchical Forgetting Alleviation (HFA) model. By tackling forgetting
+    within and across local clients, our model ensures that all local clients learn
+    from each other as they continuously learn new categories. Specifically, to alleviate
+    class-imbalanced forgetting within local clients induced by background shift,
+    we develop a confidence-regularized pseudo labeling strategy to produce class-balanced
+    soft pseudo labels for old categories that are labeled as background. Guided by
+    soft pseudo labels, we design a graph-induced relation matching loss and a forgetting-balanced
+    gradient propagation module to tackle ambiguous inter-class relations and class-imbalanced
+    gradient propagation among old classes. Besides, a novel task detection module
+    and an adaptive DBSCAN clustering are devised to address inter-client heterogeneous
+    forgetting. They detect the arrival of new tasks to store the old global model
+    for local pseudo labeling and distillation, while supplying global class prototypes
+    for modeling inter-class relations and warm-starting global classifier. Experiments
+    on multiple datasets verify our model’s superiority over other methods.
+  related_code: ''
+- author: V. Jothi Prakash, S. Arul Antran Vijay, Gopikrishnan Sundaram
+  title: A Personalized and Privacy-Preserving Federated Transformer Framework for
+    Multilingual Sentiment Analysis.
+  venue: IEEE Trans. Pattern Anal. Mach. Intell.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/pami/PrakashVS26
+  doi: 10.1109/TPAMI.2026.3663617
+  ee: https://doi.org/10.1109/TPAMI.2026.3663617
+  url: https://dblp.org/rec/journals/pami/PrakashVS26
+  abstract: Personalized federated learning for multilingual sentiment analysis poses
+    significant challenges arising from linguistic heterogeneity, non-IID data distributions,
+    and strict privacy requirements. This paper proposes FedPerX, a federated transformer
+    framework that integrates residual adapter-based personalization with adaptive
+    multi-granular differential privacy. The architecture leverages a frozen multilingual
+    backbone (XLM-R) while enabling each client to train lightweight, client-specific
+    adapters. Privacy is enforced through dynamic noise injection at both the feature
+    and adapter levels, calibrated using gradient sensitivity. FedPerX is evaluated
+    on two multilingual benchmarks—MARC and TSMD—spanning structured reviews and informal
+    social media content across more than ten languages. Experimental results demonstrate
+    consistent improvements over seven state-of-the-art baselines, with up to +4.3%
+    gains in macro-F1, a 70% reduction in communication overhead, and the lowest variance
+    in client-level performance. Comprehensive analyses, including fairness, personalization
+    gap, privacy-utility trade-off, and ablation studies, validate the framework’s
+    robustness and adaptability. FedPerX advances the design of scalable, personalized,
+    and privacy-preserving models for federated multilingual sentiment analysis
+  related_code: ''
 federate%20venue%3AKDD%3A:
 - author: Zhen Wang, Weirui Kuang, Yuexiang Xie, Liuyi Yao, Yaliang Li, Bolin Ding,
     Jingren Zhou
@@ -73607,6 +73668,37 @@ collaborat%20learn%20streamid%3Ajournals%2Fpami%3A:
     of user behaviors. Finally, experimental results on both simulated dataset and
     real-world datasets demonstrate the effectiveness of our proposed method.'
   abstract_cn: 作为一种应对训练样本不足的有效学习范式，多任务学习（MTL）通过在多个相关任务之间共享知识来提升整体性能。然而，在多任务学习中，一个主要挑战源于这样一个现象：与不相似或困难的任务共享知识，即所谓的负迁移，往往会导致性能下降。尽管已有大量研究致力于缓解负迁移问题，但现有方法大多仅将迁移关系建模为任务间的相关性，而忽略了特征层面及任务间的迁移。与之不同，我们的目标是在特征和任务两个层面协同缓解负迁移。为此，我们提出了一种名为任务‑特征协同学习（TFCL）的新型多任务学习方法。具体而言，我们首先设计了一个具有异质块对角结构正则化的基础模型，以利用特征与任务的协同分组，并抑制跨组知识共享。随后，我们进一步提出了该模型的优化算法。广泛的理论分析表明，所提方法具有以下优势：（a）具备全局收敛性；（b）能够提供块对角结构的恢复保证。作为一项实用扩展，我们允许特征重叠并区分困难任务，从而对基础模型进行了拓展。在此基础上，我们将该方法应用于个性化属性预测问题，并对用户行为进行细粒度建模。最后，基于模拟数据集和真实世界数据集的实验结果均验证了所提方法的有效性。
+  related_code: ''
+- author: Shaobo Hu, Hui Huang 0009, Nan Zhang 0014, Shiliang Sun
+  title: Robust Trusted Conflictive Multiview Collaborative Contrastive Learning.
+  venue: IEEE Trans. Pattern Anal. Mach. Intell.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/pami/HuHZS26
+  doi: 10.1109/TPAMI.2026.3663788
+  ee: https://doi.org/10.1109/TPAMI.2026.3663788
+  url: https://dblp.org/rec/journals/pami/HuHZS26
+  abstract: Although multiview learning methods have been widely studied, they mostly
+    focus on improving accuracy while ignoring decision uncertainty. In the real world,
+    multiview data often encounters misalignment issues, resulting in conflictive
+    instances and further limiting the application of these methods in safety-critical
+    domains. Recently, some efforts have been made to improve the reliability of multiview
+    learning methods by estimating decision uncertainty, but most methods often experience
+    performance degradation due to their inability to handle conflictive instances.
+    To address this issue, we propose a Robust Trusted Conflictive Multiview Collaborative
+    Contrastive Learning (RCMCL) method, which enhances the model’s robustness and
+    generalization ability in conflictive multiview scenarios. Specifically, RCMCL
+    first uses an evidential deep neural network to construct view-specific opinions,
+    and then employs dissonance-based evidence contrastive learning to enhance the
+    consistency of these opinions across different views. Subsequently, RCMCL performs
+    collaborative learning of consistent evidence and complementary evidence. It first
+    introduces the vacuity degree into the complementary evidence to extract more
+    useful information, and then employs category-level contrastive learning to separate
+    consistent and complementary evidence. In addition, consistent and complementary
+    evidence is combined to make a joint decision. Finally, experimental results on
+    eight benchmark datasets verify the superiority of RCMCL over state-of-the-art
+    methods.
   related_code: ''
 collaborat%20learn%20venue%3AKDD%3A:
 - author: Jiannan Guo 0003, Yangyang Kang, Yu Duan, Xiaozhong Liu 0001, Siliang Tang,
