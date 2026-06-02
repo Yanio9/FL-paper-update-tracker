@@ -30618,6 +30618,18 @@ federate%20streamid%3Ajournals%2Fml%3A:
   ee: https://doi.org/10.1007/s10994-026-07018-w
   url: https://dblp.org/rec/journals/ml/HuangHJM26
   abstract: ''
+- author: Feihu Huang 0001, Xinrui Wang 0003, Siqi Zhang, Soncan Chen
+  title: Faster Adaptive Momentum-Based Federated Methods for Distributed Composition
+    Optimization.
+  venue: Mach. Learn.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ml/HuangWZC26
+  doi: 10.1007/S10994-025-06968-X
+  ee: https://doi.org/10.1007/s10994-025-06968-x
+  url: https://dblp.org/rec/journals/ml/HuangWZC26
+  abstract: ''
 federate%20streamid%3Ajournals%2Fjmlr%3A:
 - author: Yann Fraboni, Richard Vidal, Laetitia Kameni, Marco Lorenzi
   title: A General Theory for Federated Optimization with Asynchronous and Heterogeneous
@@ -46413,6 +46425,45 @@ federate%20streamid%3Ajournals%2Fijcv%3A:
   abstract_cn: 摘要 联邦半监督学习旨在应对实际场景中日益严峻的隐私问题，尤其是在数据持有者标注能力有限的情况下。近年来的联邦半监督学习方法利用本地模型与全局模型之间的预测一致性，从部分标注或完全未标注的客户端中挖掘知识。然而，这些方法仅采用数据级增强来实现预测一致性，并在服务器端简单地通过加权平均聚合模型参数，这会导致分类器出现偏差，并且容易受到未标注数据分布偏斜的影响。为解决上述问题，我们提出了一种新颖的联邦半监督学习框架——关系引导的多功能正则化（FedRVR），该框架包括客户端的多功能正则化策略和服务器端的关系引导定向聚合策略。在多功能正则化中，我们同时引入了模型引导和数据引导的正则化方法，鼓励本地模型的预测对两种能力迥异的极端全局模型保持不变，从而为本地训练提供更丰富的的一致性监督信号。此外，我们在服务器端设计了一种关系引导的定向聚合机制，通过引入一个参数化的关系预测器来计算每对模型之间的关系，并据此生成模型排序。借助这一机制，服务器可以优先聚合相对可靠的客户端模型以构建性能更优的全局模型；同时，通过反向聚合生成性能较差的全局模型，进一步促进客户端上的多功能正则化。在三个联邦半监督学习基准数据集上的大量实验结果表明，FedRVR
     在多种联邦学习设置下均优于当前最先进的方法。
   related_code: ''
+- author: Chen Yang 0026, Meilu Zhu, Yifan Liu 0010, Yixuan Yuan
+  title: 'FedPD++: Enhanced Federated Open-Set Recognition with Parameter Disentanglement.'
+  venue: Int. J. Comput. Vis.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ijcv/YangZLY26
+  doi: 10.1007/S11263-026-02861-9
+  ee: https://doi.org/10.1007/s11263-026-02861-9
+  url: https://dblp.org/rec/journals/ijcv/YangZLY26
+  abstract: 'Abstract Federated Learning (FL) typically operates in a closed-set setting
+    where all test classes are known during training, limiting its applicability in
+    real-world scenarios where models must handle emerging unknown classes. This leads
+    to misclassification of unseen categories as known ones. To address this limitation,
+    we introduce Federated Open-Set Recognition (FedOSR), a novel paradigm enabling
+    distributed clients to collaboratively train models that classify known classes
+    while detecting and rejecting unknown ones. However, FedOSR presents unique challenges:
+    the inter-set interference between learning closed-set and open-set knowledge
+    within each client, and the intra-set inconsistency arising from data heterogeneity
+    across clients. These challenges fundamentally complicate the federated aggregation
+    process, as divergent optimization objectives and heterogeneous data distributions
+    lead to parameter misalignment during model aggregation. In this work, we propose
+    FedPD++ , a parameter disentanglement guided framework that systematically addresses
+    both challenges through coordinated client-server mechanisms. On the client side,
+    Local Parameter Disentanglement (LPD) decouples each OSR model into task-specific
+    closed-set and open-set subnetworks to prevent inter-set interference. We introduce
+    a Dynamic Path Integral (DPI) score that robustly identifies task-relevant parameters
+    by leveraging path integral stability, coupled with an Adaptive Soft Masking (ASM)
+    strategy that creates flexible subnetworks with adaptive thresholds rather than
+    rigid binary partitions. On the server side, Global Divide-and-Conquer Aggregation
+    (GDCA) tackles intra-set inconsistency by partitioning each subnetwork into shared
+    and specific components, then aligning corresponding parts across clients using
+    optimal transport to eliminate parameter misalignment. To ensure stable aggregation,
+    we integrate Sequential Batch-Norm Alignment (SBA) that leverages temporal batch
+    normalization statistics from multiple clients. Extensive experiments on open-set
+    classification and segmentation tasks demonstrate that FedPD++ consistently achieves
+    significant performance improvements over state-of-the-art methods. Code is available
+    at: https://github.com/CUHK-AIM-Group/FedPD'
+  related_code: https://github.com/CUHK-AIM-Group/FedPD
 federate%20venue%3AACL%3A:
 - author: Zheng Xu 0002, Yanxiang Zhang, Galen Andrew, Christopher A. Choquette-Choo,
     Peter Kairouz, H. Brendan McMahan, Jesse Rosenstock, Yuanbo Zhang
@@ -73172,6 +73223,18 @@ collaborat%20learn%20streamid%3Ajournals%2Fml%3A:
   doi: 10.1023/A:1022961719072
   ee: https://doi.org/10.1023/A:1022961719072
   url: https://dblp.org/rec/journals/ml/DasguptaLL03
+  abstract: ''
+- author: Ziyu Li, Zhijie Tan, Weiping Li 0002, Tong Mo
+  title: 'LLM-SocRec: Enhancing Graph-based Social Recommendation via Collaborative
+    Large Language Models.'
+  venue: Mach. Learn.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ml/LiTLM26
+  doi: 10.1007/S10994-026-07063-5
+  ee: https://doi.org/10.1007/s10994-026-07063-5
+  url: https://dblp.org/rec/journals/ml/LiTLM26
   abstract: ''
 collaborat%20learn%20streamid%3Ajournals%2Fjmlr%3A:
 - author: Jinchi Chen, Jie Feng, Weiguo Gao, Ke Wei 0001
