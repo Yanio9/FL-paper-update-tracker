@@ -30629,7 +30629,24 @@ federate%20streamid%3Ajournals%2Fml%3A:
   doi: 10.1007/S10994-025-06968-X
   ee: https://doi.org/10.1007/s10994-025-06968-x
   url: https://dblp.org/rec/journals/ml/HuangWZC26
-  abstract: ''
+  abstract: Federated Learning is a popular distributed learning paradigm in machine
+    learning. Meanwhile, composition optimization is an effective hierarchical learning
+    model, which appears in many machine learning applications such as meta learning
+    and robust learning. More recently, although a few federated composition optimization
+    algorithms have been proposed, they still suffer from high sample and communication
+    complexities. In the paper, thus, we propose a class of faster federated compositional
+    optimization algorithms (i.e., MFCGD and AdaMFCGD) to solve the nonconvex distributed
+    composition problems, which builds on the momentum-based variance reduced and
+    local-SGD techniques. In particular, our adaptive algorithm (i.e., AdaMFCGD) uses
+    a unified adaptive matrix to flexibly incorporate various adaptive learning rates.
+    Moreover, we provide a solid theoretical analysis for our algorithms under non-i.i.d.
+    setting, and prove our algorithms obtain a lower sample and communication complexities
+    simultaneously than the existing federated compositional algorithms. Specifically,
+    our algorithms obtain lower sample complexity of $\tilde{O}(ε^{-3})$ with lower
+    communication complexity of $\tilde{O}(ε^{-2})$ in finding an $ε$-stationary solution.
+    We conduct the numerical experiments on robust federated learning and distributed
+    meta learning tasks to demonstrate the efficiency of our algorithms.
+  related_code: ''
 federate%20streamid%3Ajournals%2Fjmlr%3A:
 - author: Yann Fraboni, Richard Vidal, Laetitia Kameni, Marco Lorenzi
   title: A General Theory for Federated Optimization with Asynchronous and Heterogeneous
