@@ -65689,6 +65689,49 @@ federate%20streamid%3Ajournals%2Ftpds%3A:
     by 32%.
   abstract_cn: 联邦学习（FL）使边缘设备能够在不共享原始数据的情况下协同训练全局模型。然而，在边缘环境中，资源限制阻碍了联邦学习的高效训练与模型聚合。尽管已有研究将模型剪枝确立为降低资源需求的有效策略，但参数对称性问题——即神经网络中存在排列等价的参数顺序——仍未得到充分探讨。若不解决这一对称性问题，异构客户端上的剪枝会导致聚合不匹配和精度下降。为此，本文提出一种面向联邦学习的注意力引导一次性剪枝方法（FedAOP），以应对上述挑战。首先，我们设计了一个融合空间注意力与通道注意力的模块，用于突出关键的空间响应并评估各通道的重要性。随后，基于这些重要性得分，我们提出了一种注意力驱动的剪枝算法，以生成针对不同客户端的个性化模型，从而降低资源消耗。此外，我们还引入了一种带有注意力匹配的聚合算法，以缓解异构剪枝条件下参数对称性带来的负面影响。我们在一个基准联邦学习平台上实现了FedAOP。在多个基准数据集上的实验结果表明，FedAOP在保持平均模型规模缩小32%的同时，其准确率始终优于当前最先进的基线方法，最高可提升11.3%。
   related_code: ''
+- author: Na Lyu, Jiayi Zhang 0006, Zhi Shen, Chen Chen 0067, Zhifeng Jiang 0001,
+    Quan Chen 0002, Minyi Guo
+  title: Enabling Client-Autonomous Training Optimizations for Efficient Federated
+    Learning.
+  venue: IEEE Trans. Parallel Distributed Syst.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/tpds/LyuZSCJCG26
+  doi: 10.1109/TPDS.2026.3688096
+  ee: https://doi.org/10.1109/TPDS.2026.3688096
+  url: https://dblp.org/rec/journals/tpds/LyuZSCJCG26
+  abstract: ''
+- author: Fang Shi, Yuehong Chen, Qiong Huang 0001, Tiansheng Huang, Guozhi Liu, Li
+    Shen 0008
+  title: Decentralized Federated Learning With Period Gradient Tracking Over Time-Varying
+    Networks.
+  venue: IEEE Trans. Parallel Distributed Syst.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/tpds/ShiCHHLS26
+  doi: 10.1109/TPDS.2026.3685244
+  ee: https://doi.org/10.1109/TPDS.2026.3685244
+  url: https://dblp.org/rec/journals/tpds/ShiCHHLS26
+  abstract: To address the communication challenges associated with Federated Learning
+    (FL), Decentralized Federated Learning (DFL) eliminates the central server and
+    trains the model with decentralized method, enabling each client to only communicate
+    with its neighbors. However, per our analysis, model trained with DFL experiences
+    performance degradation because of data-heterogeneity and time-varying topologies.
+    To address these issues, we propose a Dynamic K-step Gradient Tracking (DKGT)
+    method to enhance the performance of DFL over time varying networks. Specifically,
+    DKGT employs K-step local updates and gradient tracking to reduce the communication
+    cost and the variance from heterogeneous data distribution, and we use dynamic
+    gradient tracking parameter to correct gradient over time varying graph. Theoretically,
+    we derive a universal convergence rate for smooth and non-convex problem at the
+    rate of $\mathcal {O}(\frac{(f(\mathbf{x}_{0})-f(\mathbf{x}^{*}))}{\sqrt{T}(L\sqrt{KN})^{-1}-\tau
+    (pKL\sqrt{TKN})^{-1}}+\frac{\sigma ^{2}}{KTN\tau (pK-\tau )})$O((f(x0)-f(x*))T(LKN)-1-τ(pKLTKN)-1+σ2KTNτ(pK-τ)),
+    that $\tau$τ and $p$p respectively represent the time window length and the connectivity
+    of time-varying networks. Experimentally, we illustrate the robustness and effectiveness
+    of this heterogeneity correction on extensive non-convex neural network training
+    tasks over different topologies and dynamic network settings.
+  related_code: ''
 federate%20streamid%3Ajournals%2Ftocs%3A: []
 federate%20streamid%3Ajournals%2Ftos%3A:
 - author: Amina Chikhaoui, Laurent Lemarchand, Kamel Boukhalfa, Jalil Boukhobza
@@ -79258,6 +79301,42 @@ collaborat%20learn%20streamid%3Ajournals%2Ftpds%3A:
     can accelerate the convergence of various online agents in a double to decuple
     speed, with comparable reward achieved in different environments.
   abstract_cn: 近年来，深度强化学习（DRL）的快速发展使得在实时环境中训练出能够执行复杂任务的各类高性能智能体成为可能。借助新一代通信技术，构建由进化后的DRL智能体支撑的云边协同人工智能服务，有望成为重要的应用场景之一。然而，在同一DRL场景下，采用不同算法与架构的智能体之间往往存在兼容性问题，且其训练过程要么耗时较长，要么对计算资源要求极高。为此，本文提出了一种新颖的云边协同DRL训练框架——“离线–迁移–在线”，该框架通过云端离线智能体与边缘在线智能体的交互，在仅需交换少量数据且无需依赖高质量离线数据集的前提下，显著加速边缘在线DRL智能体的收敛速度。在此基础上，我们进一步设计了一种面向在线强化学习的新型、算法无关的知识蒸馏机制，利用预训练模型及智能体与环境之间的交互接口，实现多类异构智能体间知识的高效迁移。大量实验表明，所提算法能够在多种环境下将各类在线智能体的收敛速度提升2至10倍，并在不同任务中获得相当的累积奖励。
+  related_code: ''
+- author: Enze Yu, Haipeng Dai 0001, Haihan Zhang, Yuben Qu, Tao Wu 0011, Penghuan
+    Cheng, Sujin Hou, Zhenzhe Zheng 0001, Fan Wu 0006, Guihai Chen
+  title: Edge-End Heterogeneous Collaborative Learning by Prototype Selection and
+    Edge Association.
+  venue: IEEE Trans. Parallel Distributed Syst.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/tpds/YuDZQWCHZWC26
+  doi: 10.1109/TPDS.2026.3678282
+  ee: https://doi.org/10.1109/TPDS.2026.3678282
+  url: https://dblp.org/rec/journals/tpds/YuDZQWCHZWC26
+  abstract: Edge-end collaborative learning trains models with exchanged knowledge
+    through distributed interaction, alleviating the cloud’s burden. Edge-end heterogeneous
+    collaborative learning further enables edge servers and end devices to train models
+    of different scales in parallel based on their computational capabilities. This
+    technology supports various applications in different resource conditions and
+    improves server resource utilization. However, implementing it is challenging
+    due to heavy communication costs and high global costs (time and energy). To this
+    end, this paper proposes a novel prototype-based edge-end heterogeneous collaborative
+    learning method and an optimization algorithm, which improves model performance
+    and reduces training costs. We first use prototypes to perform collaborative learning
+    and analyze the convergence. Prototypes are computed as mean feature vectors from
+    different classes. The aggregated prototypes help capture class information on
+    end devices and generate data on edge servers. Then, we study how to determine
+    prototype selection and edge association to minimize training time, energy consumption,
+    and prototype approximation error under a limited reward budget, which is proven
+    to be NP-hard. We split the original problem into two subproblems. The first is
+    solved in the closed form. Through approximation and reformulation, the second
+    is transformed into a submodular maximization problem with knapsack and matroid
+    constraints. On this basis, we propose an approximation algorithm with a theoretical
+    guarantee. Finally, by simulation and field experiments, our method takes 3.61%
+    of communication costs to improve heterogeneous edge and end models’ accuracy
+    by at least 5.16% and 2.77% compared with five baselines. The proposed algorithm
+    outperforms others by at least 9.78% in terms of global cost.
   related_code: ''
 collaborat%20learn%20venue%3ADAC%3A:
 - author: Zhuo Liu, Yunan Yang, Zhenyu Pan, Anshujit Sharma, Amit Hasan 0001, Caiwen
