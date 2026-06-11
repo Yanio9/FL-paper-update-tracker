@@ -49623,6 +49623,37 @@ federate%20streamid%3Aconf%2Fsigmod%3A:
     its impressive efficiency.
   abstract_cn: 本文提出了一种联邦、公平且快速的K均值算法（F3KM），用于在各方之间无法共享数据的场景下高效地解决公平聚类问题。所提出的算法将公平K均值问题分解为多个子问题，并将每个子问题分配给一个客户端进行本地计算。我们的算法允许每个客户端拥有多个敏感属性（或不包含任何敏感属性）。我们设计了一种预处理方法，利用交替方向乘子法（ADMM）来求解每个子问题。在求解子问题的过程中，服务器与客户端之间仅交换计算结果，而不传输原始数据。理论分析表明，F3KM在通信复杂度和计算复杂度方面均具有较高的效率。具体而言，它能够在效用与通信复杂度之间实现更好的权衡，并将计算复杂度降低至与数据集规模呈线性关系。实验结果表明，与其他方法相比，F3KM在效用与公平性之间取得了更优的平衡。此外，F3KM能够在一小时内对五百万个数据点进行聚类，充分体现了其卓越的效率。
   related_code: ''
+- author: Chenfei Hu, Zihao Xu, Tong Wu 0011, You Li, Chuan Zhang 0003, Liehuang Zhu
+  title: 'P 2 FedRec: Towards Privacy-Preserving and Personalized Federated Recommendation
+    via Relationship Awareness.'
+  venue: Proc. ACM Manag. Data
+  year: '2025'
+  type: Journal Articles
+  access: closed
+  key: journals/pacmmod/HuXWLZZ25
+  doi: 10.1145/3769811
+  ee: https://doi.org/10.1145/3769811
+  url: https://dblp.org/rec/journals/pacmmod/HuXWLZZ25
+  abstract: Personalized federated recommendation systems can not only extract common
+    prior knowledge from extensive decentralized data but also provide personalized
+    models for different users to achieve independent and customized services. Incorporating
+    user relationship graphs to enhance personalized modeling is highly promising
+    in federated recommendation. However, it is challenging to construct such graphs
+    and further capture personalized user information while guaranteeing multi-level
+    (i.e., data-level and edge-level) privacy in reality. To this end, in this paper,
+    we propose P 2 FedRec, a relationship-aware P rivacy-preserving and P ersonalized
+    Fed erated Rec ommendation scheme, which can achieve multi-level privacy protection
+    with personalized modeling guarantees. Specifically, we first develop a user-server
+    collaborative mechanism for relationship graph generation and user-specific preferences
+    capture in a privacy-preserving manner. Then, we design an embedding-shared local
+    graph construction module and a noisy global graph-guided aggregation module to
+    safeguard the data-level and edge-level privacy, respectively. Moreover, we introduce
+    a personalized model training module that enables users to learn tailored local
+    models. Theoretical analysis demonstrates that P 2 FedRec achieves both data-level
+    and edge-level privacy preservation on the user and server sides. Extensive experiments
+    conducted on five real-world datasets highlight the outstanding performance of
+    P 2 FedRec.
+  related_code: ''
 federate%20venue%3AICDE%3A:
 - author: Min Chen 0033, Yang Xu, Hongli Xu, Liusheng Huang
   title: Enhancing Decentralized Federated Learning for Non-IID Data on Heterogeneous
