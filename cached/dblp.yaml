@@ -61441,6 +61441,90 @@ federate%20venue%3AWWW%3A:
   abstract_cn: 在快速演进的基于Web的金融生态系统中，数字银行服务已成为服务不足群体的关键基础设施。然而，信用卡欺诈却 disproportionately
     地影响着依赖这些金融平台的弱势群体。以往的研究往往忽视了极端的数据稀缺状况，尤其是在那些为弱势群体提供重要接入渠道的中小型网络银行中。本文旨在解决构建可真正实现Web规模、兼具包容性与安全性的金融系统这一根本性挑战。为此，我们提出了一种新颖的基于Web的公平感知联邦欺诈检测模型——CLARF，该模型通过设计的隐私增强型表征融合模块和欺诈感知对比学习模块，在数据稀缺和标签不平衡的条件下提升检测性能。此外，当前的联邦欺诈检测系统普遍忽视后门攻击的威胁：恶意行为者可在模型聚合过程中植入隐蔽触发器，从而破坏系统完整性。针对这一问题，我们进一步提出了一个动态的Web端Min-Max对抗博弈框架，其中攻击者采用多阶段混合强化学习，并结合多维度奖励机制，动态演化出能够在隐蔽性与有效性之间取得优异平衡的触发器。防御方则采用闭环的“选择—评估—抑制”框架：首先利用Fisher信息量筛选高可信度客户端，由其执行反向触发器工程；随后以各客户端的置信度得分作为权重，在聚合过程中最小化攻击成功率（ASR）。在六个金融欺诈数据集上的大量实验结果表明，与多种最先进模型相比，CLARF模型及Min-Max对抗博弈范式均展现出显著优势。
   related_code: ''
+- author: Soumyadeep Das, Madhusudan Singh 0001
+  title: Economics Model for Federated LLM Training via Blockchain.
+  venue: WWW
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/www/DasS26
+  doi: 10.1145/3774905.3794694
+  ee: https://doi.org/10.1145/3774905.3794694
+  url: https://dblp.org/rec/conf/www/DasS26
+  abstract: This article introduces a decentralized economic framework to support
+    collaborative training of Large Language Models (LLMs), mitigating the escalating
+    computational expenses and data privacy constraints characteristic of centralized
+    AI development. Federated Federated learning (FL) is employed to enable privacy-preserving,
+    distributed model training, while blockchain technologies are leveraged to provide
+    transparency, accountability, and trust among mutually untrusted stakeholders.
+    From an economic standpoint, the central objective is the design of a fair, incentive-compatible,
+    and cost-efficient mechanism that sustains long-term participation in federated
+    LLM training. The proposed framework integrates game-theoretic modeling with smart
+    contracts to quantify participant contributions and determine corresponding rewards.
+    A Shapley value–based contribution assessment scheme is adopted to promote allocative
+    fairness, discourage free-riding behavior, and align individual incentives with
+    improvements in the global model's performance. In addition, a tokenized incentive
+    layer is introduced to enable decentralized governance and verifiable, programmatic
+    reward distribution. Preliminary simulation results suggest enhanced fairness
+    in contribution evaluation, increased stability of participant engagement, and
+    reduced concentration of computational and financial burdens, thereby demonstrating
+    the economic viability and scalability of the proposed approach.
+  related_code: ''
+- author: Irwin King, Guodong Long, Zenglin Xu, Han Yu 0001, Xiaoli Tang 0001, Liping
+    Yi
+  title: 'FL@FM-TheWebConf&apos;26: The 3rd International Workshop on Federated Foundation
+    Models for the Web.'
+  venue: WWW
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/www/KingLXYTY26
+  doi: 10.1145/3774905.3796620
+  ee: https://doi.org/10.1145/3774905.3796620
+  url: https://dblp.org/rec/conf/www/KingLXYTY26
+  abstract: ''
+- author: Zhaolong Su, Leheng Zhao, Xiaoying Wu, Ziyue Xu, Jindong Wang 0001
+  title: 'FedUMM: A General Framework for Federated Learning with Unified Multimodal
+    Models.'
+  venue: WWW
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/www/SuZWXW26
+  doi: 10.1145/3774905.3796623
+  ee: https://doi.org/10.1145/3774905.3796623
+  url: https://dblp.org/rec/conf/www/SuZWXW26
+  abstract: ''
+- author: Qianqi Zhang, Zeling Xu, Caichun Cen, Yuntao Zou, Hongyan Liu, Yaohua Deng,
+    Hao Wu, Zhiyong Liao, Zihui Lin, Dagang Li 0001, Wei Wang 0395
+  title: 'Fed-S2: Adversarially Disentangled Federated Multimodal RAG for Safety-Critical
+    Long-Tail Fault Diagnosis.'
+  venue: WWW
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/www/ZhangXCZLDWLLLW26
+  doi: 10.1145/3774905.3795461
+  ee: https://doi.org/10.1145/3774905.3795461
+  url: https://dblp.org/rec/conf/www/ZhangXCZLDWLLLW26
+  abstract: 'Democratizing AI for smaller-scale entities is crucial, yet their critical
+    infrastructure faces a triad of challenges: long-tail fault detection in heterogeneous
+    data, multimodal gaps, and strict privacy compliance. Traditional Federated Learning
+    (FL) struggles with ''''gradient starvation'''' on scarce samples and is vulnerable
+    to inversion attacks. To address these, we propose Fed-S2, a privacy-preserving
+    framework based on Adversarially Disentangled Federated Multimodal Retrieval-Augmented
+    Generation (RAG). Fed-S2 replaces parameter synchronization with a global knowledge
+    graph constructed from lightweight embeddings sanitized via ''''Semantic-Shielding.''''
+    Our contributions include: (1) A Resolution-Agnostic Semantic Projector utilizing
+    adaptive spectral pooling for frequency-domain signal alignment; (2) A Min-Max
+    Adversarial Game formulated under the Information Bottleneck principle to theoretically
+    bound inversion risks; and (3) Retrieval-based Zero-Shot Inference leveraging
+    a frozen Meta Llama-3.1 for cross-modal reasoning. On cross-domain benchmarks
+    (CWRU, XJTU-SY, MFPT), Fed-S2 improves long-tail fault identification from 38.5%
+    to 84.2%. In zero-shot scenarios, it achieves 68.5% accuracy where traditional
+    FL fails (0%), demonstrating superior generalization while reducing communication
+    overhead by 93%.'
+  related_code: ''
 federate%20venue%3AOSDI%3A:
 - author: Fan Lai, Xiangfeng Zhu, Harsha V. Madhyastha, Mosharaf Chowdhury
   title: 'Oort: Efficient Federated Learning via Guided Participant Selection.'
