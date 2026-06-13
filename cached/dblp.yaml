@@ -65847,6 +65847,31 @@ federate%20streamid%3Ajournals%2Ftpds%3A:
     of this heterogeneity correction on extensive non-convex neural network training
     tasks over different topologies and dynamic network settings.
   related_code: ''
+- author: Chunlin Tian, Kahou Tam, Yebo Wu, Shuaihang Zhong, Li Li 0064, Nicholas
+    D. Lane, ChengZhong Xu 0001
+  title: 'Floe: Federated Specialization for Real-Time LLM-SLM Inference.'
+  venue: IEEE Trans. Parallel Distributed Syst.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/tpds/TianTWZLLX26
+  doi: 10.1109/TPDS.2026.3665358
+  ee: https://doi.org/10.1109/TPDS.2026.3665358
+  url: https://dblp.org/rec/journals/tpds/TianTWZLLX26
+  abstract: Deploying large language models (LLMs) in real-time systems is challenging
+    due to their high resource demands and privacy concerns. We propose Floe a hybrid
+    federated learning framework designed for latency-sensitive, resource-constrained
+    environments. Floe combines a cloud-based black-box LLM with lightweight small
+    language models (SLMs) on edge devices to enable low-latency, privacy-preserving
+    inference. Personal data and fine-tuning remain on-device, while the cloud LLM
+    contributes general knowledge without exposing proprietary weights. A heterogeneity-aware
+    LoRA adaptation strategy ensures efficient edge deployment across diverse hardware,
+    and a logit-level fusion mechanism enables real-time coordination between edge
+    and cloud models. Experiments demonstrate that Floe enhances user privacy and
+    personalization, while significantly improving model performance and reducing
+    inference latency on edge devices under real-time constraints, compared to baseline
+    approaches.
+  related_code: ''
 federate%20streamid%3Ajournals%2Ftocs%3A: []
 federate%20streamid%3Ajournals%2Ftos%3A:
 - author: Amina Chikhaoui, Laurent Lemarchand, Kamel Boukhalfa, Jalil Boukhobza
