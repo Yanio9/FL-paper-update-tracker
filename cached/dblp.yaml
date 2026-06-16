@@ -20841,6 +20841,158 @@ federate%20venue%3ANeurIPS%3A:
     behavior with better calibrated uncertainty estimates of FedMDMI.
   abstract_cn: 现有的联邦学习（FL）框架大多将模型视为点估计，这使得模型极易在稀缺的客户端数据上过拟合，并做出过于自信的决策。尽管贝叶斯推断能够缓解这一问题，但在客户端直接进行后验推断时，由于数据异质性，可能会导致局部后验估计出现偏差，从而得到次优的全局后验分布。从信息论的角度出发，我们提出了FedMDMI——一种基于模型-数据互信息（MI）的联邦后验推断框架。具体而言，我们在目标函数中引入全局模型-数据互信息项作为正则化，以约束全局模型从异质的本地数据中学习到关键信息，从而减轻数据异质性带来的偏差，进而提升模型的泛化能力。为了使这一全局互信息项易于优化，我们将之分解为各个客户端上的局部互信息项，从而将带有互信息正则化的全局优化问题转化为若干可基于本地数据独立优化的局部子问题。对于这些局部子问题，我们进一步证明最优的局部后验分布是一个吉布斯后验分布，该分布可以利用随机梯度朗之万动力学方法高效地进行采样。最后，在服务器端，我们通过简单地对各客户端后验样本取平均来近似采样全局吉布斯后验分布。理论分析给出了FL关于模型-数据互信息的泛化界，在不同强度的正则化下，这一泛化界体现了联邦学习场景下的偏差–方差权衡关系。实验结果表明，FedMDMI不仅具有更好的泛化性能，还能提供更为校准良好的不确定性估计。
   related_code: ''
+- author: Soham Bonnerjee, Sayar Karmakar, Wei Biao Wu
+  title: Sharp Gaussian approximations for Decentralized Federated Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/BonnerjeeKW25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/e6a11b618402617342f38f5b49430937-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/BonnerjeeKW25
+  abstract: ''
+- author: Hong Huang, Jinhai Yang 0006, Yuan Chen, Jiaxun Ye, Dapeng Wu 0001
+  title: 'FedRTS: Federated Robust Pruning via Combinatorial Thompson Sampling.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/HuangYCYW25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/eda9523faa5e7191aee1c2eaff669716-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/HuangYCYW25
+  abstract: 'Federated Learning (FL) enables collaborative model training across distributed
+    clients without data sharing, but its high computational and communication demands
+    strain resource-constrained devices. While existing methods use dynamic pruning
+    to improve efficiency by periodically adjusting sparse model topologies while
+    maintaining sparsity, these approaches suffer from issues such as greedy adjustments,
+    unstable topologies, and communication inefficiency, resulting in less robust
+    models and suboptimal performance under data heterogeneity and partial client
+    availability. To address these challenges, we propose Federated Robust pruning
+    via combinatorial Thompson Sampling (FedRTS), a novel framework designed to develop
+    robust sparse models. FedRTS enhances robustness and performance through its Thompson
+    Sampling-based Adjustment (TSAdj) mechanism, which uses probabilistic decisions
+    informed by stable, farsighted information instead of deterministic decisions
+    reliant on unstable and myopic information in previous methods. Extensive experiments
+    demonstrate that FedRTS achieves state-of-the-art performance in computer vision
+    and natural language processing tasks while reducing communication costs, particularly
+    excelling in scenarios with heterogeneous data distributions and partial client
+    participation. Our codes are available at: https://github.com/Little0o0/FedRTS'
+  related_code: https://github.com/Little0o0/FedRTS
+- author: Su Hyeong Lee, Sidharth Sharma, Manzil Zaheer, Tian Li 0005
+  title: Efficient Adaptive Federated Optimization.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/LeeSZL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/fab71c08b15508fd6c435e59b0e82b68-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/LeeSZL25
+  abstract: ''
+- author: Xiang Li, Chendi Wang, Buxin Su, Qi Long, Weijie Su 0001
+  title: Mitigating the Privacy-Utility Trade-off in Decentralized Federated Learning
+    via f-Differential Privacy.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/LiWSLS25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/f6913c4fd14f608077a4145f2744ec89-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/LiWSLS25
+  abstract: 'Differentially private (DP) decentralized Federated Learning (FL) allows
+    local users to collaborate without sharing their data with a central server. However,
+    accurately quantifying the privacy budget of private FL algorithms is challenging
+    due to the co-existence of complex algorithmic components such as decentralized
+    communication and local updates. This paper addresses privacy accounting for two
+    decentralized FL algorithms within the $f$-differential privacy ($f$-DP) framework.
+    We develop two new $f$-DP-based accounting methods tailored to decentralized settings:
+    Pairwise Network $f$-DP (PN-$f$-DP), which quantifies privacy leakage between
+    user pairs under random-walk communication, and Secret-based $f$-Local DP (Sec-$f$-LDP),
+    which supports structured noise injection via shared secrets. By combining tools
+    from $f$-DP theory and Markov chain concentration, our accounting framework captures
+    privacy amplification arising from sparse communication, local iterations, and
+    correlated noise. Experiments on synthetic and real datasets demonstrate that
+    our methods yield consistently tighter $(ε,δ)$ bounds and improved utility compared
+    to Rényi DP-based approaches, illustrating the benefits of $f$-DP in decentralized
+    privacy accounting.'
+  related_code: ''
+- author: Dongping Liao, Xitong Gao, Cheng-Zhong Xu 0001
+  title: 'FLiP: Towards Comprehensive and Reliable Evaluation of Federated Prompt
+    Learning.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/LiaoGX25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/e2994aef66cb506e4a3b9be33ab41def-Abstract-Datasets_and_Benchmarks_Track.html
+  url: https://dblp.org/rec/conf/nips/LiaoGX25
+  abstract: ''
+- author: Tianxing Man, Yu Bai, Ganyu Wang, Jinjie Fang, Haoran Fang, Bin Gu 0001,
+    Yi Chang 0001
+  title: Accelerated Vertical Federated Adversarial Learning through Decoupling Layer-Wise
+    Dependencies.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/ManBWFFGC25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/d8ace30c68b085556ccce04ed4ae4ebb-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/ManBWFFGC25
+  abstract: ''
+- author: Azadeh Motamedi, Jae-Mo Kang, Il-Min Kim 0001
+  title: 'NormFit: A Lightweight Solution for Few-Shot Federated Learning with Non-IID
+    Data.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/MotamediKK25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/f2e615059e95926e6a5b8bfb20971e83-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/MotamediKK25
+  abstract: ''
+- author: Wei Wan, Yuxuan Ning, Zhicong Huang, Cheng Hong 0001, Shengshan Hu, Ziqi
+    Zhou 0001, Yechao Zhang, Tianqing Zhu, Wanlei Zhou 0001, Leo Yu Zhang
+  title: 'MARS: A Malignity-Aware Backdoor Defense in Federated Learning.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/WanNHHHZZZZZ25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/e3d801d6b59ef6810183766194f8681b-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/WanNHHHZZZZZ25
+  abstract: ''
+- author: Siyuan Wu 0002, Yongzhe Jia, Haolong Xiang, Xiaolong Xu 0001, Xuyun Zhang,
+    Lianyong Qi, Wanchun Dou
+  title: A Fair Federated Learning Method for Handling Client Participation Probability
+    Inconsistencies in Heterogeneous Environments.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/WuJXXZQD25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/dcc0ac74ac8b95dc1939804acce0317d-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/WuJXXZQD25
+  abstract: ''
+- author: Haoran Zhang, Yang Xu, Xuchuang Wang, Hao-Xu Chen, Hao Qiu, Lin F. Yang,
+    Yang Gao
+  title: Federated Multi-armed Bandits with Efficient Bit-Level Communications.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/ZhangXWCQYG25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/e47f66608282428a17304176e5445023-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/ZhangXWCQYG25
+  abstract: ''
 federate%20venue%3AICML%3A:
 - author: Jinheon Baek, Wonyong Jeong, Jiongdao Jin, Jaehong Yoon, Sung Ju Hwang
   title: Personalized Subgraph Federated Learning.
@@ -72598,6 +72750,38 @@ collaborat%20learn%20venue%3ANeurIPS%3A:
   abstract_cn: 本文提出了一种深度协同学习方法，通过同时训练一串随机连接的神经网络，以提升整体泛化性能并构建一个强大的集成模型。所提方法利用保持功能一致性的迁移学习与知识蒸馏技术来生成集成模型。知识蒸馏是一种有效的学习范式，可通过教师网络所习得的知识来提升小型神经网络的性能。以往的大多数方法仅从一个或多个教师网络中学习，而未能实现真正的协同。在本文中，我们基于随机图算法构建了一串随机连接的神经网络，并采用保持功能一致性的迁移学习对其进行协同训练，使链中的小型网络能够同时向规模最大的网络学习。该训练过程在各随机连接模型之间实施知识蒸馏，其中每个模型都被视为其后继模型的“教师”。最终，多条模型链的决策结果可加以融合，形成一个鲁棒的集成模型。我们在
     CIFAR‑10、CIFAR‑100 和 TinyImageNet 数据集上对所提方法进行了评估。实验结果表明，协同训练显著提升了各模型的泛化能力，从而能够得到一个既能逼近大型模型性能的小型模型，并进一步构建出更为稳健的集成方案。
   related_code: ''
+- author: Yongxin He, Shan Zhang, Yixuan Cao 0001, Lei Ma, Ping Luo 0001
+  title: 'DETree: DEtecting Human-AI Collaborative Texts via Tree-Structured Hierarchical
+    Representation Learning.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/HeZCML25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/d6f8517fceeca1e2cd61721dff786c14-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/HeZCML25
+  abstract: Detecting AI-involved text is essential for combating misinformation,
+    plagiarism, and academic misconduct. However, AI text generation includes diverse
+    collaborative processes (AI-written text edited by humans, human-written text
+    edited by AI, and AI-generated text refined by other AI), where various or even
+    new LLMs could be involved. Texts generated through these varied processes exhibit
+    complex characteristics, presenting significant challenges for detection. Current
+    methods model these processes rather crudely, primarily employing binary classification
+    (purely human vs. AI-involved) or multi-classification (treating human-AI collaboration
+    as a new class). We observe that representations of texts generated through different
+    processes exhibit inherent clustering relationships. Therefore, we propose DETree,
+    a novel approach that models the relationships among different processes as a
+    Hierarchical Affinity Tree structure, and introduces a specialized loss function
+    that aligns text representations with this tree. To facilitate this learning,
+    we developed RealBench, a comprehensive benchmark dataset that automatically incorporates
+    a wide spectrum of hybrid texts produced through various human-AI collaboration
+    processes. Our method improves performance in hybrid text detection tasks and
+    significantly enhances robustness and generalization in out-of-distribution scenarios,
+    particularly in few-shot learning conditions, further demonstrating the promise
+    of training-based approaches in OOD settings. Our code and dataset are available
+    at https://github.com/heyongxin233/DETree.
+  related_code: https://github.com/heyongxin233/DETree
 collaborat%20learn%20venue%3AICML%3A:
 - author: Lan Li 0001, Da-Wei Zhou 0001, Han-Jia Ye, De-Chuan Zhan
   title: Addressing Imbalanced Domain-Incremental Learning through Dual-Balance Collaborative
@@ -83737,6 +83921,62 @@ model%20merg%20venue%3ANeurIPS%3A:
     research into methods for merging models.
   abstract_cn: 对具有相同架构和初始化的模型参数取平均，可以作为一种整合其各自能力的方式。在本文中，我们从这样一个视角出发：这一“融合”操作可被视为在各模型参数后验分布的联合似然函数上选择近似最大化其值的参数。因此，对模型参数进行简单平均，实际上是对这些后验分布做了一个各向同性的高斯近似。我们进一步提出了一种基于拉普拉斯近似的替代融合方法：将每个模型的后验分布近似为一个精度矩阵等于其费希尔信息矩阵的高斯分布。首先，我们表明，在当前普遍采用简单参数平均的场景下——尤其是鲁棒微调与模型集成——我们的“费希尔融合”技术能够带来性能提升。随后，我们将融合与基于梯度的标准迁移学习进行了对比，并证明融合提供了一种在不同模型之间传递能力的全新范式。具体而言，我们在中间任务训练与领域自适应预训练等场景中发现，费希尔融合在效果上可与基于梯度的迁移学习方法相媲美，且计算开销显著更低。此外，我们的融合方法还使得以此前未曾探索的方式组合模型成为可能。我们已公开相关代码，以促进未来关于模型融合方法的研究。
   related_code: ''
+- author: Leonardo Defilippis, Yatin Dandi, Pierre Mergny, Florent Krzakala, Bruno
+    Loureiro
+  title: Optimal Spectral Transitions in High-Dimensional Multi-Index Models.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/DefilippisDMKL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/ffcced24969ba529256ed7d3014dc615-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/DefilippisDMKL25
+  abstract: We consider the problem of how many samples from a Gaussian multi-index
+    model are required to weakly reconstruct the relevant index subspace. Despite
+    its increasing popularity as a testbed for investigating the computational complexity
+    of neural networks, results beyond the single-index setting remain elusive. In
+    this work, we introduce spectral algorithms based on the linearization of a message
+    passing scheme tailored to this problem. Our main contribution is to show that
+    the proposed methods achieve the optimal reconstruction threshold. Leveraging
+    a high-dimensional characterization of the algorithms, we show that above the
+    critical threshold the leading eigenvector correlates with the relevant index
+    subspace, a phenomenon reminiscent of the Baik-Ben Arous-Peche (BBP) transition
+    in spiked models arising in random matrix theory. Supported by numerical experiments
+    and a rigorous theoretical framework, our work bridges critical gaps in the computational
+    limits of weak learnability in multi-index model.
+  related_code: ''
+- author: Wenju Sun, Qingyong Li, Wen Wang 0019, Yang Liu, Yangliao Geng, Boyang Li
+    0001
+  title: 'Towards Minimizing Feature Drift in Model Merging: Layer-wise Task Vector
+    Fusion for Adaptive Knowledge Integration.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/SunLWLGL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/fbb4f2269267de23e0240e1c01242981-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/SunLWLGL25
+  abstract: Multi-task model merging aims to consolidate knowledge from multiple fine-tuned
+    task-specific experts into a unified model while minimizing performance degradation.
+    Existing methods primarily approach this by minimizing differences between task-specific
+    experts and the unified model, either from a parameter-level or a task-loss perspective.
+    However, parameter-level methods exhibit a significant performance gap compared
+    to the upper bound, while task-loss approaches entail costly secondary training
+    procedures. In contrast, we observe that performance degradation closely correlates
+    with feature drift, i.e., differences in feature representations of the same sample
+    caused by model merging. Motivated by this observation, we propose Layer-wise
+    Optimal Task Vector Merging (LOT Merging), a technique that explicitly minimizes
+    feature drift between task-specific experts and the unified model in a layer-by-layer
+    manner. LOT Merging can be formulated as a convex quadratic optimization problem,
+    enabling us to analytically derive closed-form solutions for the parameters of
+    linear and normalization layers. Consequently, LOT Merging achieves efficient
+    model consolidation through basic matrix operations. Extensive experiments across
+    vision and vision-language benchmarks demonstrate that LOT Merging significantly
+    outperforms baseline methods, achieving improvements of up to 4.4% (ViT-B/32)
+    over state-of-the-art approaches. The source code is available at https://github.com/SunWenJu123/model-merging.
+  related_code: https://github.com/SunWenJu123/model-merging
 model%20merg%20venue%3AICML%3A:
 - author: Qi Wei 0004, Shuo He 0001, Enneng Yang, Tingcong Liu, Haobo Wang 0001, Lei
     Feng 0006, Bo An 0001
