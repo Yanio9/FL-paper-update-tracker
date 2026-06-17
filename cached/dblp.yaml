@@ -66024,6 +66024,67 @@ federate%20streamid%3Ajournals%2Ftpds%3A:
     inference latency on edge devices under real-time constraints, compared to baseline
     approaches.
   related_code: ''
+- author: Cheng-Wei Ching, Xin Chen 0084, Taehwan Kim 0012, Jian-Jhih Kuo, Dilma Da
+    Silva, Liting Hu
+  title: 'Totoro+: An Adaptive and Scalable Edge Federated Learning System.'
+  venue: IEEE Trans. Parallel Distributed Syst.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/tpds/ChingCKKSH26
+  doi: 10.1109/TPDS.2026.3696917
+  ee: https://doi.org/10.1109/TPDS.2026.3696917
+  url: https://dblp.org/rec/journals/tpds/ChingCKKSH26
+  abstract: 'Federated Learning (FL) is an emerging distributed machine learning (ML)
+    technique that enables in-situ model training and inference on decentralized edge
+    devices. We propose Totoro$^+$+, a novel scalable FL system that enables massive
+    FL applications to run simultaneously on edge networks. The key insight is to
+    explore a distributed hash table (DHT)-based peer-to-peer (P2P) model to re-architect
+    the centralized FL system design into a fully decentralized one. In contrast to
+    previous studies where many FL applications shared one centralized parameter server,
+    Totoro$^+$+ assigns a dedicated parameter server to each application. Any edge
+    node can act as any application’s coordinator, aggregator, client selector, worker
+    (participant device), or any combination of the above, thereby radically improving
+    scalability and adaptivity. Totoro$^+$+ introduces three innovations to realize
+    its design: a locality-aware P2P multi-ring structure, a publish/subscribe-based
+    forest abstraction, and a game-theoretic path planning model with a guarantee
+    of an $\epsilon$ε-approximate Nash equilibrium. Real-world experiments on 500
+    Amazon EC2 servers show that Totoro$^+$+ scales gracefully with the number of
+    FL applications and $N$N edge nodes speeds up the total training time by $1.2\times
+    -14.0\times$1.2×-14.0×, achieves $\mathcal {O}(\log N)$O(logN) hops for model
+    dissemination and gradient aggregation with millions of nodes, and efficiently
+    adapts to the practical edge networks and churns.'
+  related_code: ''
+- author: Minh-Duong Nguyen, Quoc-Viet Pham, Dinh Thai Hoang, Diep N. Nguyen, Long
+    Tran-Thanh, Won-Joo Hwang
+  title: Exploiting Label-Aware Knowledge From Heterogeneous Clients for Hierarchical
+    Federated Learning.
+  venue: IEEE Trans. Parallel Distributed Syst.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/tpds/NguyenPHNTH26
+  doi: 10.1109/TPDS.2026.3690206
+  ee: https://doi.org/10.1109/TPDS.2026.3690206
+  url: https://dblp.org/rec/journals/tpds/NguyenPHNTH26
+  abstract: 'In real-world applications, Federated Learning (FL) faces two challenges:
+    (1) scalability and (2) heterogeneous data. To address the first problem, we design
+    a novel FL framework named Full-stack FL (F2L). More specifically, F2L provides
+    a hierarchical network architecture, making extending the FL network accessible
+    without reconstructing the whole network system. Moreover, leveraging the advantages
+    of hierarchical network design, we propose a new Label-driven Knowledge Distillation
+    (LKD) technique at the centralized server to address the second problem. Unlike
+    the current knowledge distillation techniques, LKD is capable of training a student
+    model, which consists of good knowledge from all teachers’ models. Therefore,
+    our proposed algorithm can effectively extract the knowledge of the regions’ data
+    distribution (i.e., the regional aggregated models) to reduce the divergence between
+    clients’ models when operating under the FL system with non-independent identically
+    distributed data. Extensive experiment results reveal that: (i) our F2L method
+    can significantly improve the overall FL efficiency in all global distillations
+    (i.e., accuracy is $7-20\%$7-20% higher in non-IID settings), and (ii) F2L rapidly
+    achieves convergence as global distillation stages occur instead of increasing
+    on each communication cycle.'
+  related_code: ''
 federate%20streamid%3Ajournals%2Ftocs%3A: []
 federate%20streamid%3Ajournals%2Ftos%3A:
 - author: Amina Chikhaoui, Laurent Lemarchand, Kamel Boukhalfa, Jalil Boukhobza
