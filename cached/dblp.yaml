@@ -32626,6 +32626,99 @@ federate%20streamid%3Ajournals%2Fpami%3A:
     robustness and adaptability. FedPerX advances the design of scalable, personalized,
     and privacy-preserving models for federated multilingual sentiment analysis
   related_code: ''
+- author: Rui She 0001, Sijie Wang, Qiyu Kang, Kai Zhao 0010, Tianyu Geng, Yanan Zhao
+    0003, Wenfei Liang 0001, Wee Peng Tay
+  title: Hierarchical Information Embeddings With Neural ODEs for Personalized Federated
+    Learning.
+  venue: IEEE Trans. Pattern Anal. Mach. Intell.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/pami/SheWKZGZLT26
+  doi: 10.1109/TPAMI.2026.3662990
+  ee: https://doi.org/10.1109/TPAMI.2026.3662990
+  url: https://dblp.org/rec/journals/pami/SheWKZGZLT26
+  abstract: Personalized federated learning (PFL) plays a pivotal role in ensuring
+    efficient privacy preservation and secure collaborative learning. However, PFL
+    faces significant challenges due to data heterogeneity and device diversity. To
+    enhance personalization and robustness in PFL, we propose a novel model called
+    FedNODE, which leverages hierarchical embeddings. FedNODE incorporates personalized,
+    pseudo-generic, and fusion embeddings to facilitate hierarchical information representation.
+    We utilize a hypernetwork based on neural ordinary differential equations (ODEs)
+    within the server to generate backbone parameters for different clients, enabling
+    the creation of personalized embeddings. Additionally, we introduce a pseudo-generic
+    embedding based on a learnable vector to balance personalized and generic information.
+    A neural ODE-based network follows the backbone module for each client, integrating
+    personalized and pseudo-generic embeddings. To validate the efficacy of FedNODE,
+    we conduct extensive evaluations across various classification datasets, encompassing
+    diverse statistically heterogeneous settings and noisy scenarios. The results
+    demonstrate that FedNODE achieves state-of-the-art performance.
+  related_code: ''
+- author: Mingwei Xu, Xiaofeng Cao 0002, Ivor W. Tsang, James T. Kwok, Heng Tao Shen
+  title: Generalized Distribution Aggregation Protocol for Federated Statistical Heterogeneity.
+  venue: IEEE Trans. Pattern Anal. Mach. Intell.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/pami/XuCTKS26
+  doi: 10.1109/TPAMI.2026.3663744
+  ee: https://doi.org/10.1109/TPAMI.2026.3663744
+  url: https://dblp.org/rec/journals/pami/XuCTKS26
+  abstract: Federated heterogeneity refers to the disparities in data distributions,
+    model architectures, and communication capabilities across various devices or
+    institutional entities. In real-world scenarios, statistical heterogeneity can
+    often lead to ineffective aggregation, severely impacting generalization performance
+    and resulting in biased or unstable model weights. Theoretically, distributional
+    robustness analysis indicates that the generalization performance of a learning
+    model can be bounded with respect to any heterogeneity distribution. This insight
+    motivates us to reconsider the aggregation strategy in federated statistical heterogeneity
+    scenarios, and we thus propose a new weighting aggregation protocol that considers
+    the generalization bound disagreement of each local model. Specifically, we estimate
+    the upper and lower bounds of the second-order origin moment of the shifted distribution
+    for the current local model, and using these bound disagreements as the aggregation
+    proportions for weights in each communication round. Our experiments demonstrate
+    that this proposed aggregation protocol significantly improves the performance
+    of several representative Federated Learning algorithms on benchmark datasets.
+  related_code: ''
+- author: Xun Yang 0001, Rong Dai, Yonggang Zhang 0003, Ang Li 0005, Tongliang Liu,
+    Bo Han 0003
+  title: 'Co-Boosting++: Coupled Optimization of Data and Ensemble for One-Shot Federated
+    Learning.'
+  venue: IEEE Trans. Pattern Anal. Mach. Intell.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/pami/YangDZLLH26
+  doi: 10.1109/TPAMI.2026.3672655
+  ee: https://doi.org/10.1109/TPAMI.2026.3672655
+  url: https://dblp.org/rec/journals/pami/YangDZLLH26
+  abstract: One-shot Federated Learning (OFL) has emerged as a promising paradigm,
+    enabling global model training with minimal communication overhead. In OFL, the
+    server model is usually distilled from an ensemble of pre-trained client models,
+    while the ensemble also facilitates synthetic data generation for the knowledge
+    distillation process. Prior works show that the performance of the final model
+    is fundamentally tied to both the quality of the synthetic data and the ensemble.
+    However, existing methods often optimize these two components separately, overlooking
+    their interaction. To address this coupled optimization problem and provide a
+    unified solution to the dual challenges of data and model heterogeneity inherent
+    in OFL, we introduce Co-Boosting++, a novel OFL framework where synthetic data
+    generation and ensemble construction mutually enhance each other in an iterative
+    fashion. First, we fix the ensemble and generate hard samples in an adversarial
+    manner. These samples are crucial for enhancing the robustness of knowledge transfer,
+    as they challenge the model to generalize better, thereby improving quality of
+    the synthetic data and subsequent distillation process. Second, leveraging these
+    hard samples, we enhance the ensemble via a Mixture of Experts (MoE) mechanism.
+    MoE allows dynamic adjustment of ensemble weights based on the generated hard
+    samples, which enables the ensemble to better capture diverse and heterogeneous
+    knowledge from client models. Furthermore, we extend Co-Boosting++ to support
+    the simultaneous generation of multiple heterogeneous target models, enabling
+    efficient adaptation to diverse device constraints. Extensive experiments on benchmark
+    datasets demonstrate that Co-Boosting++ consistently outperforms state-of-the-art
+    methods due to its coupled optimization of data and ensemble quality. Additionally,
+    Co-Boosting++ is highly practical in real-world model market scenarios, requiring
+    no local training modifications, additional transmissions, or restrictions on
+    client model architectures.
+  related_code: ''
 federate%20venue%3AKDD%3A:
 - author: Zhen Wang, Weirui Kuang, Yuexiang Xie, Liuyi Yao, Yaliang Li, Bolin Ding,
     Jingren Zhou
