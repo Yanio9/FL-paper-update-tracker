@@ -21226,6 +21226,358 @@ federate%20venue%3ANeurIPS%3A:
   ee: http://papers.nips.cc/paper_files/paper/2025/hash/bb203e938836544655996d1bb94a0fd7-Abstract-Conference.html
   url: https://dblp.org/rec/conf/nips/ZhangZX25
   abstract: ''
+- author: Sana Ayromlou, David B. Emerson
+  title: Adaptive Latent-Space Constraints in Personalized Federated Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/AyromlouE25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/74fc5575632191d96881d8015f79dde3-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/AyromlouE25
+  abstract: ''
+- author: Haizhou Du, Yiran Xiang, Yiwen Cai, Xiufeng Liu 0001, Zonghan Wu, Huan Huo,
+    Guodong Long
+  title: 'FedFree: Breaking Knowledge-sharing Barriers through Layer-wise Alignment
+    in Heterogeneous Federated Learning.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/DuXCLWHL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/7644353d580a9e027e0069d6480d971b-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/DuXCLWHL25
+  abstract: ''
+- author: Lele Fu, Tianchi Liao, Sheng Huang, Bowen Deng 0002, Chuanfu Zhang, Shirui
+    Pan, Chuan Chen 0001
+  title: Unsupervised Federated Graph Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/FuLHDZPC25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/8c4c80d3eee8a56da1302bc6dcd2d953-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/FuLHDZPC25
+  abstract: ''
+- author: Yuqi Jia, Minghong Fang, Neil Gong 0001
+  title: Competitive Advantage Attacks to Decentralized Federated Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/JiaFG25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/7c818dd40651b420873af70b8a790e3f-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/JiaFG25
+  abstract: ''
+- author: Jisoo Kim 0007, Sungmin Kang, Sunwoo Lee 0001
+  title: Layer-wise Update Aggregation with Recycling for Communication-Efficient
+    Federated Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/KimKL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/7ccae68f81c1bd9104c304a9d8967048-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/KimKL25
+  abstract: Expensive communication cost is a common performance bottleneck in Federated
+    Learning (FL), which makes it less appealing in real-world applications. Many
+    communication-efficient FL methods focus on discarding a part of model updates
+    mostly based on gradient magnitude. In this study, we find that recycling previous
+    updates, rather than simply dropping them, more effectively reduces the communication
+    cost while maintaining FL performance. We propose FedLUAR, a Layer-wise Update
+    Aggregation with Recycling scheme for communication-efficient FL. We first define
+    a useful metric that quantifies the extent to which the aggregated gradients influences
+    the model parameter values in each layer. FedLUAR selects a few layers based on
+    the metric and recycles their previous updates on the server side. Our extensive
+    empirical study demonstrates that the update recycling scheme significantly reduces
+    the communication cost while maintaining model accuracy. For example, our method
+    achieves nearly the same AG News accuracy as FedAvg, while reducing the communication
+    cost to just 17%.
+  related_code: ''
+- author: Yunbo Li, Jiaping Gui, Zhihang Deng, Fanchao Meng, Yue Wu 0010
+  title: 'FedQS: Optimizing Gradient and Model Aggregation for Semi-Asynchronous Federated
+    Learning.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/LiGDMW25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/7d3f1540bb7af35813578db81d03b0dd-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/LiGDMW25
+  abstract: ''
+- author: Yichen Li 0006, Yuying Wang, Jiahua Dong 0001, Haozhao Wang, Yining Qi,
+    Rui Zhang 0003, Ruixuan Li 0001
+  title: 'Resource-Constrained Federated Continual Learning: What Does Matter?'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/LiWDWQZL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/721dbcfed36ef373f19a03e3e3130729-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/LiWDWQZL25
+  abstract: ''
+- author: Yichen Li 0006, Xiuying Wang, Wenchao Xu 0001, Haozhao Wang, Yining Qi,
+    Jiahua Dong 0001, Ruixuan Li 0001
+  title: Feature Distillation is the Better Choice for Model-Heterogeneous Federated
+    Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/LiWXWQDL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/96dd63ab8fd79163a5399e0b385f208d-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/LiWXWQDL25
+  abstract: ''
+- author: Guiqiu Liao, Matjaz Jogan, Eric Eaton, Daniel A. Hashimoto
+  title: 'FORLA: Federated Object-Centric Representation Learning with Slot Attention.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/LiaoJEH25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/923fd1695eaee59610c2bc033a9e2354-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/LiaoJEH25
+  abstract: ''
+- author: Yinjie Min, Chuchen Zhang, Liuhua Peng, Changliang Zou
+  title: Personalized Federated Conformal Prediction with Localization.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/MinZPZ25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/930a720c815416c263b0a090448ee901-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/MinZPZ25
+  abstract: ''
+- author: Martin Pelikan, Sheikh Shams Azam, Vitaly Feldman, Jan Honza Silovsky, Kunal
+    Talwar, Christopher Brinton 0001, Tatiana Likhomanenko
+  title: 'Enabling Differentially Private Federated Learning for Speech Recognition:
+    Benchmarks, Adaptive Optimizers, and Gradient Clipping.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/PelikanAFSTBL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/a0f30168b3acb17101cbb1ea46e76aac-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/PelikanAFSTBL25
+  abstract: 'While federated learning (FL) and differential privacy (DP) have been
+    extensively studied, their application to automatic speech recognition (ASR) remains
+    largely unexplored due to the challenges in training large transformer models.
+    Specifically, large models further exacerbate issues in FL as they are particularly
+    susceptible to gradient heterogeneity across layers, unlike the relatively uniform
+    gradient behavior observed in shallow models. As a result, prior works struggle
+    to converge with standard optimization techniques, even in the absence of DP mechanisms.
+    To the best of our knowledge, no existing work establishes a competitive, practical
+    recipe for FL with DP in the context of ASR. To address this gap, we establish
+    \textbf{the first benchmark for FL with DP in end-to-end ASR}. Our approach centers
+    on per-layer clipping and layer-wise gradient normalization: theoretical analysis
+    reveals that these techniques together mitigate clipping bias and gradient heterogeneity
+    across layers in deeper models. Consistent with these theoretical insights, our
+    empirical results show that FL with DP is viable under strong privacy guarantees,
+    provided a population of at least several million users. Specifically, we achieve
+    user-level (7.2, $10^{-9}$)-DP (resp. (4.5, $10^{-9}$)-DP) with only a 1.3% (resp.
+    4.6%) absolute drop in word error rate when extrapolating to high (resp. low)
+    population scales for FL with DP in ASR. Although our experiments focus on ASR,
+    the underlying principles we uncover - particularly those concerning gradient
+    heterogeneity and layer-wise gradient normalization - offer broader guidance for
+    designing scalable, privacy-preserving FL algorithms for large models across domains.
+    Code of all experiments and benchmarks is available at https://github.com/apple/ml-pfl4asr.'
+  related_code: https://github.com/apple/ml-pfl4asr
+- author: Xihang Qiu, Jiarong Cheng, Yuhao Fang, Wanpeng Zhang 0006, Yao Lu, Ye Zhang,
+    Chun Li
+  title: Federated Dialogue-Semantic Diffusion for Emotion Recognition under Incomplete
+    Modalities.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/QiuCFZLZL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/7c8c0db90a14c7a2db9475e52dc343a9-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/QiuCFZLZL25
+  abstract: Multimodal Emotion Recognition in Conversations (MERC) enhances emotional
+    understanding through the fusion of multimodal signals. However, unpredictable
+    modality absence in real-world scenarios significantly degrades the performance
+    of existing methods. Conventional missing-modality recovery approaches, which
+    depend on training with complete multimodal data, often suffer from semantic distortion
+    under extreme data distributions, such as fixed-modality absence. To address this,
+    we propose the Federated Dialogue-guided and Semantic-Consistent Diffusion (FedDISC)
+    framework, pioneering the integration of federated learning into missing-modality
+    recovery. By federated aggregation of modality-specific diffusion models trained
+    on clients and broadcasting them to clients missing corresponding modalities,
+    FedDISC overcomes single-client reliance on modality completeness. Additionally,
+    the DISC-Diffusion module ensures consistency in context, speaker identity, and
+    semantics between recovered and available modalities, using a Dialogue Graph Network
+    to capture conversational dependencies and a Semantic Conditioning Network to
+    enforce semantic alignment. We further introduce a novel Alternating Frozen Aggregation
+    strategy, which cyclically freezes recovery and classifier modules to facilitate
+    collaborative optimization. Extensive experiments on the IEMOCAP, CMUMOSI, and
+    CMUMOSEI datasets demonstrate that FedDISC achieves superior emotion classification
+    performance across diverse missing modality patterns, outperforming existing approaches.
+  related_code: ''
+- author: Jinglong Shen, Nan Cheng 0001, Wenchao Xu 0001, Haozhao Wang, Yifan guo,
+    Jiajie Xu
+  title: 'LLM at Network Edge: A Layer-wise Efficient Federated Fine-tuning Approach.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/ShenCXWgX25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/972ce3dca0f2d4a6f4bffbec859dae78-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/ShenCXWgX25
+  abstract: ''
+- author: Xiaoli Tang 0001, Han Yu 0001, Xiaoxiao Li
+  title: A Reinforcement Learning-based Bidding Strategy for Data Consumers in Auction-based
+    Federated Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/TangYL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/76ee49ee4ad128d57282d99d6f2d4947-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/TangYL25
+  abstract: Auction-based Federated Learning (AFL) has attracted extensive research
+    interest due to its ability to motivate data owners to join FL through economic
+    means. Existing works assume that only one data consumer and multiple data owners
+    exist in an AFL marketplace (i.e., a monopoly market). Therefore, data owners
+    bid to join the data consumer for FL. However, this assumption is not realistic
+    in practical AFL marketplaces in which multiple data consumers can compete to
+    attract data owners to join their respective FL tasks. In this paper, we bridge
+    this gap by proposing a first-of-its-kind utility-maximizing bidding strategy
+    for data consumers in federated learning (Fed-Bidder). It enables multiple FL
+    data consumers to compete for data owners via AFL effectively and efficiently
+    by providing with utility estimation capabilities which can accommodate diverse
+    forms of winning functions, each reflecting different market dynamics. Extensive
+    experiments based on six commonly adopted benchmark datasets show that Fed-Bidder
+    is significantly more advantageous compared to four state-of-the-art approaches.
+  related_code: ''
+- author: Frank Wan, Jiaru Qian, Wenke Huang 0003, Qilin Xu, Xianda Guo, Boheng Li,
+    Guibin Zhang, Bo Du 0001, Mang Ye
+  title: 'OASIS: One-Shot Federated Graph Learning via Wasserstein Assisted Knowledge
+    Integration.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/WanQHXGLZDY25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/7300dd4d625cb42a438c1b822c77569f-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/WanQHXGLZDY25
+  abstract: ''
+- author: Lei Wang 0199, Jieming Bian, Letian Zhang, Jie Xu 0001
+  title: Adaptive LoRA Experts Allocation and Selection for Federated Fine-Tuning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/WangBZX25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/6df1b2b45e64d402588746f79b68b82c-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/WangBZX25
+  abstract: 'Large Language Models (LLMs) have demonstrated impressive capabilities
+    across various tasks, but fine-tuning them for domain-specific applications often
+    requires substantial domain-specific data that may be distributed across multiple
+    organizations. Federated Learning (FL) offers a privacy-preserving solution, but
+    faces challenges with computational constraints when applied to LLMs. Low-Rank
+    Adaptation (LoRA) has emerged as a parameter-efficient fine-tuning approach, though
+    a single LoRA module often struggles with heterogeneous data across diverse domains.
+    This paper addresses two critical challenges in federated LoRA fine-tuning: 1.
+    determining the optimal number and allocation of LoRA experts across heterogeneous
+    clients, and 2. enabling clients to selectively utilize these experts based on
+    their specific data characteristics. We propose FedLEASE (Federated adaptive LoRA
+    Expert Allocation and SElection), a novel framework that adaptively clusters clients
+    based on representation similarity to allocate and train domain-specific LoRA
+    experts. It also introduces an adaptive top-$M$ Mixture-of-Experts mechanism that
+    allows each client to select the optimal number of utilized experts. Our extensive
+    experiments on diverse benchmark datasets demonstrate that FedLEASE significantly
+    outperforms existing federated fine-tuning approaches in heterogeneous client
+    settings while maintaining communication efficiency.'
+  related_code: ''
+- author: Ting Wei, Biao Mei, Junliang Lyu, Renquan Zhang, Feng Zhou, Yifan Sun
+  title: Personalized Bayesian Federated Learning with Wasserstein Barycenter Aggregation.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/WeiMLZZS25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/6d0c18c6edc02be434c883bdd9fbe3b5-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/WeiMLZZS25
+  abstract: 'We introduce and study a novel model-selection strategy for Bayesian
+    learning, based on optimal transport, along with its associated predictive posterior
+    law: the Wasserstein population barycenter of the posterior law over models. We
+    first show how this estimator, termed Bayesian Wasserstein barycenter (BWB), arises
+    naturally in a general, parameter-free Bayesian model-selection framework, when
+    the considered Bayesian risk is the Wasserstein distance. Examples are given,
+    illustrating how the BWB extends some classic parametric and non-parametric selection
+    strategies. Furthermore, we also provide explicit conditions granting the existence
+    and statistical consistency of the BWB, and discuss some of its general and specific
+    properties, providing insights into its advantages compared to usual choices,
+    such as the model average estimator. Finally, we illustrate how this estimator
+    can be computed using the stochastic gradient descent (SGD) algorithm in Wasserstein
+    space introduced in a companion paper arXiv:2201.04232v2 [math.OC], and provide
+    a numerical example for experimental validation of the proposed method.'
+  related_code: ''
+- author: Fan Wu, Xinyu Yan 0003, Jiabei Liu, Wei Yang Bryan Lim
+  title: 'FedRAM: Federated Reweighting and Aggregation for Multi-Task Learning.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/WuYLL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/9421261e06f1a63a352b068f1ac90609-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/WuYLL25
+  abstract: ''
+- author: Danni Yang, Zhikang Chen, Sen Cui, Mengyue Yang, Ding Li, Abudukelimu Wuerkaixi,
+    Haoxuan Li 0001, Jinke Ren, Mingming Gong
+  title: Decentralized Dynamic Cooperation of Personalized Models for Federated Continual
+    Learning.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/YangCCYLWLRG25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/a2582a9f63edd4dd9489bd59ed0b6fce-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/YangCCYLWLRG25
+  abstract: ''
+- author: Zhiqin Yang, Yonggang Zhang 0003, Chenxin Li, Yiu-ming Cheung, Bo Han 0003,
+    Yixuan Yuan
+  title: 'FedGPS: Statistical Rectification Against Data Heterogeneity in Federated
+    Learning.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/YangZLCHY25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/87ee1bbac4635e7c948f3eea83c1f262-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/YangZLCHY25
+  abstract: ''
+- author: TaeHo Yoon, Sayantan Choudhury, Nicolas Loizou
+  title: 'Multiplayer Federated Learning: Reaching Equilibrium with Less Communication.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/YoonCL25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/8258e815fa93aa59441ad526cc828c53-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/YoonCL25
+  abstract: ''
 federate%20venue%3AICML%3A:
 - author: Jinheon Baek, Wonyong Jeong, Jiongdao Jin, Jaehong Yoon, Sung Ju Hwang
   title: Personalized Subgraph Federated Learning.
@@ -80712,6 +81064,42 @@ local%20SGD%20venue%3ANeurIPS%3A:
     Polyak‑Łojasiewicz 条件的损失函数，只需 O((pT)^(1/3)) 轮通信即可实现线性加速，即达到 O(1/pT) 的误差，其中 T 表示每个工作者的总更新次数。这与先前的工作形成鲜明对比：后者为获得类似的渐近性能，不仅需要更多的通信轮次，而且仅限于强凸损失函数。此外，我们还提出了一种自适应同步机制，给出了实现线性加速的一般性条件。最后，我们通过实验验证了上述理论，实验分别在
     AWS EC2 云平台和内部 GPU 集群上开展。
   related_code: ''
+- author: Ahmed Khaled 0001, Satyen Kale, Arthur Douillard, Chi Jin 0001, Rob Fergus,
+    Manzil Zaheer
+  title: 'Understanding Outer Optimizers in Local SGD: Learning Rates, Momentum, and
+    Acceleration.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/KhaledKDJFZ25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/90ad0e850532986dff56da49bc599904-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/KhaledKDJFZ25
+  abstract: 'Modern machine learning often requires training with large batch size,
+    distributed data, and massively parallel compute hardware (like mobile and other
+    edge devices or distributed data centers). Communication becomes a major bottleneck
+    in such settings but methods like Local Stochastic Gradient Descent (Local SGD)
+    show great promise in reducing this additional communication overhead. Local SGD
+    consists of three parts: a local optimization process, an aggregation mechanism,
+    and an outer optimizer that uses the aggregated updates from the nodes to produce
+    a new model. While there exists an extensive literature on understanding the impact
+    of hyperparameters in the local optimization process, the choice of outer optimizer
+    and its hyperparameters is less clear. We study the role of the outer optimizer
+    in Local SGD, and prove new convergence guarantees for the algorithm. In particular,
+    we show that tuning the outer learning rate allows us to (a) trade off between
+    optimization error and stochastic gradient noise variance, and (b) make up for
+    ill-tuning of the inner learning rate. Our theory suggests that the outer learning
+    rate should sometimes be set to values greater than $1$. We extend our results
+    to settings where we use momentum in the outer optimizer, and we show a similar
+    role for the momentum-adjusted outer learning rate. We also study acceleration
+    in the outer optimizer and show that it improves the convergence rate as a function
+    of the number of communication rounds, improving upon the convergence rate of
+    prior algorithms that apply acceleration locally. Finally, we also introduce a
+    novel data-dependent analysis of Local SGD that yields further insights on outer
+    learning rate tuning. We conduct comprehensive experiments with standard language
+    models and various outer optimizers to validate our theory.'
+  related_code: ''
 local%20SGD%20venue%3AICML%3A:
 - author: Blake E. Woodworth, Kumar Kshitij Patel, Sebastian U. Stich, Zhen Dai, Brian
     Bullins, H. Brendan McMahan, Ohad Shamir, Nathan Srebro
@@ -84488,6 +84876,65 @@ model%20merg%20venue%3ANeurIPS%3A:
   doi: ''
   ee: http://papers.nips.cc/paper_files/paper/2025/hash/b395e7bd5eaf3e980386debf2e9d7f11-Abstract-Conference.html
   url: https://dblp.org/rec/conf/nips/YaoLLLLHGWS25
+  abstract: ''
+- author: Jinluan Yang, Dingnan Jin, Anke Tang, Li Shen 0008, Didi Zhu, Zhengyu Chen
+    0001, Ziyu Zhao 0001, Daixin Wang, Qing Cui, Zhiqiang Zhang 0012, Jun Zhou 0011,
+    Fei Wu 0001, Kun Kuang 0001
+  title: Mix Data or Merge Models? Balancing the Helpfulness, Honesty, and Harmlessness
+    of Large Language Model via Model Merging.
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/YangJTSZCZWCZZW25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/a3948805bc5220206f5bfc465de0b1b7-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/YangJTSZCZWCZZW25
+  abstract: Achieving balanced alignment of large language models (LLMs) in terms
+    of Helpfulness, Honesty, and Harmlessness (3H optimization) constitutes a cornerstone
+    of responsible AI. Existing methods like data mixture strategies face limitations,
+    including heavy reliance on expert knowledge and conflicting optimization signals.
+    While model merging offers parameter-level conflict-resolution strategies through
+    integrating specialized models' parameters, its potential for 3H optimization
+    remains underexplored. This paper systematically compares the effectiveness of
+    model merging and data mixture methods in constructing 3H-aligned LLMs for the
+    first time, revealing previously overlooked collaborative and conflict relationships
+    among the 3H dimensions and discussing the advantages and drawbacks of data mixture
+    (\textit{data-level}) and model merging (\textit{parameter-level}) methods in
+    mitigating the conflict for balanced 3H optimization. Specially, we propose a
+    novel \textbf{R}eweighting \textbf{E}nhanced task \textbf{S}ingular \textbf{M}erging
+    method, \textbf{RESM}, through outlier weighting and sparsity-aware rank selection
+    strategies to address the challenges of preference noise accumulation and layer
+    sparsity adaptation inherent in 3H-aligned LLM merging. Extensive evaluations
+    can verify the effectiveness and robustness of RESM compared to previous data
+    mixture (2\%-5\% gain) and model merging (1\%-3\% gain) methods in achieving balanced
+    LLM alignment. We release our models through \href{https://huggingface.co/Jinluan}{3H\_Merging}
+    for further investigations.
+  related_code: ''
+- author: Anke Tang, Enneng Yang, Li Shen 0008, Yong Luo 0002, Han Hu 0003, Lefei
+    Zhang, Bo Du 0001, Dacheng Tao
+  title: 'Merging on the Fly Without Retraining: A Sequential Approach to Scalable
+    Continual Model Merging.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/TangYSLHZDT25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/7611a3cb5d733e628081431445cb01fd-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/TangYSLHZDT25
+  abstract: ''
+- author: Xinyu Yang 0002, Yuwei An, Hongyi Liu, Tianqi Chen 0001, Beidi Chen
+  title: 'Multiverse: Your Language Models Secretly Decide How to Parallelize and
+    Merge Generation.'
+  venue: NeurIPS
+  year: '2025'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/nips/YangALCC25
+  doi: ''
+  ee: http://papers.nips.cc/paper_files/paper/2025/hash/91b1966914203338495a76d13b23599c-Abstract-Conference.html
+  url: https://dblp.org/rec/conf/nips/YangALCC25
   abstract: ''
 model%20merg%20venue%3AICML%3A:
 - author: Qi Wei 0004, Shuo He 0001, Enneng Yang, Tingcong Liu, Haobo Wang 0001, Lei
