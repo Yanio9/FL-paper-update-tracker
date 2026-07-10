@@ -47891,6 +47891,33 @@ federate%20venue%3AACL%3A:
   ee: https://aclanthology.org/2026.findings-acl.284/
   url: https://dblp.org/rec/conf/acl/WangWLCZYHW26
   abstract: ''
+- author: Wenhao Wang 0002, Haoting Shi, Mengying Yuan, Yiquan Lin, Panrong Tong,
+    Hanzhang Zhou, Guangyi Liu, Pengxiang Zhao, Yue Wang, Siheng Chen
+  title: 'FedGUI: Benchmarking Federated GUI Agents across Heterogeneous Platforms,
+    Devices, and Operating Systems.'
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/acl/WangSYLTZLZWC26
+  doi: ''
+  ee: https://aclanthology.org/2026.findings-acl.1436/
+  url: https://dblp.org/rec/conf/acl/WangSYLTZLZWC26
+  abstract: 'Training GUI agents with traditional centralized methods faces significant
+    cost and scalability challenges. Federated learning (FL) offers a promising solution,
+    yet its potential is hindered by the lack of benchmarks that capture real-world,
+    cross-platform heterogeneity. To bridge this gap, we introduce FedGUI, the first
+    comprehensive benchmark for developing and evaluating federated GUI agents across
+    mobile, web, and desktop platforms. FedGUI provides a suite of six curated datasets
+    to systematically study four crucial types of heterogeneity: cross-platform, cross-device,
+    cross-OS, and cross-source. Extensive experiments reveal several key insights:
+    First, we show that cross-platform collaboration improves performance, extending
+    prior mobile-only federated learning to diverse GUI environments; Second, we demonstrate
+    the presence of distinct heterogeneity dimensions and identify platform and OS
+    as the most influential factors. FedGUI provides a vital foundation for the community
+    to build more scalable and privacy-preserving GUI agents for real-world deployment.
+    Our code and data are publicly available at https://github.com/wwh0411/FedGUI..'
+  related_code: https://github.com/wwh0411/FedGUI
 federate%20venue%3AEMNLP%3A:
 - author: Yatin Chaudhary, Pranav Rai, Matthias Schubert, Hinrich Schütze, Pankaj
     Gupta 0003
@@ -57321,6 +57348,1411 @@ federate%20venue%3AINFOCOM%3A:
   abstract_cn: 联邦学习（FL）是一种新兴的分布式学习范式，它能够协调多个客户端，利用各自的本地数据样本联合训练一个机器学习模型。现有的联邦学习研究按模型训练模式大致可分为两类：并行联邦学习（PFL）和顺序联邦学习（SFL）。PFL
     通过并行训练可缩短每轮模型训练时间，但在面临异构性问题时可能导致收敛性能下降；SFL 能较好地应对异构性问题、减少训练轮次，但由于采用顺序模式，每轮本地模型训练耗时较长。本文提出了一种新颖的混合并行–顺序联邦学习（PSFL）框架，将并行与顺序两种训练模式有机结合。我们通过理论分析推导了该框架的模型收敛上界及期望总训练时间，并据此确定了最优的训练结构，设计了一种客户端采样策略，以实现两种训练模式的平衡并保证无偏性。大量实验验证了我们的理论分析，并充分展示了
     PSFL 框架的显著性能优势。
+  related_code: ''
+- author: Huiqing Ao, Tianrun Gao, Wanli Ni, Hui Tian 0003
+  title: Personalized Federated Split Learning for Connected Intelligence via Edge-End
+    Collaboration.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/AoGNT26
+  doi: 10.1109/INFOCOM59046.2026.11571698
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571698
+  url: https://dblp.org/rec/conf/infocom/AoGNT26
+  abstract: As a promising learning paradigm, federated split learning (FSL) can be
+    utilized to train large models by incorporating parallel computing and model splitting.
+    However, FSL suffers from challenges on model performance and training efficiency
+    due to data heterogeneity in wireless networks. To address these challenges, we
+    propose a personalized federated split learning (PFSL) framework. We analyze the
+    convergence performance of the proposed PFSL by considering data heterogeneity
+    and the split layer of deep neural network models. To reduce the long-term training
+    latency in resource-constrained wireless networks, we formulate a two-timescale
+    problem by jointly optimizing the bandwidth, power allocation and split layer
+    selection. Then, we design an iterative optimization algorithm to solve the formulated
+    problem with a low computational complexity. Simulation results demonstrate that
+    the proposed framework outperforms the state-of-the-art benchmarks under independent
+    and identically distributed (IID) and non-IID settings, highlighting the superiority
+    of the designed algorithm in terms of latency reduction.
+  related_code: ''
+- author: Iqra Batool, Zubair Md Fadlullah, Mostafa M. Fouda, Shikhar Verma, Nei Kato
+  title: 'Q-FLAP: Quantum-Secured Federated Learning with Adaptive Protection for
+    Jamming-Resilient LEO Satellite-IoT Networks.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/BatoolFFVK26
+  doi: 10.1109/INFOCOM59046.2026.11571279
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571279
+  url: https://dblp.org/rec/conf/infocom/BatoolFFVK26
+  abstract: Low Earth orbit (LEO) satellite constellations face two converging threats,
+    adaptive jamming that learns defensive behavior and quantum computers capable
+    of breaking today’s cryptography. To address this, we propose Q-FLAP, a unified
+    framework that integrates quantum-secured federated learning (FL) with deep reinforcement
+    learning (DRL), to address both challenges. Q-FLAP models anti-jamming channel
+    selection as a distributed Markov decision process, where satellites learn policies
+    via Deep Q-Networks while federated averaging enables coordination without centralizing
+    sensitive data. Federated updates are secured using BB84 quantum key distribution
+    (QKD) and lattice-based post-quantum cryptography (PQC), ensuring resilience against
+    classical eavesdropping and harvest-now-decrypt-later attacks. Analytical results
+    establish a steady-state throughput benchmark under adversarial jamming. Simulations
+    show that under intelligent jamming, Q-FLAP retains 78% of nominal capacity, achieving
+    2.52 Gbps raw throughput and a 77.9% transmission success rate. Security overhead
+    is minimal, 2.16% for QKD and 0.094% for PQC, yielding effective secure throughputs
+    of 2.46 Gbps and 2.52 Gbps. Compared with baseline methods, Q-FLAP improves throughput
+    by 2.5 times over random allocation and 1.67 times over greedy channel selection.
+  related_code: ''
+- author: Xiaosong Chen, Wenyan Chen, Yuanhang Chen, Huanle Xu
+  title: 'FedSUV: Validity and Utility-guided Client Selection for Federated Learning.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ChenCCX26
+  doi: 10.1109/INFOCOM59046.2026.11571211
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571211
+  url: https://dblp.org/rec/conf/infocom/ChenCCX26
+  abstract: 'Federated Learning faces significant challenges arising from two critical
+    uncertainties: the validity of a client’s participation, which can be compromised
+    by network and system heterogeneity, and the utility of the data contributed by
+    each client, which varies due to heterogeneous statistical data. Traditional client
+    selection methods often treat these uncertainties as a whole, leading to suboptimal
+    performance. To address this issue, we propose FedSUV, an innovative client selection
+    framework that decouples validity and utility uncertainties. FedSUV approaches
+    client selection from a multi-objective optimization perspective, employing advanced
+    bandit algorithms: a confidence bound-based linear contextual bandit for assessing
+    validity and a Gaussian Process bandit for evaluating utility. We validate the
+    effectiveness of FedSUV through both theoretical analysis and large-scale experiments
+    conducted within our physical cluster.'
+  related_code: ''
+- author: Yiming Chen, Celimuge Wu, Yangfei Lin, Zhaoyang Du, Jianhang Tang, Soufiene
+    Djahel, Lei Zhong
+  title: 'HDFL: A Hierarchical Decentralized Federated Learning Framework for Dynamic
+    and Heterogeneous IoV Environments.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ChenWLDTDZ26
+  doi: 10.1109/INFOCOM59046.2026.11571476
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571476
+  url: https://dblp.org/rec/conf/infocom/ChenWLDTDZ26
+  abstract: Traditional federated learning (FL) approaches face significant challenges
+    when applied to dynamic and heterogeneous Internet of Vehicles (IoV) environments,
+    which are characterized by frequent node mobility, unstable communication links,
+    and highly non-independent and identically distributed (Non-IID) data. In particular,
+    decentralized network topologies exacerbate the difficulty of maintaining model
+    consistency, thereby impairing overall learning performance. To address these
+    challenges, we propose a new hierarchical decentralized federated learning (HDFL)
+    framework. This framework combines the advantages of centralization and decentralization,
+    builds a three-layer collaborative structure, and improves communication flexibility
+    through an asynchronous model exchange mechanism between the edge and the client.
+    Simultaneously, HDFL introduces a local fine-tuning strategy based on knowledge
+    distillation to enhance the generalization ability and stability of the model.
+    Experimental results using an urban traffic simulation platform show that HDFL
+    consistently outperforms representative decentralized FL methods in terms of the
+    achieved accuracy and convergence speed under heterogeneous IoV environments.
+  related_code: ''
+- author: Phai Vu Dinh, Marwan Krunz, Diep N. Nguyen, Dinh Thai Hoang
+  title: 'PFAE: Personalized Federated Learning for Anomaly Detection Over Heterogeneous
+    IoT Domains.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/DinhKNH26
+  doi: 10.1109/INFOCOM59046.2026.11571258
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571258
+  url: https://dblp.org/rec/conf/infocom/DinhKNH26
+  abstract: Existing federated learning (FL)-based anomaly detection (AD) methods
+    suffer from performance degradation due to domain heterogeneity, e.g., differences
+    in features, data distributions, and data types across clients from different
+    domains. This challenge is particularly pronounced in IoT systems and is more
+    challenging than the well-known problem of non-i.i.d. data issues. To address
+    this problem, we propose Personalized Federated Heterogeneous Autoencoder (PFAE),
+    an AD framework that introduces a private head for processing domain-specific
+    inputs and a public backbone for shared representation learning. PFAE design enables
+    each client to effectively detect anomalies within its own data domain while leveraging
+    global knowledge through model aggregation. We theoretically prove that the difference
+    in the expected anomaly score of PFAE calculated using the public backbone for
+    benign samples from any pair of clients is bounded. This implies that the distribution
+    of benign samples is shared across domains, so benign samples from a client may
+    not be misidentified as anomalies by other clients during inference. PFAE has
+    lower training complexity than existing autoencoder-based methods. Experiments
+    on eight non-i.i.d. datasets from different domains, where each client is trained
+    on a single dataset, show that PFAE enhances the generalization of anomaly scores
+    for benign samples across domains, especially under high anomaly ratios.
+  related_code: ''
+- author: Shun Fukumoto, Ruidong Li 0001, Haihan Nan, Zhou Su 0001
+  title: In-Network Model Aggregation in Federated Learning with Heterogeneous Resource.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/FukumotoLNS26
+  doi: 10.1109/INFOCOM59046.2026.11571729
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571729
+  url: https://dblp.org/rec/conf/infocom/FukumotoLNS26
+  abstract: Federated Learning (FL) enables collaborative distributed machine learning
+    across multiple devices without privacy leakage. However, communication cost in
+    FL remains high due to the numerous iterations required for model convergence.
+    Although communication cost reduction in FL has been extensively studied, router-based
+    model aggregation still has not been well researched. In particular, the challenge
+    of jointly optimizing communication cost and computational heterogeneity remains
+    largely unexplored. To address this issue, we propose a novel communication-efficient
+    FL model aggregation scheme that performs router-based aggregation, formulated
+    as a game-theoretic exchange process. In this scheme, routers cooperatively assign
+    edge nodes to maximize their utility functions, which include the communication
+    cost and a penalty term defined as the variance in processing times among devices
+    assigned to each router, representing the straggler effect. Performance evaluations
+    demonstrate that the proposed scheme effectively balances computational variance
+    within clusters and communication cost while optimizing device allocation in FL.
+  related_code: ''
+- author: Daniel Mauricio Jimenez Gutierrez, Giovanni Giunta, Mehrdad Hassanzadeh,
+    Aris Anagnostopoulos, Ioannis Chatzigiannakis, Andrea Vitaletti
+  title: 'FedLECC: Cluster- and Loss-Guided Client Selection for Federated Learning
+    under Non-IID Data.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/GutierrezGHACV26
+  doi: 10.1109/INFOCOM59046.2026.11571294
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571294
+  url: https://dblp.org/rec/conf/infocom/GutierrezGHACV26
+  abstract: Federated Learning (FL) enables distributed Artificial Intelligence (AI)
+    across cloud–edge environments by allowing collaborative model training without
+    centralizing data. In cross-device deployments, FL systems face strict communication
+    and participation constraints, as well as strong non-independent and identically
+    distributed (non-IID) data that degrades convergence and model quality. Since
+    only a subset of devices (a.k.a clients) can participate per training round, intelligent
+    client selection becomes a key systems challenge. This paper proposes FedLECC
+    (Federated Learning with Enhanced Cluster Choice), a lightweight, cluster-aware
+    and loss-guided client selection strategy for cross-device FL. FedLECC groups
+    clients by label-distribution similarity and prioritizes clusters and clients
+    with higher local loss, enabling the selection of a small yet informative and
+    diverse set of clients. Experimental results under severe label skew show that
+    FedLECC improves test accuracy by up to 12%, while reducing communication rounds
+    by approximately 22% and overall communication overhead by up to 50% compared
+    to strong baselines. These results demonstrate that informed client selection
+    improves the efficiency and scalability of FL workloads in cloud–edge systems.
+  related_code: ''
+- author: Shayan Mohajer Hamidi, Ben Liang 0001
+  title: Entropy-Adaptive Federated Learning with Efficient Bit Allocation over Wireless
+    Channels.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/HamidiL26
+  doi: 10.1109/INFOCOM59046.2026.11571579
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571579
+  url: https://dblp.org/rec/conf/infocom/HamidiL26
+  abstract: A key bottleneck in federated learning (FL) is the high communication
+    cost of transmitting large local model updates. This paper proposes Entropy-Adaptive
+    FL (EA-FL), a novel framework that integrates information-theoretic coding into
+    the FL pipeline to reduce the bit rate of encoded updates. In EA-FL, clients train
+    local models under an entropy constraint on their updates, ensuring they are compressible
+    and require fewer bits when entropy coded. Accounting for wireless channel imperfections,
+    we analyze the statistical behavior of the decoded updates at the server and derive
+    bounds on the first and second derivatives of the EA-FL loss function, establishing
+    its Lipschitz continuity. These results enable a convergence analysis that explicitly
+    captures the effects of quantization error, channel noise, and aggregation. Building
+    on this, we develop an optimization framework for efficient bit allocation across
+    clients under a fixed total quantization budget. Extensive experiments show that
+    (i) EA-FL outperforms state-of-the-art quantized FL methods in rateaccuracy trade-offs,
+    and (ii) the proposed bit allocation scheme significantly improves over uniform
+    allocation under the same bit budget.
+  related_code: ''
+- author: Chaemoon Im, Soohyun Park, Joongheon Kim
+  title: Differential Privacy in Quantum Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ImPK26
+  doi: 10.1109/INFOCOM59046.2026.11571639
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571639
+  url: https://dblp.org/rec/conf/infocom/ImPK26
+  abstract: Despite the structural advantages for privacy in federated learning (FL),
+    many gradient inversion attacks have widely appeared to exploit participants’
+    private information. These privacy threat remains even for the case where FL is
+    extended to quantum FL (QFL) to utilize quantum advantages. To deal with the privacy
+    leakage of the QFL, this paper proposes a novel QFL structure adopting quantum
+    teleportation (QT) and distributed quantum differential privacy (d-QDP), which
+    considers communication efficiency, privacy, and training accuracy at the same
+    time. The supremacy of our proposed algorithm has been verified via intensive
+    experiments, in terms of reduced attack performances and maximized communication
+    efficiency.
+  related_code: ''
+- author: Minyan Jiang, Kunlun Wang, Yang Yang, Xi Zhang
+  title: Intelligent Distributed Training and Resource Allocation with Clustered Split
+    Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/JiangWYZ26
+  doi: 10.1109/INFOCOM59046.2026.11571498
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571498
+  url: https://dblp.org/rec/conf/infocom/JiangWYZ26
+  abstract: Split federated learning (SFL) enables collaborative training in wireless
+    edge systems by splitting model execution between devices and edge servers, but
+    its performance is highly sensitive to model partitioning and wireless resource
+    allocation under heterogeneous devices and dynamic channel conditions. In clustered
+    deployments, the combinatorial partition space further complicates efficient optimization.
+    This paper proposes clustered split federated learning (CSFL), a cost-aware framework
+    for online model partition decisions in multi-cluster edge systems. We formulate
+    a unified cost minimization problem that jointly captures training latency and
+    energy consumption, and develop an adaptive strategy to optimize both model partitioning
+    and wireless resource allocation. Extensive experiments with varying numbers of
+    devices and bandwidth budgets show that CSFL consistently reduces the total training
+    cost compared with base-line schemes, demonstrating its effectiveness and scalability
+    for practical edge intelligence.
+  related_code: ''
+- author: Houssem Jmal, Kandaraj Piamrat, Yusheng Ji
+  title: 'DSFR-FL: Detecting Selfish Free-Riders in Federated Learning on Continuous
+    Network Traffic.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/JmalPJ26
+  doi: 10.1109/INFOCOM59046.2026.11571382
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571382
+  url: https://dblp.org/rec/conf/infocom/JmalPJ26
+  abstract: The digital transformation toward Industry 4.0 and Society 5.0 relies
+    on massive deployment of Internet of Things (IoT) devices across industrial cyber-physical
+    systems, creating unprecedented security challenges for mission-critical infrastructures.
+    Effective Intrusion Detection Systems (IDS) are essential for protecting these
+    distributed networks, yet centralized training raises serious privacy concerns.
+    Federated Learning (FL) offers a promising solution by enabling collaborative
+    model training across IoT devices without sharing raw data. However, FL remains
+    vulnerable to selfish free-rider attacks, where clients avoid investing in local
+    training while still benefiting from the global model, degrading overall performance.
+    In this work, we propose DSFR-FL, a framework for detecting selfish free-riders
+    in FL environments for IoT-based IDS on continuous network traffic data. We propose
+    a gradient sensitivity-based detection mechanism that analyzes the geometric properties
+    of local gradients to identify dishonest participants. Experimental results on
+    two IDS datasets demonstrate that our method achieves up to 90% detection accuracy
+    in non-IID settings while maintaining local dataset privacy.
+  related_code: ''
+- author: Lisa Johnson-Davies, Yuto Lim, Yasuo Tan
+  title: 'FedExPred: Federated Learning and Explainable AI for Autonomous Vehicle
+    Localisation.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/JohnsonDaviesLT26
+  doi: 10.1109/INFOCOM59046.2026.11571555
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571555
+  url: https://dblp.org/rec/conf/infocom/JohnsonDaviesLT26
+  abstract: 'Vehicle localisation models must generalise across heterogeneous environments
+    (e.g., different cities and sensing conditions) while respecting privacy constraints.
+    We present FedExPred, an explainable federated localisation framework whose main
+    contribution is Explain-Then-Weight (ETW): an explanation-aware aggregation method
+    that uses compact client "attribution profiles" to modulate how client updates
+    are combined, favouring consistent explanation-aligned patterns over spurious
+    features. Using an Extended Kalman Filter (EKF) with an LSTM residual corrector
+    as the base localiser, we apply Integrated Gradients (IG) with an EKF-scoped baseline
+    to explain the learned correction (rather than raw motion), and summarise these
+    attributions into privacy-preserving profiles for ETW. In preliminary leave-one-client-out
+    simulations under identical compute/training settings on a nuScenes-derived four-client
+    split (3 seeds, 20 rounds), ETW reduces overall ADE versus FedAvg (3.529m) and
+    FedProx (3.571m), and is close to FedDC (3.434m) in this setup. This positions
+    ETW as a low-overhead, reliability-aware aggregation signal for non-IID edge learners
+    in a 6G AI-RAN control stack; performance remains scenario-dependent across held-out
+    clients.'
+  related_code: ''
+- author: Faeze Moradi Kalarde, Ben Liang 0001, Min Dong 0001, Yahia A. Eldemerdash
+    Ahmed, Ho Ting Cheng
+  title: Privacy Enhancement in Over-the-Air Federated Learning via Adaptive Receive
+    Scaling.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/KalardeLDAC26
+  doi: 10.1109/INFOCOM59046.2026.11571657
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571657
+  url: https://dblp.org/rec/conf/infocom/KalardeLDAC26
+  abstract: In Federated Learning (FL) with over-the-air aggregation, the quality
+    of the signal received at the server critically depends on the receive scaling
+    factors. While a larger scaling factor can reduce the effective noise power and
+    improve training performance, it also compromises the privacy of devices by reducing
+    uncertainty. In this work, we aim to adaptively design the receive scaling factors
+    across training rounds to balance the trade-off between training convergence and
+    privacy in an FL system under dynamic channel conditions. We formulate a stochastic
+    optimization problem that minimizes the overall Rényi differential privacy (RDP)
+    leakage over the entire training process, subject to a long-term constraint that
+    ensures convergence of the global loss function. Our problem depends on unknown
+    future information, and we observe that standard Lyapunov optimization is not
+    applicable. Thus, we develop a new online algorithm, termed AdaScale, based on
+    a sequence of novel per-round problems that can be solved efficiently. We further
+    derive upper bounds on the dynamic regret and constraint violation of AdaScale,
+    establishing that it achieves diminishing dynamic regret in terms of time-averaged
+    RDP leakage while ensuring convergence of FL training to a stationary point. Numerical
+    experiments on canonical classification tasks show that our approach effectively
+    reduces RDP and DP leakages compared with state-of-the-art benchmarks without
+    compromising learning performance.
+  related_code: ''
+- author: Shohei Kamiguchi, Takayuki Nishio
+  title: Communication-Efficient and Privacy-Preserving Cooperative Robot-Arm Imitation
+    Learning via Parallel Split Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/KamiguchiN26
+  doi: 10.1109/INFOCOM59046.2026.11571408
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571408
+  url: https://dblp.org/rec/conf/infocom/KamiguchiN26
+  abstract: Imitation Learning (IL) enables the direct learning of robot control policies
+    from human demonstrations as supervisory signals. This property has motivated
+    extensive research on multimodal robotic arm control based on IL. IL typically
+    requires a large amount of demonstration data, which is difficult to collect using
+    a single robot. Although aggregating data from multiple robots is a potential
+    solution, it incurs significant communication costs and raises concerns about
+    privacy leakage from sensors, particularly camera images. To address these challenges,
+    this study investigates a privacy-preserving cooperative imitation learning framework
+    for robots based on Federated Learning. Specifically, we introduce Parallel Split
+    Federated Learning (PSFL) as a communication-efficient framework for cooperative
+    imitation learning, and demonstrate its applicability using Diffusion Policy (DP).
+    Experimental results demonstrate that PSFL-based IL achieves more than twice the
+    performance score of single-robot IL, while reducing the communication volume
+    per training round by over 50% compared with naive FL-based IL.
+  related_code: ''
+- author: Naveen Kumar Kummari, Mohsen Guizani
+  title: 'SAFER-FL: Adversarially Robust Federated Learning in IoT Networks via Latent
+    Space Auditing and Verifiable Contributions.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/KummariG26
+  doi: 10.1109/INFOCOM59046.2026.11571340
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571340
+  url: https://dblp.org/rec/conf/infocom/KummariG26
+  abstract: The rise of IoT networks has driven demand for robust, privacy-preserving
+    machine learning in distributed, resource-constrained environments. Federated
+    Learning (FL) addresses this by enabling on-device training without sharing raw
+    data, but remains vulnerable to data poisoning from adversarial clients. Ensuring
+    auditable data quality and verifiable model contributions is essential for securing
+    FL and challenging due to limited client data visibility. Existing defenses often
+    rely on trusted central servers for client selection or aggregation, offer limited
+    visibility into client data quality and often fail to identify clients contributing
+    low-quality or poisoned data. To overcome these limitations, we propose Statistical
+    Auditing and Filtering for Enabling Robust FL (SAFER-FL), a data-aware framework
+    for adversarially robust FL in IoT networks. SAFER-FL builds a global, privacy-preserved
+    statistical profile by aggregating Gaussian-noised client-side data moments (mean,
+    covariance) in latent space. Clients use this to filter poisoned samples via Mahalanobis
+    distance before training, ensuring only clean data influences the model. This
+    proactive approach eliminates the need for validation data or pretrained models.
+    We provide theoretical analysis on convergence, filtering efficacy, and poisoning
+    resilience. Experiments on five IoT datasets show SAFER-FL significantly improves
+    robustness and accuracy under various attacks, making it practical for real-world
+    IoT FL deployments.
+  related_code: ''
+- author: Thomas Yip-Po Lam, Ivan Wang-Hei Ho, Yuyi Mao
+  title: 'MELD: Mentee-Elastic Logit Distillation for Communication-Efficient Federated
+    Learning in Heterogeneous IoT.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/LamHM26
+  doi: 10.1109/INFOCOM59046.2026.11571770
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571770
+  url: https://dblp.org/rec/conf/infocom/LamHM26
+  abstract: Federated learning (FL) faces significant challenges in resource-constrained
+    Internet-of-Things (IoT) environments where client devices have diverse computational
+    capabilities and connectivity status. Traditional approaches require synchronized
+    and full model parameter exchange among client devices, creating a huge bottleneck
+    for heterogeneous edge networks. This paper introduces a new federated knowledge
+    distillation (KD) framework that enables client devices to adapt their computation
+    based on local resources while maintaining collaborative learning. The approach
+    uses partial information sharing and server-side aggregation techniques to remove
+    the strict requirement on synchronous model parameter exchange. Clients adaptively
+    compute logits for only a subset of classes, and the server intelligently aggregates
+    these partial inputs to form a coherent global model. Experimental evaluation
+    on standard datasets demonstrates that the proposed method reduces communication
+    overhead while preserving model performance compared to conventional federated
+    KD approaches. Experimental results demonstrate the framework’s practical efficiency,
+    reducing communication overhead by 41.3% compared to FedKD while maintaining superior
+    accuracy (70.11%) under extreme non-IID data distributions.
+  related_code: ''
+- author: Boyi Liu 0002, Zimu Zhou, Pengfei Gao, Shuo Kang, Yongxin Tong
+  title: Towards Asynchronous Client Collaboration in Personalized Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/LiuZGKT26
+  doi: 10.1109/INFOCOM59046.2026.11571282
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571282
+  url: https://dblp.org/rec/conf/infocom/LiuZGKT26
+  abstract: 'Collaboration-based personalized federated learning (Co-PFL) achieves
+    superior accuracy on non-IID data by leveraging a collaboration graph that captures
+    pairwise similarities among client data distributions for personalized model aggregation.
+    However, its synchronous operation suffers from substantial delays caused by slow
+    clients, limiting its applicability in latency-sensitive IoT applications. A natural
+    alternative is asynchronous Co-PFL, where the server processes model updates as
+    they arrive. Yet, asynchrony introduces staleness that distorts both collaboration
+    graph estimation and personalized model aggregation, two tightly coupled components
+    in Co-PFL. Existing asynchronous federated learning methods only handle staleness
+    in global model aggregation and fail to maintain this coupling. To bridge this
+    gap, we propose PACE, the first asynchronous Co-PFL framework that jointly manages
+    staleness across collaboration estimation and model aggregation. PACE employs
+    two lightweight, theoretically grounded server-side mechanisms: a collaboration-aware
+    buffer update that adaptively refreshes buffered models based on staleness and
+    collaboration relevance, and a staleness-triggered model multicast that selectively
+    disseminates fresh aggregates when collaboration estimation error exceeds a threshold.
+    Extensive evaluations show that PACE matches the accuracy of state-of-the-art
+    synchronous Co-PFL methods, while reducing convergence time by up to 8.58×, enabling
+    practical Co-PFL with IoT devices.'
+  related_code: ''
+- author: Jieshu Ma, Shuping Dang, Zhou Fang, Zhenrong Zhang, Zhihui Ge, Xiangcheng
+    Li 0001
+  title: 'Fed-RAFT: Enabling Robust Dynamic Clustering in Non-Stationary Federated
+    LLM Fine-Tuning via Asymmetric Fusion.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/MaDFZGL26
+  doi: 10.1109/INFOCOM59046.2026.11571275
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571275
+  url: https://dblp.org/rec/conf/infocom/MaDFZGL26
+  abstract: Federated fine-tuning empowers edge devices to personalize large language
+    models (LLMs) while preserving data privacy. However, in non-stationary settings
+    where client data distributions drift over time, conventional static aggregation
+    approaches fail to adapt effectively, often resulting in catastrophic forgetting.
+    Although dynamic clustering offers a potential solution, current methods frequently
+    incur prohibitive communication costs and suffer from severe instability due to
+    stochastic client participation. In this paper, we propose Fed-RAFT, a communication-efficient
+    framework designed to reconcile the stability-plasticity dilemma under concept
+    drift. Utilizing lightweight behavioral profiling, our approach implements a novel
+    asymmetric fusion mechanism. Specifically, this mechanism combines a hard expert
+    routing strategy for assigning clients to experts, which suppresses routing noise,
+    with a normalized soft aggregation that promotes positive knowledge transfer.
+    Experimental evaluations on LLaMA-2 demonstrate that Fed-RAFT not only achieves
+    state-of-the-art performance on vicuna bench, but also effectively mitigates the
+    performance degradation caused by concept drift while significantly reducing communication
+    overhead compared to existing baselines.
+  related_code: ''
+- author: Zihan Ma, Guangchi Liu, Xiangyu Xu 0001, Shaofeng Li 0001, Zhen Ling 0001,
+    Junzhou Luo
+  title: 'A Needle in a Haystack: Defending Federated Learning Backdoor Attacks via
+    Orthogonal Subnetwork Pruning.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/MaLXLLL26
+  doi: 10.1109/INFOCOM59046.2026.11571338
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571338
+  url: https://dblp.org/rec/conf/infocom/MaLXLLL26
+  abstract: Federated Learning (FL) enables collaborative model training without exposing
+    private data, but remains vulnerable to backdoor attacks, where malicious clients
+    inject backdoor updates into the global model. Detecting such attacks is challenging
+    due to the noisy and heterogeneous nature of benign updates obscuring backdoor
+    patterns. To this end, we propose Peeler, a lightweight backdoor defense framework
+    that accurately identifies backdoor by dynamically isolating normal model weights
+    orthogonal to malicious ones within client-submitted updates. Peeler employs circuit
+    discovery to prune subnetworks associated with the main task, and utilizes gradient-based
+    layer selection to eliminate layers that are non-critical for backdoor objective
+    adaptation. The remaining parameters are then flattened into feature vectors,
+    enabling distance-based anomaly detection across client-submitted model updates.
+    To validate Peeler, we perform a Neural Tangent Kernel (NTK)-based analysis, showing
+    that Peeler effectively retains backdoor-relevant weights while filtering out
+    benign ones. Experiments across diverse scenarios and recent defense benchmarks
+    demonstrate the superiority of Peeler. Peeler reduces the Attack Success Rate
+    (ASR) to 2.79% on average, significantly outperforming the prior state-of-the-art
+    defense (11.48% for FLAME). Even under highly heterogeneous data distributions
+    (with Dirichlet parameter α = 0.3), Peeler achieves an ASR of 10.4%, compared
+    to the prior state-of-the-art defense (27.3% for FLTracer).
+  related_code: ''
+- author: Chuiyang Meng, Ming Tang 0006, Vincent W. S. Wong 0001
+  title: 'ZorBA: Zeroth-order Federated Fine-tuning of LLMs with Heterogeneous Block
+    Activation.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/MengTW26
+  doi: 10.1109/INFOCOM59046.2026.11571394
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571394
+  url: https://dblp.org/rec/conf/infocom/MengTW26
+  abstract: Federated fine-tuning of large language models (LLMs) enables collaborative
+    tuning across distributed clients. However, due to the large size of LLMs, local
+    updates in federated learning (FL) may incur substantial video random-access memory
+    (VRAM) usage. Moreover, frequent model exchange may lead to significant communication
+    overhead. To tackle these challenges, in this paper we propose ZorBA, a zeroth-order
+    optimization-based federated fine-tuning framework with heterogeneous block activation.
+    ZorBA leverages zeroth-order optimization to eliminate the storage of gradients
+    at the clients by forward passes. ZorBA includes a heterogeneous block activation
+    mechanism in which the central server allocates different subsets of transformer
+    blocks to clients in order to accelerate the convergence rate and reduce the VRAM
+    usage. Furthermore, ZorBA utilizes shared random seeds and the finite differences
+    of gradients in order to reduce the communication overhead. We conduct theoretical
+    analysis to characterize the effect of block activation decisions on the convergence
+    rate and VRAM usage. To jointly enhance the convergence rate and reduce the VRAM
+    usage, we formulate an optimization problem to optimize the block activation decisions.
+    We propose an ϵ-constraint lexicographic algorithm to solve this problem. Experimental
+    results show that ZorBA outperforms three federated fine-tuning baselines in VRAM
+    usage by up to 62.41% and incurs a low communication overhead.
+  related_code: ''
+- author: Shota Ono, Akihiro Nakao
+  title: PIC-FL:Privacy-Preserving Integrated Sensing and Communication Enabled Curriculum
+    Federated Learning for Digital Twin Beam Selection.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/OnoN26
+  doi: 10.1109/INFOCOM59046.2026.11571670
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571670
+  url: https://dblp.org/rec/conf/infocom/OnoN26
+  abstract: Urban digital twins enable data-driven optimization for wireless communication,
+    transportation systems, and infrastructure management across dense and dynamic
+    urban environments. Accurate digital twin construction requires continuous user
+    behavior data, which introduces high sensing costs and severe privacy constraints
+    in operational millimeter wave networks. Federated learning mitigates privacy
+    risks, while non independent and identically distributed beam appearances significantly
+    degrade convergence and performance for distributed beam selection. A Top-K curriculum
+    federated learning framework enables stable beam selection training by controlling
+    early learning difficulty under non independent and identically distributed beam
+    distributions. Global beam frequency statistics determine a shared Top-K curriculum,
+    followed by two stage federated training with initial pretraining and full class
+    refinement. Evaluation on Raymobtime channel data demonstrates mean received power
+    improvement from −141.01 dB to −137.04 dB, reducing the centralized learning gap
+    to 2.21 dB. At the ninetieth percentile, the centralized performance gap decreases
+    from 2.31 dB to 0.46 dB under identical test conditions. Classification accuracy
+    reaches 0.940 with 15 rounds earlier convergence, while training loss decreases
+    smoothly with a final reduction of 0.134. These results establish curriculum federated
+    learning as a practical foundation for privacy preserving digital twin driven
+    beam selection in millimeter wave communication systems.
+  related_code: ''
+- author: Ioannis Panitsas, Iason Ofeidis, Leandros Tassiulas
+  title: 'FedJam: Multimodal Federated Learning Framework for Jamming Detection.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/PanitsasOT26
+  doi: 10.1109/INFOCOM59046.2026.11571330
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571330
+  url: https://dblp.org/rec/conf/infocom/PanitsasOT26
+  abstract: Jamming attacks pose a critical threat to wireless networks, yet existing
+    detection methods remain largely uni-modal, centralized and resource-intensive,
+    limiting their performance, scalability, and deployment feasibility, respectively.
+    To address these limitations, we present FedJam, a multimodal Federated Learning
+    (FL) framework for on-device jamming detection and classification. FedJam locally
+    fuses spectrograms and cross-layer network Key Performance Indicators (KPIs) using
+    a lightweight dual-encoder architecture with an integrated fusion module and multimodal
+    projection head, that enables privacy-preserving training and inference without
+    transmitting raw data. We prototype and deploy FedJam on a wireless experimental
+    testbed and evaluate it using the first, over-the-air multimodal dataset comprising
+    synchronized samples across benign and three distinct jamming attack types. FedJam
+    outperforms state-of-the-art unimodal baselines by up to 15% in accuracy, while
+    requiring 60% fewer communication rounds to converge, and maintains low resource
+    utilization. Its advantage is especially pronounced in realistic scenarios, where
+    it remains extremely robust under heterogeneous data distributions across devices.
+  related_code: ''
+- author: Suyash Pradhan, Asil Koç, Divyadharshini Muruganandham, Mohamed Amine Arfaoui,
+    Philip Pietraski, Guodong Zhang, John Kaewell, Kaushik R. Chowdhury
+  title: Deploying Over-the-Air Federated Learning in Real-World Multi-Antenna Systems.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/PradhanKMAPZKC26
+  doi: 10.1109/INFOCOM59046.2026.11571326
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571326
+  url: https://dblp.org/rec/conf/infocom/PradhanKMAPZKC26
+  abstract: Over-the-air federated learning (OTA-FL) harnesses the superposition property
+    of wireless channels for efficient model aggregation, offering significant spectrum
+    savings. However, practical deployment is challenged by analog distortions, synchronization
+    errors, and dynamic gradient scaling across neural network layers. This paper
+    presents a robust OTA-FL framework that systematically addresses these limitations.
+    We introduce a gradient-aware power scaling technique that adjusts per-layer transmit
+    power to mitigate the impact of uneven gradient magnitudes, coupled with channel
+    pre-equalization for stable convergence. We implement OTA-FL on a real-world testbed
+    with a multi-antenna gNB and develop a deep learning based multi-antenna combiner
+    for scalable aggregation in dense networks. To enable reproducible and site-aware
+    evaluation, we propose a digital twin framework that integrates ray-traced urban
+    channels into a hardware-in-the-loop testbed via real-time channel emulation.
+    Experimental results on a wireless positioning task demonstrate that our OTA-FL
+    system achieves model accuracy comparable to digital FL while providing a 140×
+    reduction in spectrum usage for 20 participants. This work closes the gap between
+    OTA-FL theory and real-world deployment, highlighting practical solutions for
+    scalable and spectrum-efficient FL.
+  related_code: ''
+- author: Chen Shang, Dinh Thai Hoang, Diep N. Nguyen, Jiadong Yu
+  title: Spiking Personalized Federated Learning for Brain-Computer Interface-Enabled
+    Immersive Communication.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ShangHNY26
+  doi: 10.1109/INFOCOM59046.2026.11571348
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571348
+  url: https://dblp.org/rec/conf/infocom/ShangHNY26
+  abstract: This work proposes a novel immersive communication framework that leverages
+    brain-computer interface (BCI) to acquire brain signals for inferring user-centric
+    states (e.g., intention and perception-related discomfort), thereby enabling more
+    personalized and robust immersive adaptation under strong individual variability.
+    Specifically, we develop a personalized federated learning (PFL) model to analyze
+    and process the collected brain signals, which not only accommodates neurodiverse
+    brain-signal data but also prevents the leakage of sensitive brain-signal information.
+    To address the energy bottleneck of continual on-device learning and inference
+    on energy-limited immersive terminals (e.g., head-mounted display), we further
+    embed spiking neural networks (SNNs) into the PFL. By exploiting sparse, event-driven
+    spike computation, the SNN-enabled PFL reduces the computation and energy cost
+    of training and inference while maintaining competitive personalization performance.
+    Experiments on real brain-signal dataset demonstrate that our method achieves
+    the best overall identification accuracy while reducing inference energy by 6.46×
+    compared with conventional artificial neural network-based personalized baselines.
+  related_code: ''
+- author: Md Nahid Hasan Shuvo, Moinul Hossain, Anik Mallik, Jeffrey N. Twigg, Fikadu
+    T. Dagefu
+  title: 'FLARE: A Wireless Side-Channel Fingerprinting Attack on Federated Learning.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ShuvoHMTD26
+  doi: 10.1109/INFOCOM59046.2026.11571658
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571658
+  url: https://dblp.org/rec/conf/infocom/ShuvoHMTD26
+  abstract: Federated Learning (FL) enables collaborative model training across distributed
+    devices while safeguarding data and user privacy. However, FL remains susceptible
+    to privacy threats that can compromise data via direct means. That said, indirectly
+    compromising the confidentiality of the FL model architecture (e.g., a convolutional
+    neural network (CNN) or a recurrent neural network (RNN)) on a client device by
+    an outsider remains unexplored. If leaked, this information can enable next-level
+    attacks tailored to the architecture. This paper proposes a novel side-channel
+    fingerprinting attack, leveraging flow-level and packet-level statistics of encrypted
+    wireless traffic from an FL client to infer its deep learning model architecture.
+    We name it FLARE, a fingerprinting framework based on FL Architecture REconnaissance.
+    Evaluation across various CNN and RNN variants—including pre-trained and custom
+    models trained over IEEE 802.11 Wi-Fi—shows that FLARE achieves over 98% F1-score
+    in closed-world and up to 91% in open-world scenarios. These results reveal that
+    CNN and RNN models leak distinguishable traffic patterns, enabling architecture
+    fingerprinting even under realistic FL settings with hardware, software, and data
+    heterogeneity. To our knowledge, this is the first work to fingerprint FL model
+    architectures by sniffing encrypted wireless traffic, exposing a critical side-channel
+    vulnerability in current FL systems.
+  related_code: ''
+- author: Xiaoxue Song, Hui Xia 0001, Shuo Xu, Yuyao Zhu, Le Li
+  title: 'Datura: Durable and Stable Backdoor Attack against Federated Learning.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/SongXXZL26
+  doi: 10.1109/INFOCOM59046.2026.11571432
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571432
+  url: https://dblp.org/rec/conf/infocom/SongXXZL26
+  abstract: Due to the distributed training framework, FL is vulnerable to backdoor
+    attacks from malicious clients. However existing backdoor attack methods have
+    insufficient attack success rates at low attack frequencies, and the attack effects
+    are difficult to sustain. Therefore, we propose a novel backdoor attack method
+    in FL, named Datura. Datura firstly utilizes adversarial samples to obtain the
+    global prediction model. It then leverages the softmax probability vector to design
+    a trigger generation loss to optimize pattern and mask, creating a highly adaptable
+    trigger. This stage makes it possible to achieve a high attack success rate with
+    minimal attack frequencies. Secondly, in order to obtain the durable high attack
+    success rate, Datura leverages the decentralization of model updates and introduces
+    a layered poisoning strategy based on the redundancy of the model parameters,
+    applying ‘heavy poisoning’ to parameters with high redundancy and ‘light poisoning’
+    to the rest. We compare Datura with five representative backdoor attack methods
+    on six datasets. Detailed experimental results demonstrate that Datura achieves
+    an attack success rate exceeding 95% with just 1 - 2 attack frequencies, defeating
+    the six defense methods. The 90%-Lifespan of backdoors implanted by Datura reaches
+    an average of 845 rounds after the attack stops.
+  related_code: ''
+- author: Fan Sun 0005, Fang Dong 0001, Dian Shen
+  title: Decentralizing Compressed Sensing for Federated Learning with Hardware-Software
+    Codesign.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/SunDS26
+  doi: 10.1109/INFOCOM59046.2026.11571221
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571221
+  url: https://dblp.org/rec/conf/infocom/SunDS26
+  abstract: 'Compressed Sensing (CS), a sparse signal compression technique, has been
+    adopted in federated learning (FL) reduce to network communication overhead. However,
+    the computational cost incurred by CS reconstruction is commonly ignored, often
+    surpassing the benefits derived from communication compression. This inefficiency
+    arises from two main factors: (1) current CPU architectures are ill-suited for
+    efficiently performing critical reconstruction operations, leading to low computational
+    efficiency; and (2) reconstruction is executed centrally and sequentially at the
+    server, imposing substantial computational burdens when facing multiple clients.
+    To address these issues, we propose HiFedCS, a novel framework enabling accelerated
+    and distributed CS reconstruction in FL. HiFedCS comprises two key components:
+    (1) a hardware layer, optimize the critical operators in the reconstruction process
+    at the circuit level; and (2) a software layer, offload the centralized reconstruction
+    task from the server to clients for distributed execution. We implemented a HiFedCS
+    prototype on a Xilinx Alveo U55C FPGA. Experimental results show that HiFedCS
+    achieves up to 7.57× and 6.61× speedups over CPU and GPU, respectively, in gradient
+    reconstruction tasks, and provides 2.52× and 1.92× end-to-end acceleration in
+    real-world FL applications.'
+  related_code: ''
+- author: Jiaxiang Tang, Xinran Wang, Qi Le, Kangjie Lu, Zhi-Li Zhang, Ali Anwar
+  title: 'AHE: Adaptive Homomorphic Encryption for Customizable Privacy in Heterogeneous
+    Federated Learning.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/TangWLLZA26
+  doi: 10.1109/INFOCOM59046.2026.11571699
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571699
+  url: https://dblp.org/rec/conf/infocom/TangWLLZA26
+  abstract: 'Homomorphic Encryption (HE) serves as a vital privacy-preserving technique
+    in federated learning (FL) applications. However, while HE offers substantial
+    privacy benefits, it also introduces significant computational and communication
+    overhead. This challenge is further compounded in real-world heterogeneous scenarios,
+    where clients vary in computing resources and privacy requirements. Existing solutions
+    apply uniform static HE configuration to satisfy the privacy requirements of the
+    most stringent client, resulting in high resource usage for all the clients. We
+    propose AHE, a novel FL framework that integrates HE with adaptive privacy-aware
+    clustering to dynamically optimize the latency-accuracy-privacy trade-off. AHE
+    introduces two key innovations: (1) adaptive HE parameter management, which tailors
+    encryption levels to individual client capabilities and customizable privacy needs,
+    and (2) private cross-cluster aggregation, a lightweight key-switching based protocol
+    that privately combines model updates across clusters with divergent HE schemes.
+    To further minimize overhead, we design a parallelized key-switching mechanism
+    that reduces server-side latency. Experimental results demonstrate that our approach
+    enhances various FL applications by improving final accuracy up to 19% and reducing
+    global round time up to 70%, significantly boosting training efficiency. Additionally,
+    AHE is robust to dynamic client shift, and the parallelization strategy dramatically
+    reduces server-side latency, enabling better scalability.'
+  related_code: ''
+- author: Himanshu Tiwari, Binayak Kar, Priyanshu Tiwari
+  title: 'NUA-FedBeam: Noisy-Uplink-Aware Federated Downlink Beamforming for Distributed
+    MIMO.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/TiwariKT26
+  doi: 10.1109/INFOCOM59046.2026.11571649
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571649
+  url: https://dblp.org/rec/conf/infocom/TiwariKT26
+  abstract: 'Federated learning (FL) enables distributed massive MIMO base stations
+    to learn beamforming policies without exchanging raw channel state information
+    (CSI), but most existing FL beamforming studies assume ideal, noise-free uplink
+    aggregation, which is rarely satisfied in practical wireless deployments. This
+    paper studies federated downlink beamforming under noisy uplink model-update transmissions
+    and proposes NUA-FedBeam (Noisy-Uplink-Aware Federated Beamforming), a robust
+    aggregation framework that explicitly models uplink aggregation noise and stabilizes
+    learning under heterogeneous link qualities. NUA-FedBeam integrates three complementary
+    mechanisms: client-side update clipping with error feedback to control unstable
+    steps and reduce clipping bias, server-side shrinkage denoising to suppress aggregation
+    noise, and SNR-aware weighting to down-weight unreliable uplinks during fusion.
+    Using a time-correlated Rayleigh fading distributed MIMO downlink with ZF-supervised
+    labels, extensive simulations across multiple uplink SNR regimes demonstrate that
+    NUA-FedBeam achieves faster and more stable convergence, higher achievable downlink
+    sum-rate than centralized learning and ideal-uplink FedAvg baselines, and substantial
+    efficiency gains, including up to 80% reduction in uplink communication overhead
+    and energy consumption. These results support noisy-uplink-aware federated beamforming
+    as a practical approach for scalable, privacy-preserving coordination in future
+    6G distributed MIMO systems.'
+  related_code: ''
+- author: Haoyu Tu, Wen Wu 0003, Lin Chen 0002, Liang Li, Xu Chen 0004
+  title: Dynamic Sketch-based Federated Learning over Vehicular Networks.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/TuWCLC26
+  doi: 10.1109/INFOCOM59046.2026.11571290
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571290
+  url: https://dblp.org/rec/conf/infocom/TuWCLC26
+  abstract: In this paper, we propose a novel dynamic sketch-based federated learning
+    (DSFL) framework for vehicular networks. To bridge the gap between high mobility
+    and efficient data utilization, we design a dual-mode participation mechanism
+    that differentiates participation based on connection status. While stable vehicles
+    perform standard model updates, newly arriving vehicles contribute via lightweight
+    data representations as a sketch. Meanwhile, we propose a knowledge-driven proxy
+    retrieval strategy that matches these sketches against a historical repository
+    to instantly obtain representative model parameters, effectively integrating diverse
+    data sources to select the corresponding model. Moreover, we continuously refresh
+    the repository using a sliding window to adapt to time-varying vehicle traffic
+    patterns. Extensive simulation results demonstrate that the proposed DSFL accelerates
+    model convergence by up to 45% and improves model accuracy by approximately 5%,
+    as compared to the state-of-the-art benchmarks.
+  related_code: ''
+- author: Abhishek Vyas, Ren-Hung Hwang, Po-Ching Lin, Meenakshi Tripathi
+  title: Communication-Efficient Quantum Federated Learning for Privacy-Preserving
+    IIoT Network Intrusion Detection.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/VyasHLT26
+  doi: 10.1109/INFOCOM59046.2026.11571554
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571554
+  url: https://dblp.org/rec/conf/infocom/VyasHLT26
+  abstract: Intrusion detection in Industrial IoT (IIoT) networks faces a fundamental
+    tension between detection accuracy and communication overhead—edge devices must
+    collaboratively learn attack patterns without overwhelming bandwidth-constrained
+    industrial networks or compromising data privacy. This paper presents a systematic
+    evaluation of hybrid quantum-classical federated learning for network intrusion
+    detection system (NIDS), where quantum computing enhances local model training
+    while classical communication enables practical deployment. We evaluate our approach
+    across three validated IIoT datasets (WUSTL-2021, ToN-IoT, SCVIC-APT-2021) under
+    differential privacy budgets ϵ ∈ {2.0, 4.0}. Our QFL-NIDS framework integrates
+    quantum convolutional neural networks (Q-CNN) for parameter-efficient feature
+    encoding with classical Gaussian differential privacy for gradient protection.
+    Experimental results demonstrate that QFL achieves comparable detection accuracy
+    to classical federated learning (97-99%) while reducing model parameters by approximately
+    60% and communication rounds by 30%—yielding 72% total bandwidth savings critical
+    for bandwidth-constrained industrial IoT networks. Under realistic NISQ noise
+    models, QFL-NIDS maintains >94% accuracy at 1% gate error rates. These findings
+    establish hybrid quantum-classical federated learning as a practical paradigm
+    for communication-efficient, privacy-preserving network security in next-generation
+    IIoT deployments.
+  related_code: ''
+- author: Xu Wang, Yuanzhu Peter Chen, Qiang John Ye, Jooyoung Son, Octavia A. Dobre
+  title: Disrupting Cross-Community Information Flow in Decentralized Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/WangCYSD26
+  doi: 10.1109/INFOCOM59046.2026.11571733
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571733
+  url: https://dblp.org/rec/conf/infocom/WangCYSD26
+  abstract: Structural disruptions in decentralized federated learning (DFL) can affect
+    learning performance in different ways. In some cases, removing only a few nodes
+    or edges causes severe performance degradation, whereas in others even extensive
+    removals have limited effect. Severe performance degradation occurs when structural
+    disruptions sever critical information flows, whereas disruptions that preserve
+    these flows have limited impact on learning. Motivated by this observation, we
+    propose a data-oriented community attack for DFL that explicitly targets critical
+    information flows. The attack jointly leverages leaked client data patterns and
+    network topology to identify data-oriented communities that shape information
+    propagation in the network. Based on these communities, we develop a budget-constrained
+    strategy for selecting node and edge removals that selectively disrupt information
+    flow across communities. Experimental results show that the proposed attack strategy
+    causes more severe performance degradation than structure-based baselines.
+  related_code: ''
+- author: Yan Wang, Ziyi Gao, Yida Zhang, Rui Wang
+  title: 'FedDynMask: Efficient Federated Fine-Tuning for Edge LLMs via Dynamic Sparse
+    Masking.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/WangGZW26
+  doi: 10.1109/INFOCOM59046.2026.11571368
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571368
+  url: https://dblp.org/rec/conf/infocom/WangGZW26
+  abstract: 'Deploying large language models (LLMs) on edge devices often demands
+    effective fine-tuning to adapt to local requirements, yet confronts two key challenges:
+    data heterogeneity and resource constraints. Existing solutions fall short: traditional
+    federated learning methods, inherently designed for small-scale models, fail to
+    scale to the size and complexity of LLMs. Meanwhile, current federated fine-tuning
+    approaches for LLMs fail to adequately address the stringent resource constraints
+    of edge devices. To address these, we propose FedDynMask——a framework designed
+    specifically for efficient federated fine-tuning of LLMs on edge devices. FedDynMask
+    couples Dynamic Personalized Sparse Masking (DPSM) on edge devices with Masked
+    Intersection Aggregation (MIA) on the server via dynamic mask updates. DPSM enables
+    devices to dynamically identify and retain only task-essential parameters by leveraging
+    local data distributions, reducing computational overhead and enabling local adaptation.
+    MIA further reduces communication overhead by identifying consistent parameters
+    through masked intersection, preventing global model performance degradation caused
+    by heterogeneous data. Compared to baselines, this design reduces communication
+    overhead to 0.366M and 0.522M for Llama3.2-3B and Llama3-8B models, respectively,
+    and computational overhead to 3.67M and 5.24M. It also achieves a 1.36% accuracy
+    improvement over other methods, making federated fine-tuning of LLMs feasible
+    on resource-constrained edge devices.'
+  related_code: ''
+- author: Shilong Wang 0002, Jianchun Liu, Hongli Xu 0001, Chunming Qiao
+  title: 'FLUDE: An Efficient Federated Learning Framework with Undependable Devices.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/WangLXQ26
+  doi: 10.1109/INFOCOM59046.2026.11571430
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571430
+  url: https://dblp.org/rec/conf/infocom/WangLXQ26
+  abstract: In a federated learning (FL) system, many devices, such as smartphones,
+    are often undependable (e.g., frequently disconnected from WiFi) during training.
+    Existing FL frameworks always assume a dependable environment and simply exclude
+    undependable devices from training, leading to poor model performance and resource
+    wastage. In this paper, we propose FLUDE to effectively deal with undependable
+    environments. First, FLUDE assesses the dependability of devices based on the
+    probability distribution of their historical behaviors (e.g., the likelihood of
+    successfully completing training). Based on this assessment, FLUDE adaptively
+    selects devices with high dependability for training. To mitigate resource wastage
+    during the training phase, FLUDE maintains a model cache on each device, aiming
+    to preserve the latest training state for later use in case local training on
+    an undependable device is interrupted. Moreover, FLUDE proposes a staleness-aware
+    strategy to judiciously distribute the global model to a subset of devices, thus
+    significantly reducing resource wastage while maintaining model performance. We
+    have implemented FLUDE on two physical platforms with 120 smartphones and NVIDIA
+    Jetson devices. Extensive experiments show that FLUDE effectively improves model
+    performance and resource efficiency of FL in undependable environments.
+  related_code: ''
+- author: Aiwen Wang, Xiaoming Yuan 0002, Haidong Kang, Changle Li, Ning Zhang 0007,
+    Celimuge Wu, Jalel Ben Othman
+  title: 'RA-MoE: Efficient Edge Federated Learning for Emotion Recognition Based
+    on Resource-Aware Scheduling and Mixture-of-Experts Model.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/WangYKLZWO26
+  doi: 10.1109/INFOCOM59046.2026.11571764
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571764
+  url: https://dblp.org/rec/conf/infocom/WangYKLZWO26
+  abstract: Multimodal emotion recognition has received increasing attention with
+    the rise of edge computing and intelligent terminals. By integrating audio, visual,
+    and textual information, multimodal models can achieve more reliable emotion perception.
+    However, practical edge environments impose strict constraints on computational
+    resources and data privacy, which makes training and the deployment of large-scale
+    multimodal models difficult. To address these challenges, we propose a Resource-Aware
+    Mixture-of-Experts (RA-MoE) framework for federated multimodal emotion recognition
+    at the edge. Unlike existing approaches with fixed inference paths, RA-MoE incorporates
+    resource awareness into model design, enabling adaptive computation under heterogeneous
+    device conditions. On this basis, differences in computational capability among
+    edge devices are taken into account. A federated optimization strategy is also
+    introduced to enable collaborative learning under heterogeneous resource constraints.
+    Experimental results show that RA-MoE achieves robust emotion recognition performance
+    across a wide range of resource constraints.
+  related_code: ''
+- author: Hengliang Wu, Youming Tao 0001, Anhao Zhou, Shuzhen Chen 0001, Falko Dressler,
+    Dongxiao Yu
+  title: Certified Unlearning in Decentralized Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/WuTZCDY26
+  doi: 10.1109/INFOCOM59046.2026.11571416
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571416
+  url: https://dblp.org/rec/conf/infocom/WuTZCDY26
+  abstract: Driven by the right to be forgotten (RTBF), machine unlearning has become
+    an essential requirement for privacy-preserving machine learning. However, its
+    realization in decentralized federated learning (DFL) remains largely unexplored.
+    In DFL, clients exchange local updates only with neighbors, causing model information
+    to propagate and mix across the network. As a result, when a client requests data
+    deletion, its influence is implicitly embedded throughout the system, making removal
+    difficult without centralized coordination. We propose a novel certified unlearning
+    framework for DFL based on Newton-style updates. Our approach first quantifies
+    how a client’s data influence propagates during training. Leveraging curvature
+    information of the loss with respect to the target data, we then construct corrective
+    updates using Newton-style approximations. To ensure scalability, we approximate
+    second-order information via Fisher information matrices. The resulting updates
+    are perturbed with calibrated noise and broadcast through the network to eliminate
+    residual influence across clients. We theoretically prove that our approach satisfies
+    the formal definition of certified unlearning, ensuring that the unlearned model
+    is difficult to distinguish from a retrained model without the deleted data. We
+    also establish utility bounds showing that the unlearned model remains close to
+    retraining from scratch. Extensive experiments across diverse decentralized settings
+    demonstrate the effectiveness and efficiency of our framework.
+  related_code: ''
+- author: Zuan Xie, Yang Xu 0020, Yunming Liao, Junhao Cheng, Jingjing Yang, Ying
+    Zhu
+  title: Optimizing Split Federated Learning through Adaptive Pipeline Parallelism.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/XieXLCYZ26
+  doi: 10.1109/INFOCOM59046.2026.11571502
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571502
+  url: https://dblp.org/rec/conf/infocom/XieXLCYZ26
+  abstract: Split federated learning (SFL) offers a promising solution for training
+    large models on resource-constrained edge devices. However, existing synchronous
+    and asynchronous SFL frameworks are plagued by a fundamental sequential execution
+    pattern for communication and computation. This design creates a severe communication
+    bottleneck, particularly for modern large models with substantial activation sizes,
+    leading to significant resource underutilization and extended training time. To
+    dismantle this bottleneck, we propose MicroSFL, a novel SFL framework with adaptive
+    pipeline parallelism. MicroSFL enables workers to divide each of their training
+    mini-batches into multiple small micro-batches and process them in a pipelined
+    fashion. To counteract the challenges of system and statistical heterogeneity,
+    MicroSFL adaptively assigns distinct micro-batch sizes to workers to accommodate
+    their heterogeneous capacities, maximizing the temporal overlap between the computation
+    and transmission of activations/gradients. Besides, to address statistical heterogeneity,
+    MicroSFL employs an adaptive updating strategy. This strategy accumulates gradients
+    at the server side to simulate updates on a large, balanced batch. Guided by a
+    theoretical convergence analysis, the optimal updating weights are assigned to
+    different workers to normalize their contributions for model updating. MicroSFL
+    then dynamically determines the appropriate timing to apply the aggregated gradients,
+    ensuring both stable convergence and high model accuracy. Extensive evaluations
+    on a physical platform of 80 edge devices show that MicroSFL accelerates training
+    by 3.64× to 5.67× and improves model accuracy by 3.6% to 6.1% compared to the
+    baselines.
+  related_code: ''
+- author: Anran Xu, Zhenzhe Zheng, Wenming Zheng, Fan Wu 0006
+  title: Budget-Constrained Federated Bandits for Mobile Applications.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/XuZZW26
+  doi: 10.1109/INFOCOM59046.2026.11571300
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571300
+  url: https://dblp.org/rec/conf/infocom/XuZZW26
+  abstract: With the development of federated learning and mobile computing, federated
+    bandit frameworks have been proposed to enable multiple clients to explore and
+    exploit collaboratively under the guarantee of data privacy. However, none of
+    them take the widespread budget constraints into account. In this work, we introduce
+    the Federated linear Bandits framework with Knapsacks (FBwK), where M clients
+    can pull K arms with linear rewards and costs to minimize the total regret under
+    the coordination of a central server. For FBwK, we propose a new definition of
+    OPT solution and a bandit algorithm, namely FedUCBwK. Specifically, we design
+    a uniform policy parameter update threshold for each client, which balances regret,
+    communication, and computation costs. In this process, the central server uses
+    a factor on knapsack constraints to pace the budget consumption and preserve the
+    clients’ privacy by transmitting model updates instead of raw data. We conduct
+    a theoretical analysis and show that FedUCBwK achieves a sublinear regret with
+    logarithmic communication and computation. Evaluation on real-world mobile application
+    datasets demonstrates that FedUCBwK consistently outperforms existing methods
+    across diverse tasks.
+  related_code: ''
+- author: Guohao Yang, Tongle Wu, Yuanxiong Guo, Ying Sun, Yanmin Gong 0001
+  title: 'FedKRSO: Communication and Memory Efficient Federated Fine-Tuning of Large
+    Language Models.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/YangWGSG26
+  doi: 10.1109/INFOCOM59046.2026.11571261
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571261
+  url: https://dblp.org/rec/conf/infocom/YangWGSG26
+  abstract: Fine-tuning is essential to adapt general-purpose large language models
+    (LLMs) to domain-specific tasks. As a privacy-preserving framework to leverage
+    decentralized data for collaborative model training, Federated Learning (FL) is
+    gaining popularity in LLM fine-tuning, but remains challenging due to the high
+    cost of transmitting full model parameters and computing full gradients on resource-constrained
+    clients. While Parameter-Efficient Fine-Tuning (PEFT) methods are widely used
+    in FL to reduce communication and memory costs, they often sacrifice model performance
+    compared to FFT. This paper proposes FedKRSO (Federated K-Seed Random Subspace
+    Optimization), a novel method that enables communication and memory efficient
+    FFT of LLMs in federated settings. In FedKRSO, clients update the model within
+    a shared set of random low-dimension subspaces generated by the server to save
+    memory usage. Furthermore, instead of transmitting full model parameters in each
+    FL round, clients send only the model update accumulators along the subspaces
+    to the server, enabling efficient global model aggregation and dissemination.
+    By using these strategies, FedKRSO can substantially reduce communication and
+    memory overhead while overcoming the performance limitations of PEFT, closely
+    approximating the performance of federated FFT. The convergence properties of
+    FedKRSO are analyzed rigorously under general FL settings. Extensive experiments
+    on the GLUE benchmark across diverse FL scenarios demonstrate that FedKRSO achieves
+    both superior performance and low communication and memory overhead, paving the
+    way towards on federated LLM fine-tuning at the resource-constrained edge.
+  related_code: ''
+- author: Pei Ye, Yuqing Li 0001, Kun He 0008, Haoran Wang, Ruiying Du, Wei Wang
+  title: 'Less is More: Persistent Low-Frequency Backdoor Injection in Federated Learning.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/YeLHWDW26
+  doi: 10.1109/INFOCOM59046.2026.11571624
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571624
+  url: https://dblp.org/rec/conf/infocom/YeLHWDW26
+  abstract: ''
+- author: Qingli Zeng, Yinjin Fu, Farid Naït-Abdesselam
+  title: 'FedGraph-ID: A Federated Graph Learning Framework for Intrusion Detection
+    in UAV Networks Under Adversarial Settings.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZengFN26
+  doi: 10.1109/INFOCOM59046.2026.11571676
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571676
+  url: https://dblp.org/rec/conf/infocom/ZengFN26
+  abstract: 'Intrusion detection in UAV networks requires decentralized learning mechanisms
+    that preserve data privacy while remaining robust to Byzantine failures caused
+    by compromised drones. Existing federated learning approaches suffer from two
+    fundamental limitations: (1) they rely on flat traffic feature representations
+    that ignore the intrinsic graph structure of network communications, and (2) they
+    implicitly assume benign client behavior, resulting in severe performance degradation
+    even under moderate adversarial participation. This paper presents FedGraph-ID,
+    a federated graph learning framework for robust intrusion detection in adversarial
+    UAV networks. FedGraph-ID introduces a sliding-window graph construction mechanism
+    that transforms raw network flows into temporal graph representations, enabling
+    Graph Convolutional Networks (GCNs) to jointly capture spatial communication patterns
+    and temporal attack dynamics. To tolerate Byzantine behavior, we design HYDRA,
+    a hybrid robust aggregation strategy that combines statistical anomaly filtering
+    with trust-aware weighted model fusion, effectively suppressing malicious updates
+    while preserving convergence. Extensive experiments on the CICIDS-2017 benchmark
+    and a newly developed UAVIDS-2025 dataset show that FedGraph-ID achieves 96.29%
+    detection precision in benign settings and maintains 92.21% precision with up
+    to 50% Byzantine clients, a regime in which existing methods fail. Under extreme
+    adversarial conditions, FedGraph-ID outperforms state-of-the-art defenses by up
+    to 79 F1-score points, demonstrating strong robustness and scalability for federated
+    intrusion detection in UAV networks.'
+  related_code: ''
+- author: Kai Zeng 0005, Hang Wen, Tao Shen 0004, Ruidong Li 0001
+  title: 'FT-PromptFL: A Feature Transmission-based Framework for Communication-Efficient
+    Prompt Federated Learning.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZengWSL26
+  doi: 10.1109/INFOCOM59046.2026.11571515
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571515
+  url: https://dblp.org/rec/conf/infocom/ZengWSL26
+  abstract: PromptFL combines prompt tuning and federated learning to enable collaborative
+    model training. It employs the entire Contrastive Language-Image Pre-training
+    (CLIP) model on the client side, and submits the prompt learner for global aggregation.
+    However, the large scale of the prompt network results in significant communication
+    overhead per round, a challenge that remains unaddressed. To tackle this issue,
+    this study presents a Feature Transmission-based PromptFL (FT-PromptFL), which
+    distributes the CLIP encoder across clients and the server. Furthermore, we propose
+    a Federated Feature Compaction (FFC) framework to minimize communication costs
+    by constructing compact feature subsets through federated clustering. Theoretical
+    analysis is provided to demonstrate the effectiveness of FFC. To mitigate performance
+    degradation caused by compressed transmission, Semantic Compensation (SC) mechanism
+    is designed through the multi-modal fusion of partial images and intact text.
+    In addition, a dynamic weighting strategy is introduced to constrain the generalization
+    error arising from asymmetric modality fusion. Thus, the model performance can
+    be guaranteed while maintaining low communication cost. Experimental results show
+    that the communication overhead of FT-PromptFL decreases 90% per-round compared
+    to PromptFL. It also achieves superior inference performance, such as state-of-the-art
+    (SOTA) 96.85% accuracy on the Flowers102 dataset.
+  related_code: ''
+- author: Ming Zhan, Kevin S. Chan, Mingyue Ji
+  title: Convergence-Driven Federated Learning with Joint Compression and Computation
+    Optimization.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhanCJ26
+  doi: 10.1109/INFOCOM59046.2026.11571582
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571582
+  url: https://dblp.org/rec/conf/infocom/ZhanCJ26
+  abstract: Federated Learning (FL) has emerged as a powerful paradigm for distributed
+    model training that preserves data privacy while aggregating model updates through
+    a central server. However, efficiently implementing federated learning in resource-constrained
+    and heterogeneous edge environments remains challenging due to the trade-off between
+    convergence performance and computation/communication costs. Most of the existing
+    approaches only heuristically tune the compression and computation parameters
+    without directly minimizing the theoretical convergence bound. In this paper,
+    we propose the first FL framework, Convergence-driven Federated learning (ConFed),
+    that explicitly formulates and minimizes the non-convex convergence error upper
+    bound under time-averaged expected resource constraints, providing a principled
+    foundation for joint optimization of computation and compression. ConFed supports
+    diverse compression mechanisms, including Top-k sparsification, random quantization,
+    and their combinations. Extensive experiments on Fashion-MNIST (FMNIST) and CIFAR-10
+    demonstrate that our method achieves faster convergence and lower resource costs
+    compared to state-of-the-art approaches.
+  related_code: ''
+- author: Boyue Zhang, Weijia Feng, Ruojia Zhang, Rui Lan, Tongtong Su, Chenyang Wang
+    0001, Chongke Bi
+  title: 'FedGRO: Group Relative Optimization for Resource-Efficient Federated Self-Supervised
+    Learning in V2X.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhangFZLSWB26
+  doi: 10.1109/INFOCOM59046.2026.11571202
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571202
+  url: https://dblp.org/rec/conf/infocom/ZhangFZLSWB26
+  abstract: With the widespread adoption of the Society 5.0 concept, Vehicle-to-Everything
+    (V2X) has garnered increasing attention. However, physical interference, such
+    as channel fading and motion ambiguity in highly dynamic scenarios, hinders the
+    development of V2X technology. To address these challenges, we propose a mobility-aware
+    federated self-supervised learning framework called FedGRO. By quantifying the
+    cross-domain impact of speed on perception quality and wireless channel, we construct
+    a deep fusion model of Data, Operations, Information, and Communication Technologies
+    (DOICT). Methodologically, this framework incorporates a motion-ambiguity-resistant
+    momentum contrast (MoCo) mechanism to improve feature extraction quality from
+    unlabeled data and innovatively designs the Critic-Enhanced GRPO algorithm. This
+    algorithm preserves the Critic network to maintain long-term planning capabilities.
+    It utilizes Group Relative Advantage to eliminate the value estimation bias of
+    the traditional Actor-Critic method in noisy environments, thus achieving robust
+    resource orchestration. Extensive experiments demonstrate that our framework achieves
+    an average accuracy improvement of 4% to 8% compared to existing methods.
+  related_code: ''
+- author: Jiayuan Zhang 0001, Xuefeng Liu 0001, Jianwei Niu 0002, Haotian Yang, Wanyu
+    Lin, Xinghao Wu
+  title: 'The Aggregated Model is a Confounder: Enabling Deconfounded Federated Learning
+    for OOD Generalization.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhangLNYLW26
+  doi: 10.1109/INFOCOM59046.2026.11571547
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571547
+  url: https://dblp.org/rec/conf/infocom/ZhangLNYLW26
+  abstract: Federated Learning (FL) enables collaborative model training across edge
+    devices without sharing raw data. However, most FL approaches suffer from severe
+    performance degradation when deployed to unseen edges with distribution shifts,
+    known as the out-of-distribution (OOD) generalization problem. Given that causal
+    relationships between inputs and labels are typically invariant under OOD scenarios,
+    causality-inspired FL has attracted increasing attention. Existing works primarily
+    focus on eliminating spurious correlations within each client’s local data while
+    overlooking a critical step in FL, model aggregation. We show that in a structural
+    causal graph, the aggregated model is a confounder leading to reliance on spurious
+    correlations. To address this problem, we introduce a Federated Deconfounding
+    learning (FedDEC) framework based on backdoor adjustment to eliminate the confounding
+    paths. Theoretically, backdoor adjustment requires enumerating aggregated models
+    under all possible aggregation weights, which is infeasible in practice. To efficiently
+    approximate this process, FedDEC proposes a client-side disentangled feature learning
+    module that separates personalized and global components. It also introduces a
+    deconfounded training module that computes cross-attention between the personalized
+    features and a server-maintained prototype bank to obtain deconfounded causal
+    features. Experiments demonstrate that FedDEC achieves higher accuracy while maintaining
+    comparable convergence speed compared to state-of-the-art algorithms.
+  related_code: ''
+- author: Weiyao Zhang, Jinyang Li, Qi Song, Miao Wang, Chungang Lin, Haitong Luo,
+    Xuying Meng, Yujun Zhang
+  title: Heterogeneity-Oblivious Robust Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhangLSWLLMZ26
+  doi: 10.1109/INFOCOM59046.2026.11571187
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571187
+  url: https://dblp.org/rec/conf/infocom/ZhangLSWLLMZ26
+  abstract: Federated Learning (FL) remains highly vulnerable to poisoning attacks,
+    especially under real-world hyper-heterogeneity, where clients differ significantly
+    in data distributions, communication capabilities, and model architectures. Such
+    heterogeneity not only undermines the effectiveness of aggregation strategies
+    but also makes attacks more difficult to detect. Furthermore, high-dimensional
+    models expand the attack surface. To address these challenges, we propose Horus,
+    a heterogeneity-oblivious robust FL framework centered on low-rank adaptations
+    (LoRAs). Rather than aggregating full model parameters, Horus inserts LoRAs into
+    empirically stable layers and aggregates only LoRAs to reduce the attack surface.
+    We uncover a key empirical observation that the input projection (LoRA-A) is markedly
+    more stable than the output projection (LoRA-B) under heterogeneity and poisoning.
+    Leveraging this, we design a Heterogeneity-Oblivious Poisoning Score using the
+    features from LoRA-A to filter poisoned clients. For the remaining benign clients,
+    we propose projection-aware aggregation mechanism to preserve collaborative signals
+    while suppressing drifts, which reweights client updates by consistency with the
+    global directions. Extensive experiments across diverse datasets, model architectures,
+    and attacks demonstrate that Horus consistently outperforms state-of-the-art baselines
+    in both robustness and accuracy.
+  related_code: ''
+- author: Xusheng Zhang, Tuan Nguyen, Ting He
+  title: Mixing Matrix Design for Energy-efficient Decentralized Federated Learning.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhangNH26
+  doi: 10.1109/INFOCOM59046.2026.11571245
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571245
+  url: https://dblp.org/rec/conf/infocom/ZhangNH26
+  abstract: We consider the design of mixing matrices to minimize the operation cost
+    for decentralized federated learning (DFL) in wireless networks, with focus on
+    minimizing the maximum per-node energy consumption. As a critical hyperparameter
+    for DFL, the mixing matrix controls both the convergence rate and the needs of
+    agent-to-agent communications, and has thus been studied extensively. However,
+    existing designs mostly focused on minimizing the communication time, leaving
+    open the per-node energy consumption that is critical for energy-constrained devices.
+    This work addresses this gap through a theoretically-justified solution for mixing
+    matrix design that aims at minimizing the maximum per-node energy consumption
+    until convergence, while taking into account the broadcast nature of wireless
+    communications. Based on a novel convergence theorem that allows arbitrarily time-varying
+    mixing matrices, we propose a multi-phase design framework that activates time-varying
+    communication topologies under optimized budgets to trade off the per-iteration
+    energy consumption and the convergence rate while balancing the energy consumption
+    across nodes. Our evaluations based on real data have validated the efficacy of
+    the proposed solution in combining the low energy consumption of sparse mixing
+    matrices and the fast convergence of dense mixing matrices.
+  related_code: ''
+- author: Quan Zhang, Yuli Yang 0003, Jide Yuan, Mohsen Guizani
+  title: Federated Learning Improves Metasource-Based Secret Key Generation with Low-Density
+    Parity-Check Coding.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhangYYG26
+  doi: 10.1109/INFOCOM59046.2026.11571672
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571672
+  url: https://dblp.org/rec/conf/infocom/ZhangYYG26
+  abstract: This paper develops a novel metasource-based secret key (MBSK) generation
+    scheme achieving physical-layer security in wireless communications. The core
+    mechanism dynamically varies the low-density parity-check (LDPC) matrix for each
+    transmission, using the random channel gain of the legitimate link as a driving
+    parameter. Since eavesdroppers lack access to the legitimate channel state information
+    (CSI), they cannot identify the specific LDPC matrix employed in the legitimate
+    link, thus failing to successfully decode. In practice, however, the legitimate
+    transmitter and receiver perform channel estimation independently. The estimation
+    errors might result in a mismatch between the LDPC matrices used at each end.
+    To address this challenge, we integrate a federated learning framework to enhance
+    the accuracy and consistency of channel estimation. This approach minimizes the
+    mismatch probability while ensuring that eavesdroppers remain ignorant of both
+    the CSI and the corresponding LDPC matrix. Simulation results substantiate that,
+    even against computationally unbounded eavesdroppers, the developed MBSK scheme
+    robustly guarantees the physical-layer security without relying on higher-layer
+    encryption mechanisms.
+  related_code: ''
+- author: Wenwei Zhao, Yuanzhe Peng, Xiaowen Li, Jie Xu 0001, Yao Liu, Zhuo Lu
+  title: 'Malicious Forgetting: Backdoor Injection in Active Federated Unlearning
+    and Countermeasure Design.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhaoPLXLL26
+  doi: 10.1109/INFOCOM59046.2026.11571403
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571403
+  url: https://dblp.org/rec/conf/infocom/ZhaoPLXLL26
+  abstract: 'Federated learning (FL) enables collaborative model training without
+    sharing raw data, but also raises increasing demands for the right to be forgotten.
+    To support data erasure, active federated unlearning (FU) allows clients to actively
+    remove their data’s influence from the model. We reveal a critical and overlooked
+    threat: malicious clients can pose as privacy-concerned users requesting to unlearn
+    some of their data, while secretly preparing backdoor attacks during training.
+    We propose FUsion backdoor, a subnetwork-based attack that stealthily constructs
+    a compact backdoor subnetwork from trigger-sensitive units within backdoor-critical
+    layers during training, and rapidly fuses it during the limited rounds of unlearning.
+    FUsion backdoor achieves up to 99% backdoor success rate across diverse datasets
+    and FU methods. We also develop a detection method that captures directional subspace
+    deviations introduced by coordinated backdoor updates, achieving high attack detection
+    accuracy.'
+  related_code: ''
+- author: Changjun Zhou, Jintao Zheng, Leyou Yang, Pengfei Wang 0013
+  title: Dual-Phase Federated Deep Unlearning via Weight-Aware Rollback and Reconstruction.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/ZhouZYW26
+  doi: 10.1109/INFOCOM59046.2026.11571665
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571665
+  url: https://dblp.org/rec/conf/infocom/ZhouZYW26
+  abstract: 'Federated Unlearning (FUL) focuses on client data and computing power
+    to offer a privacy-preserving solution. However, high computational demands, complex
+    incentive mechanisms, and disparities in client-side computing power often lead
+    to long waiting time and high costs. To address these challenges, many existing
+    methods rely on server-side knowledge distillation that solely removes the updates
+    of the target client, overlooking the privacy embedded in the contributions of
+    other clients, which can lead to privacy leakage. In this work, we introduce DPUL,
+    a novel server-side unlearning method that deeply unlearns all influential weights
+    to prevent privacy pitfalls. Our approach comprises three components: (i) identifying
+    high-weight parameters by filtering client update magnitudes, and rolling them
+    back to ensure deep removal, (ii) leveraging the variational autoencoder (VAE)
+    to reconstruct and eliminate low-weight parameters, (iii) utilizing a projection-based
+    technique to recover the model. Experimental results on four datasets demonstrate
+    that DPUL surpasses state-of-the-art baselines, providing a 1%–5% improvement
+    in accuracy and up to 12× reduction in time cost.'
   related_code: ''
 federate%20venue%3AMobiCom%3A:
 - author: Tianyue Zheng, Ang Li 0005, Zhe Chen 0015, Hongbo Wang, Jun Luo 0001
@@ -78530,6 +79962,19 @@ collaborat%20learn%20venue%3AACL%3A:
   ee: https://aclanthology.org/2026.acl-long.1804/
   url: https://dblp.org/rec/conf/acl/LiuXDZLZ26
   abstract: ''
+- author: Wenjin Liu, Haoran Luo 0001, Xueyuan Lin, Haoming Liu, Tiesunlong Shen,
+    Jiapu Wang, Rui Mao 0010, Erik Cambria
+  title: 'Prompt-R1: Collaborative Automatic Prompting Framework via End-to-end Reinforcement
+    Learning.'
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/acl/LiuLLLSWMC26
+  doi: ''
+  ee: https://aclanthology.org/2026.findings-acl.799/
+  url: https://dblp.org/rec/conf/acl/LiuLLLSWMC26
+  abstract: ''
 collaborat%20learn%20venue%3ANAACL-HLT%3A:
 - author: Armanda Lewis
   title: Multimodal large language models for inclusive collaboration learning tasks.
@@ -79609,6 +81054,60 @@ collaborat%20learn%20venue%3AINFOCOM%3A:
     proposed algorithm shows a significant performance improvement of 20%.'
   abstract_cn: 蜂窝网络的性能在很大程度上取决于其网络参数的配置。当前的参数配置主要依赖于专家经验，这种方法往往次优、耗时且易出错。因此，有必要通过基于学习的方法实现这一过程的自动化，以提升配置的准确性和效率。然而，此类方法在实际运营网络中面临诸多挑战：历史数据匮乏、运营商设定的实验预算有限，以及网络性能函数高度复杂且未知。为应对这些挑战，我们提出了一种协同学习方法，通过整合来自不同小区的数据来提升学习效率并改善网络性能。具体而言，我们将问题建模为可迁移的上下文多臂
     bandit 问题，并证明借助迁移学习可以显著降低遗憾上界。在此理论基础上，我们进一步设计了一种实用算法，将每个小区的策略分解为两部分：一是利用所有小区数据学习得到的共性同质化策略，二是用于刻画各小区异质行为的个性化策略。我们基于真实网络数据构建的仿真平台对所提算法进行了评估，结果表明其收敛速度优于基线方法。更为重要的是，我们在一个由1700多个小区组成的大型城市蜂窝网络上开展了为期两周的现场试验，针对五个关键参数进行优化。实验结果显示，所提算法使网络性能提升了20%。
+  related_code: ''
+- author: Htet Htet Hlaing, Hitoshi Asaeda
+  title: Accelerating Collaborative Edge Learning through Verifiable Data-Centric
+    Gossip Protocol.
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/HlaingA26
+  doi: 10.1109/INFOCOM59046.2026.11571260
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571260
+  url: https://dblp.org/rec/conf/infocom/HlaingA26
+  abstract: With the rapid progress in artificial intelligence (AI), the network edge
+    has become a dominant source of context-rich data, which demands immediate processing
+    and seamless sharing to optimize AI-as-a-service models. Edge AI (or edge intelligence)
+    enables on-device inference and localized training without central coordination.
+    This paradigm requires the timely exchange of model updates among distributed
+    devices to ensure efficient collaboration and consistent model convergence under
+    constrained resources. However, existing approaches are limited by bandwidth asymmetry,
+    heterogeneous device churn, and model integrity under adversarial updates. Herein,
+    we propose DcGossip, a data-centric gossip-based model update sharing approach
+    that leverages information-centric networking to enable receiver-driven model
+    retrieval with named, content-addressable updates, adaptive model discovery, and
+    version-controlled exchange for communication-efficient collaborative edge learning.
+    DcGossip also introduces a self-verifying model integrity verification mechanism
+    to ensure secure propagation and tamper-proof validation of shared updates. Our
+    extensive evaluations demonstrate that DcGossip achieves 41% faster convergence
+    speed and 26% lower propagation latency, effectively reducing communication cost
+    by 80% compared to existing approaches, while maintaining minimal verification
+    overhead.
+  related_code: ''
+- author: Yi Yue, Xiongyan Tang, Lexi Xu, Xuebei Zhang, Feile Li, Wei Liu, Chang Cao
+  title: 'FlexInfer: A Multi-Agent Reinforcement Learning Approach for Device-Edge-Cloud
+    Collaborative Inference.'
+  venue: INFOCOM
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/infocom/YueTXZLLC26
+  doi: 10.1109/INFOCOM59046.2026.11571280
+  ee: https://doi.org/10.1109/INFOCOM59046.2026.11571280
+  url: https://dblp.org/rec/conf/infocom/YueTXZLLC26
+  abstract: AI inference tasks are becoming pervasive in device–edge–cloud environments,
+    yet their computation-intensive and delay-sensitive requirements often exceed
+    the capabilities of conventional collaboration frameworks. Existing approaches
+    remain constrained by fixed edge resources and static task–node mapping, which
+    restrict scalability and adaptability under dynamic workloads. To address these
+    limitations, we propose FlexInfer, a multi-agent reinforcement learning approach
+    derived from the MAPPO paradigm and tailored for collaborative AI inference. FlexInfer
+    incorporates inference-specific features into the state, action, and reward design,
+    enabling adaptive coordination across heterogeneous nodes. Simulation results
+    show that FlexInfer achieves lower task delay, fewer deadline violations, and
+    higher task–node matching accuracy compared with baseline schemes, demonstrating
+    its effectiveness in enhancing device–edge–cloud inference performance.
   related_code: ''
 collaborat%20learn%20venue%3AMobiCom%3A:
 - author: Xu Yang 0011, Mingzhi Pang, Faren Yan, Yuqing Yin, Qiang Niu, Shouwan Gao
@@ -87735,6 +89234,118 @@ model%20merg%20venue%3AACL%3A:
   ee: https://aclanthology.org/2026.findings-acl.261/
   url: https://dblp.org/rec/conf/acl/LuLZCWCLH26
   abstract: ''
+- author: Aladin Djuhera, Swanand Ravindra Kadhe, Farhan Ahmed, Syed Zawad, Holger
+    Boche
+  title: 'SafeMERGE: Preserving Safety Alignment in Fine-Tuned Large Language Models
+    via Selective Layer-Wise Model Merging.'
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/acl/DjuheraKAZB26
+  doi: ''
+  ee: https://aclanthology.org/2026.findings-acl.1761/
+  url: https://dblp.org/rec/conf/acl/DjuheraKAZB26
+  abstract: Fine-tuning large language models (LLMs) is a common practice to adapt
+    generalist models to specialized domains. However, recent studies show that fine-tuning
+    can erode safety alignment, causing LLMs to respond to harmful or unethical prompts.
+    Many methods to realign safety have been proposed, but often introduce custom
+    algorithms that are difficult to implement or compromise task utility. In this
+    work, we propose SafeMERGE, a lightweight, post-fine-tuning framework that restores
+    safety while maintaining downstream performance. SafeMERGE selectively merges
+    fine-tuned with safety-aligned model layers only when they deviate from safe behavior,
+    measured by a cosine similarity criterion. Across four LLMs and several tasks,
+    SafeMERGE consistently reduces harmful outputs compared to other defenses, with
+    negligible or even positive impact on utility. Our results demonstrate that selective,
+    layer-wise merging offers a robust safeguard against the inadvertent loss of safety
+    during fine-tuning, establishing SafeMERGE as a simple yet effective post-fine-tuning
+    defense.
+  related_code: ''
+- author: Adir Rahamim, Asaf Yehudai, Boaz Carmeli, Leshem Choshen, Yosi Mass, Yonatan
+    Belinkov
+  title: Will it Merge? On The Causes of Model Mergeability.
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/acl/RahamimYCCMB26
+  doi: ''
+  ee: https://aclanthology.org/2026.findings-acl.1322/
+  url: https://dblp.org/rec/conf/acl/RahamimYCCMB26
+  abstract: 'Model merging has emerged as a promising technique for combining multiple
+    fine-tuned models into a single multitask model without retraining. However, the
+    factors that determine whether merging will succeed or fail remain poorly understood.
+    In this work, we investigate why specific models are merged better than others.
+    To do so, we propose a concrete, measurable definition of mergeability. We investigate
+    several potential causes for high or low mergeability, highlighting the base model
+    knowledge as a dominant factor: Models fine-tuned on instances that the base model
+    knows better are more mergeable than models fine-tuned on instances that the base
+    model struggles with. Based on our mergeability definition, we explore a simple
+    weighted merging technique that better preserves weak knowledge in the base model.'
+  related_code: ''
+- author: Zijian Li 0020, Xiachong Feng, Weitao Ma, Yichong Huang, Xiaocheng Feng,
+    Bing Qin
+  title: Two-Stage Parameter Alignment for Multi-LoRA Merging in Large Language Models.
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/acl/LiFMHFQ26
+  doi: ''
+  ee: https://aclanthology.org/2026.findings-acl.1504/
+  url: https://dblp.org/rec/conf/acl/LiFMHFQ26
+  abstract: ''
+- author: Zhuoran Li 0001, Rui Xu, Jian Yang, Junnan Liu, Zhijun Chen, Qianren Mao,
+    Hongcheng Guo, Jiaheng Liu, Likang Xiao, Ming Li, Xiaojie Wang
+  title: Enhancing Multilingual Reasoning via Steerable Model Merging.
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/acl/LiXYLCMGLXLW26
+  doi: ''
+  ee: https://aclanthology.org/2026.findings-acl.1856/
+  url: https://dblp.org/rec/conf/acl/LiXYLCMGLXLW26
+  abstract: Model merging is an effective technique for composing the capabilities
+    of a multilingual model and a reasoning model. It has achieved promising generalization
+    in multilingual reasoning tasks by aligning feature spaces of different models.
+    However, the merged single model often fails to address the conflicts between
+    source models, leading to suboptimal performance. In other words, the one-size-fits-all
+    merging strategy may not align with the characteristics of different inputs which
+    may require prioritizing certain models over others. To this end, we propose a
+    Steerable Model Merging (ST-Merge) framework to modulate the contribution of each
+    source model. To realize this idea, we introduce a gated cross-attention mechanism
+    to weight or filter the two attended source models in an adaptive manner. Extensive
+    experiments demonstrate that ST-Merge consistently outperforms multiple strong
+    baselines on four multilingual reasoning benchmarks across 21 different languages.
+  related_code: ''
+- author: Zijing Wang, Yongkang Liu 0002, Mingyang Wang 0003, Ercong Nie, Deyuan Chen,
+    Zhengjie Zhao, Shi Feng 0001, Daling Wang, Xiaocui Yang, Yifei Zhang 0003, Hinrich
+    Schütze
+  title: 'PlaM: Training-Free Plateau-Guided Model Merging for Better Visual Grounding
+    in MLLMs.'
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/acl/WangLWNCZFWYZS26
+  doi: ''
+  ee: https://aclanthology.org/2026.findings-acl.1056/
+  url: https://dblp.org/rec/conf/acl/WangLWNCZFWYZS26
+  abstract: 'Multimodal Large Language Models (MLLMs) rely on strong linguistic reasoning
+    inherited from their base language models. However, multimodal instruction fine-tuning
+    paradoxically degrades this text''s reasoning capability, undermining multimodal
+    performance. To address this issue, we propose a training-free framework to mitigate
+    this degradation. Through layer-wise vision token masking, we reveal a common
+    three-stage pattern in multimodal large language models: early-modal separation,
+    mid-modal alignment, and late-modal degradation. By analyzing the behavior of
+    MLLMs at different stages, we propose a plateau-guided model merging method that
+    selectively injects base language model parameters into MLLMs. Experimental results
+    based on five MLLMs on nine benchmarks demonstrate the effectiveness of our method.
+    Attention-based analysis further reveals that merging shifts attention from diffuse,
+    scattered patterns to focused localization on task-relevant visual regions. Our
+    repository is on https://github.com/wzj1718/PlaM.'
+  related_code: https://github.com/wzj1718/PlaM
 model%20merg%20venue%3ANAACL-HLT%3A:
 - author: Swarnadeep Saha, Omer Levy, Asli Celikyilmaz, Mohit Bansal, Jason Weston,
     Xian Li 0003
