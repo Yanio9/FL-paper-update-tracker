@@ -50048,6 +50048,31 @@ federate%20venue%3ASIGIR%3A:
     Extensive experiments on benchmark datasets demonstrate that FedMM significantly
     improves recommendation performance with privacy guarantees.
   related_code: ''
+- author: Aymen Rayane Khouas
+  title: Towards Structurally Robust Cross-Device Federated Recommendation.
+  venue: SIGIR
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/sigir/Khouas26
+  doi: 10.1145/3805712.3808355
+  ee: https://doi.org/10.1145/3805712.3808355
+  url: https://dblp.org/rec/conf/sigir/Khouas26
+  abstract: 'Federated recommendation (FedRec) allows training recommender systems
+    without collecting user data centrally[3]. However, in these settings, particularly
+    in cross-device scenarios where each client corresponds to a single user, only
+    local interaction histories are available. Consequently, the learning process
+    relies on partial, fragmented, and sparse signals. This, in turn, makes collaboration
+    between users indirect, with only a subset of users participating in each training
+    round. In practice, this means the model is trained on incomplete and potentially
+    biased data. Standard Federated Learning (FL) methods assume that simply averaging
+    updates is enough, but in this setting, that is not sufficient to recover meaningful
+    collaborative patterns. This thesis studies the following question: "How do federated
+    constraints influence the propagation of collaborative signals in recommendation
+    systems, and how can key mechanisms be redesigned to improve performance, fairness,
+    and cross-domain transfer under realistic cross-device conditions? " To address
+    this question, the thesis is structured around four interconnected research directions:'
+  related_code: ''
 federate%20streamid%3Aconf%2Fsigmod%3A:
 - author: Rui Fu, Yuncheng Wu, Quanqing Xu, Meihui Zhang 0001
   title: 'FEAST: A Communication-efficient Federated Feature Selection Framework for
@@ -90262,6 +90287,34 @@ model%20merg%20venue%3ASIGIR%3A:
     further identify key factors that influence the merging process; this information
     might provide us more insight and understanding into MLIR merging.'
   abstract_cn: 本文提出了一种用于多语种信息检索（MLIR）融合过程的学习方法。为实施该方法，我们还设计并提取了大量可能影响MLIR融合过程的特征，这些特征主要从查询、文档和翻译三个层面进行抽取。在完成特征提取后，我们采用FRank排序算法构建融合模型；据我们所知，这是首次尝试利用基于学习的排序算法来构建MLIR融合模型。在实验中，我们选用NTCIR3、4和5中跨语言信息检索（CLIR）任务的三个测试集对所提方法的性能进行评估，并与多种融合方法进行了对比，包括传统融合方法、两步融合策略以及基于逻辑回归的融合方法。实验结果表明，在两类不同数据集上，所提方法均能显著提升融合效果。此外，借助由FRank生成的融合模型，本方法还能进一步识别出影响融合过程的关键因素，从而为我们深入理解MLIR融合机制提供有益的洞见。
+  related_code: ''
+- author: Ahmed Rayane Kebir, José G. Moreno 0001, Lynda Tamine
+  title: Improving Ad-hoc Search Effectiveness for Conversational Information Retrieval
+    via Model Merging.
+  venue: SIGIR
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/sigir/KebirMT26
+  doi: 10.1145/3805712.3809939
+  ee: https://doi.org/10.1145/3805712.3809939
+  url: https://dblp.org/rec/conf/sigir/KebirMT26
+  abstract: Conversational information retrieval is challenging since it requires
+    the consideration of the conversation history which potentially gives rise to
+    topic shifts and coreference resolution across previous turns. To address these
+    challenges, previous work mainly rely on traditional fine-tuning of ad-hoc retrievers
+    on conversational datasets or extrapolates their generalizability through multi-tasking.
+    However, this mainstream approach is costly - since it requires model re-training
+    - and exhibits catastrophic forgetting, where the model loses its foundational
+    ad-hoc retrieval performance. In this paper, we fill this gap by introducing model
+    merging as a training-free strategy enabling the design of a single retrieval
+    model that operates across both ad-hoc and conversational settings with no additional
+    fine-tuning. We conduct experiments using linear and non-linear parameter-wise
+    merging strategies - namely Model Soup and Slerp - on standard ad-hoc search and
+    conversational retrieval datasets. Our results demonstrate that model merging
+    significantly enhances the ad-hoc search capabilities of conversational retrievers
+    while improving generalizability across task-specific datasets, achieving up to
+    15% higher NDCG@3 under zero-shot conditions.
   related_code: ''
 model%20merg%20streamid%3Aconf%2Fsigmod%3A:
 - author: Kyoungmin Kim 0002, Sangoh Lee, Injung Kim 0001, Wook-Shin Han
