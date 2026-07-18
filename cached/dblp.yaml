@@ -37726,6 +37726,127 @@ federate%20streamid%3Aconf%2Fsp%3A:
     VFL systems.
   abstract_cn: 垂直联邦学习（VFL）系统近年来作为一种无需将数据集中化即可处理分布在多个不同数据源中的数据的范式而备受关注。在该框架下，多个参与方基于各自本地数据以隐私友好的方式协同训练模型。迄今为止，VFL已成为组织间安全地联合建模的事实标准解决方案，能够在不泄露任何个人隐私的前提下实现知识共享。然而，尽管VFL系统发展迅速，我们发现某些特定的输入——称为“对抗性主导输入”（ADIs）——能够操控联合推理结果朝向攻击者所期望的方向，并迫使其他（受害）参与方几乎无法作出有效贡献，从而丧失其在联邦学习场景中通常依据贡献度所应获得的奖励。  为此，我们对ADIs开展了系统性研究：首先证明了ADIs在典型VFL系统中的存在性；随后提出基于梯度的方法来构造多种格式的ADIs，并利用这些输入成功攻破常见的VFL系统。此外，我们还引入灰盒模糊测试技术，以“受害”参与方的显著性分数为指导，对由攻击者控制的输入进行扰动，从而以隐私保护的方式系统性地探索VFL系统的攻击面。我们进一步深入分析了在构造ADIs过程中关键参数与配置的影响。我们的研究揭示了全新的VFL攻击机会，有助于在实际入侵发生之前识别未知威胁，进而构建更加安全的VFL系统。
   related_code: ''
+- author: Vincenzo Carletti, Pasquale Foggia, Carlo Mazzocca, Giuseppe Parrella, Mario
+    Vento
+  title: On the Detectability of Active Gradient Inversion Attacks in Federated Learning.
+  venue: SP
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/sp/CarlettiFMPV26
+  doi: 10.1109/SP63933.2026.00193
+  ee: https://doi.org/10.1109/SP63933.2026.00193
+  url: https://dblp.org/rec/conf/sp/CarlettiFMPV26
+  abstract: One of the key advantages of Federated Learning (FL) is its ability to
+    collaboratively train a Machine Learning (ML) model while keeping clients' data
+    on-site. However, this can create a false sense of security. Despite not sharing
+    private data increases the overall privacy, prior studies have shown that gradients
+    exchanged during the FL training remain vulnerable to Gradient Inversion Attacks
+    (GIAs). These attacks allow the reconstruction of the clients' local data, breaking
+    the privacy promise of FL. GIAs can be launched by either a passive or an active
+    server. In the latter case, a malicious server manipulates the global model to
+    facilitate data reconstruction. While effective, earlier attacks falling under
+    this category have been demonstrated to be detectable by clients, limiting their
+    real-world applicability. Recently, novel active GIAs have emerged, claiming to
+    be far stealthier than previous approaches. This work provides the first comprehensive
+    analysis of these claims, investigating four state-of-the-art GIAs. We propose
+    novel lightweight client-side detection techniques, based on statistically improbable
+    weight structures and anomalous loss and gradient dynamics. Extensive evaluation
+    across several configurations demonstrates that our methods enable clients to
+    effectively detect active GIAs without any modifications to the FL training protocol.
+  related_code: ''
+- author: Guilin Deng, Silong Chen, Yuchuan Luo, Yi Liu 0057, Songlei Wang, Zhiping
+    Cai, Lin Liu 0018, Xiaohua Jia, Shaojing Fu
+  title: 'Toward Efficient Membership Inference Attacks Against Federated Large Language
+    Models: A Projection Residual Approach.'
+  venue: SP
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/sp/DengCLLWCLJF26
+  doi: 10.1109/SP63933.2026.00205
+  ee: https://doi.org/10.1109/SP63933.2026.00205
+  url: https://dblp.org/rec/conf/sp/DengCLLWCLJF26
+  abstract: Federated Large Language Models (FedLLMs) enable multiple parties to collaboratively
+    fine-tune LLMs without sharing raw data, addressing challenges of limited resources
+    and privacy concerns. Despite data localization, shared gradients can still expose
+    sensitive information through membership inference attacks (MIAs). However, FedLLMs'
+    unique properties, i.e., massive parameter scales, rapid convergence, and sparse,
+    non-orthogonal gradients, render existing MIAs ineffective. To address this gap,
+    we propose ProjRes, the first projection residuals-based passive MIA tailored
+    for FedLLMs. ProjRes leverages hidden embedding vectors as sample representations
+    and analyzes their projection residuals on the gradient subspace to uncover the
+    intrinsic link between gradients and inputs. It requires no shadow models, auxiliary
+    classifiers, or historical updates, ensuring efficiency and robustness. Experiments
+    on four benchmarks and four llMs show that ProjRes achieves near 100% accuracy,
+    outperforming prior methods by up to 75.75%. While strong DP can effectively mitigate
+    ProjRes, it does so by substantially degrading model utility. Our findings reveal
+    a previously overlooked privacy vulnerability in FedLLMs and call for a re-examination
+    of their security assumptions. Our code and data are available at link.
+  related_code: ''
+- author: Youlong Ding, Peihua Mai, Jingqi Zhang, Sherman S. M. Chow, Minxin Du, Yan
+    Pang
+  title: 'Shared Spotlight Meridian: Distributed Sparse Pseudorandom Functions for
+    Scalable Federated Learning.'
+  venue: SP
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/sp/DingMZCDP26
+  doi: 10.1109/SP63933.2026.00065
+  ee: https://doi.org/10.1109/SP63933.2026.00065
+  url: https://dblp.org/rec/conf/sp/DingMZCDP26
+  abstract: Secure federated learning enables multiple clients to train a shared model
+    while keeping raw data private. Minimizing communication is natural in secure
+    multiparty computation, yet cryptographic mechanisms create tension. Consequently,
+    existing secure aggregation protocols are illsuited to high-dimensional sparse
+    updates and forfeit sparsification gains, inflating communication by orders of
+    magnitude relative to plaintext aggregation. Seeking efficiency under privacy,
+    we introduce distributed sparse pseudorandom functions. Hidden alignment comes
+    from a secretly shared spotlight index that illuminates the chosen coordinate
+    and serves as a meridian that anchors aggregations of nonzero entries. Enabled
+    by our cryptographic advances, we present a secure aggregation protocol with near-optimal
+    client communication. Relative to a plaintext baseline, each client sends at most
+    one extra bit per nonzero gradient element. Multi-server security holds unless
+    all servers collude. At the client side, computational overhead is small, and
+    server communication is optimal. Near-baseline accuracy is seen across computer
+    vision, natural language processing, and recommendation experiments, with plaintext-level
+    bandwidth savings.
+  related_code: ''
+- author: Zirui Gong, Leo Yu Zhang, Yanjun Zhang, Viet Vo, Tianqing Zhu, Shirui Pan,
+    Cong Wang
+  title: 'ARES: Scalable and Practical Gradient Inversion Attack in Federated Learning
+    Through Activation Recovery.'
+  venue: SP
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/sp/GongZZVZPW26
+  doi: 10.1109/SP63933.2026.00181
+  ee: https://doi.org/10.1109/SP63933.2026.00181
+  url: https://dblp.org/rec/conf/sp/GongZZVZPW26
+  abstract: Federated Learning (FL) enables collaborative model training by sharing
+    model updates instead of raw data, aiming to protect user privacy. However, recent
+    studies reveal that these shared updates can inadvertently leak sensitive training
+    data through gradient inversion attacks (GIAs). Among them, active GIAs are particularly
+    powerful, enabling highfidelity reconstruction of individual samples even under
+    large batch sizes. Nevertheless, existing approaches often require architectural
+    modifications, which limit their practical applicability. In this work, we bridge
+    this gap by introducing the Activation REcovery via Sparse inversion (ARES) attack,
+    an active GIA designed to reconstruct training samples from large training batches
+    without requiring architectural modifications. Specifically, we formulate the
+    recovery problem as a noisy sparse recovery task and solve it using the generalized
+    Least Absolute Shrinkage and Selection Operator (Lasso). To extend the attack
+    to multi-sample recovery, ARES incorporates the imprint method to disentangle
+    activations, enabling scalable per-sample reconstruction. We further establish
+    the expected recovery rate and derive an upper bound on the reconstruction error,
+    providing theoretical guarantees for the ARES attack. Extensive experiments on
+    CNNs and MLPs demonstrate that ARES achieves high-fidelity reconstruction across
+    diverse datasets, significantly outperforming prior GIAs under large batch sizes
+    and realistic FL settings. Our results highlight that intermediate activations
+    pose a serious and underestimated privacy risk in FL, underscoring the urgent
+    need for stronger defenses.
+  related_code: ''
 federate%20venue%3ACCS%3A:
 - author: Amrita Roy Chowdhury 0001, Chuan Guo, Somesh Jha, Laurens van der Maaten
   title: 'EIFFeL: Ensuring Integrity for Federated Learning.'
@@ -50012,7 +50133,25 @@ federate%20venue%3ASIGIR%3A:
   doi: 10.1145/3805712.3809655
   ee: https://doi.org/10.1145/3805712.3809655
   url: https://dblp.org/rec/conf/sigir/LiangWZZLT26
-  abstract: ''
+  abstract: 'Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs)
+    by grounding generation in external knowledge to improve factuality and reduce
+    hallucinations. Yet most deployments assume a centralized corpus, which is infeasible
+    in privacy-aware domains where knowledge remains siloed. This motivates federated
+    RAG (FedRAG), where a central LLM server collaborates with distributed silos without
+    sharing raw documents. In-context RAG violates this requirement by transmitting
+    verbatim documents, whereas parametric RAG encodes documents into light weight
+    adapters that merge with a frozen LLM at inference, avoiding raw-text exchange.
+    We adopt the parametric approach but face two unique challenges induced by FedRAG:
+    high storage and communication from per-document adapters, and destructive aggregation
+    caused by indiscriminately merging multiple adapters. We present FedMosaic, the
+    first federated RAG framework built on parametric adapters. FedMosaic clusters
+    semantically related documents into multi-document adapters with document-specific
+    masks to reduce overhead while preserving specificity, and performs selective
+    adapter aggregation to combine only relevance-aligned, non-conflicting adapters.
+    Experiments show that FedMosaic achieves an average 10.9% higher accuracy than
+    state-of-the-art methods in four categories, while lowering storage costs by 78.8%
+    to 86.3% and communication costs by 91.4%, and never sharing raw documents.'
+  related_code: ''
 - author: Jun Zhang, Dugang Liu, Xing Tang 0007, Xiuqiang He 0001, Zhong Ming 0001
   title: 'FedMM: Federated Collaborative Signal Quantization for Multi-Market CTR
     Prediction.'
@@ -64000,7 +64139,12 @@ federate%20venue%3AWWW%3A:
   doi: 10.1145/3774905.3796620
   ee: https://doi.org/10.1145/3774905.3796620
   url: https://dblp.org/rec/conf/www/KingLXYTY26
-  abstract: ''
+  abstract: 'In the evolving landscape of machine learning research, two significant
+    developments have emerged to prominence: foundation models and federated learning.
+    The FL@FM-TheWebConf''26 work- shop provides an exciting forum for researchers
+    and practitioners to discuss promising works and chart potential trajectories
+    forward for this emerging field.'
+  related_code: ''
 - author: Zhaolong Su, Leheng Zhao, Xiaoying Wu, Ziyue Xu, Jindong Wang 0001
   title: 'FedUMM: A General Framework for Federated Learning with Unified Multimodal
     Models.'
@@ -64012,7 +64156,25 @@ federate%20venue%3AWWW%3A:
   doi: 10.1145/3774905.3796623
   ee: https://doi.org/10.1145/3774905.3796623
   url: https://dblp.org/rec/conf/www/SuZWXW26
-  abstract: ''
+  abstract: 'Unified multimodal models (UMMs) are emerging as strong foundation models
+    that can do both generation and understanding tasks in a single architecture.
+    However, they are typically trained in centralized settings where all training
+    and downstream datasets are gathered in a central server, limiting the deployment
+    in privacy-sensitive and geographically distributed scenarios. In this paper,
+    we present FedUMM, a general federated learning framework for UMMs under non-IID
+    multimodal data with low communication cost. Built on NVIDIA FLARE, FedUMM instantiates
+    federation for a BLIP3o backbone via parameter-efficient fine-tuning: clients
+    train lightweight LoRA adapters while freezing the foundation models, and the
+    server aggregates only adapter updates. We evaluate on VQA v2 and the GenEval
+    compositional generation benchmarks under Dirichlet-controlled heterogeneity with
+    up to 16 clients. Results show slight degradation as client count and heterogeneity
+    increase, while remaining competitive with centralized training. We further analyze
+    computation--communication trade-offs and demonstrate that adapter-only federation
+    reduces per-round communication by over an order of magnitude compared to full
+    fine-tuning, enabling practical federated UMM training. This work provides empirical
+    experience for future research on privacy-preserving federated unified multimodal
+    models.'
+  related_code: ''
 - author: Qianqi Zhang, Zeling Xu, Caichun Cen, Yuntao Zou, Hongyan Liu, Yaohua Deng,
     Hao Wu, Zhiyong Liao, Zihui Lin, Dagang Li 0001, Wei Wang 0395
   title: 'Fed-S2: Adversarially Disentangled Federated Multimodal RAG for Safety-Critical
@@ -80850,7 +81012,22 @@ collaborat%20learn%20venue%3ASIGIR%3A:
   doi: 10.1145/3805712.3809712
   ee: https://doi.org/10.1145/3805712.3809712
   url: https://dblp.org/rec/conf/sigir/DongCLJQZMZDW26
-  abstract: ''
+  abstract: 'Recently, Large Language Models (LLMs) have demonstrated remarkable reasoning
+    capabilities through reinforcement learning (RL). However, enabling LLM-based
+    agents to effectively orchestrate multiple tools remains an open challenge. In
+    this paper, we introduce Tool-Star, an end-to-end agentic post-training framework
+    that empowers LLM-based web agents to strategically interact with external multi-tool
+    environments. Tool-Star begins with a general tool-integrated data synthesis pipeline
+    that combines two complementary sampling strategies to generate tool-use trajectories,
+    followed by quality normalization and difficulty-aware curriculum construction
+    to filter noisy samples and organize training data from easy to hard. We then
+    introduce a two-stage training paradigm for multi-tool collaborative reasoning:
+    (1) cold-start supervised fine-tuning with tool feedback to bootstrap long-horizon
+    tool-augmented reasoning, and (2) a multi-tool self-critic RL algorithm with hierarchical
+    rewards to reinforce effective tool coordination. Experiments across 13 benchmarks
+    demonstrate Tool-Star''s effectiveness. Further analyses provide practical insights
+    for optimizing strategic tool use in web agents. The code is available at https://github.com/RUC-NLPIR/Tool-Star.'
+  related_code: https://github.com/RUC-NLPIR/Tool-Star
 - author: Yifan Liu 0019, Yaokun Liu, Zelin Li 0002, Zhenrui Yue, Ruichen Yao, Yang
     Zhang 0031, Dong Wang 0002
   title: Learning Decomposed Contextual Token Representations from Pretrained and
@@ -80892,7 +81069,31 @@ collaborat%20learn%20venue%3ASIGIR%3A:
   doi: 10.1145/3805712.3809527
   ee: https://doi.org/10.1145/3805712.3809527
   url: https://dblp.org/rec/conf/sigir/YangLCK26
-  abstract: ''
+  abstract: 'Recent research has shown that single-vector embedding retrieval models
+    face a fundamental bottleneck: the finite dimensionality of single-vector representations
+    limits their capacity to represent arbitrary top-k relevant item combinations,
+    even with perfect training. This inherent bottleneck substantially limits the
+    expressive capacity of such models and reduces their ability to capture complex
+    user-item interaction patterns. To overcome this bottleneck, we propose Adaptive
+    Rich-kernelized Contrastive Learning (ARC), which enhances model expressiveness
+    while maintaining the computational efficiency of single-vector retrieval. ARC
+    replaces the fixed inner product with a learnable spherical kernel family parameterized
+    by a truncated Gegenbauer expansion, thereby increasing the model''s effective
+    dimensionality while preserving single-vector efficiency and low-pass inductive
+    bias for generalization. Specifically, we construct a positive-definite kernel
+    on the unit sphere using a positive combination of Gegenbauer polynomials, and
+    adopt a contrastive learning objective to jointly learn the polynomials weights
+    and user–item embeddings. Through data-driven optimization, the adaptive kernel
+    induces a more expressive representation space, enabling the model to better capture
+    complex preferences. From a theoretical perspective, the learned kernel implicitly
+    maps embeddings into a higher-dimensional Reproducing Kernel Hilbert Space, allowing
+    the model to capture a broader range of top-k item combinations before reaching
+    the geometric limit imposed by the embedding dimensionality. Consequently, the
+    proposed ARC framework effectively alleviates the inherent representational bottleneck
+    in traditional single-vector embedding models. Extensive experiments on four real-world
+    datasets demonstrate the effectiveness of our method, showing consistent improvements
+    over strong baselines and state-of-the-art models.'
+  related_code: ''
 collaborat%20learn%20streamid%3Aconf%2Fsigmod%3A:
 - author: Behrouz Derakhshan, Alireza Rezaei Mahdiraji, Ziawasch Abedjan, Tilmann
     Rabl, Volker Markl
