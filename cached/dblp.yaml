@@ -31384,6 +31384,17 @@ federate%20streamid%3Ajournals%2Fml%3A:
     We conduct the numerical experiments on robust federated learning and distributed
     meta learning tasks to demonstrate the efficiency of our algorithms.
   related_code: ''
+- author: Shunxin Guo, Jiaqi Lv, Qiufeng Wang 0002, Xin Geng 0001
+  title: Towards Adaptive and Communication-Efficient Dynamic Federated Learning.
+  venue: Mach. Learn.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ml/GuoLWG26
+  doi: 10.1007/S10994-026-07102-1
+  ee: https://doi.org/10.1007/s10994-026-07102-1
+  url: https://dblp.org/rec/journals/ml/GuoLWG26
+  abstract: ''
 federate%20streamid%3Ajournals%2Fjmlr%3A:
 - author: Yann Fraboni, Richard Vidal, Laetitia Kameni, Marco Lorenzi
   title: A General Theory for Federated Optimization with Asynchronous and Heterogeneous
@@ -90770,6 +90781,38 @@ swarm%20learn%20streamid%3Ajournals%2Fml%3A:
   ee: https://doi.org/10.1007/s10994-010-5216-5
   url: https://dblp.org/rec/journals/ml/MartensBF11
   abstract: ''
+- author: Niklas Freymuth, Philipp Dahlinger, Tobias Würth, Simon Reisch, Luise Kärger,
+    Gerhard Neumann
+  title: Adaptive Swarm Mesh Refinement Using Deep Reinforcement Learning with Local
+    Rewards.
+  venue: Mach. Learn.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ml/FreymuthDWRKN26
+  doi: 10.1007/S10994-026-07064-4
+  ee: https://doi.org/10.1007/s10994-026-07064-4
+  url: https://dblp.org/rec/journals/ml/FreymuthDWRKN26
+  abstract: Abstract Simulating physical systems is essential in engineering, but
+    analytical solutions are limited to straightforward problems. Consequently, numerical
+    methods like the Finite Element Method (FEM) are widely used. However, the FEM
+    becomes computationally expensive as problem complexity and accuracy demands increase.
+    Adaptive Mesh Refinement (AMR) improves the FEM by dynamically placing mesh elements
+    on the domain, balancing computational speed and accuracy. Classical AMR depends
+    on heuristics or expensive error estimators, which may lead to suboptimal performance
+    for complex simulations. While AMR methods based on machine learning are promising,
+    they currently only scale to simple problems. In this work, we formulate AMR as
+    a system of collaborating, homogeneous agents that iteratively split into multiple
+    new agents. This agent-wise perspective enables a spatial reward formulation focused
+    on reducing the maximum mesh element error. Our approach, Adaptive Swarm Mesh
+    Refinement++ (ASMR++), offers efficient, stable optimization and generates highly
+    adaptive meshes at user-defined resolution at inference time. Extensive experiments
+    demonstrate that ASMR++ outperforms heuristic approaches and learned baselines,
+    matching the performance of expensive error-based oracle AMR strategies. ASMR++
+    additionally generalizes to different domains during inference, and produces meshes
+    that simulate up to 2 orders of magnitude faster than uniform refinements in more
+    demanding settings.
+  related_code: ''
 swarm%20learn%20streamid%3Ajournals%2Fjmlr%3A:
 - author: Maximilian Hüttenrauch, Adrian Sosic, Gerhard Neumann
   title: Deep Reinforcement Learning for Swarm Systems.
