@@ -36409,7 +36409,29 @@ federate%20venue%3AKDD%3A:
   doi: 10.1145/3770854.3780269
   ee: https://doi.org/10.1145/3770854.3780269
   url: https://dblp.org/rec/conf/kdd/CaoCHQCZX26
-  abstract: ''
+  abstract: 'Cross-domain federated learning aims to collaboratively train a generalized
+    model across clients with heterogeneous domain distributions without sharing data.
+    Existing methods typically leverage prototypes to align intermediate representations
+    among local models and enhance collaborative knowledge sharing, constructed either
+    by directly aggregating class-center features across clients or by performing
+    clustering to improve diversity. However, their performance is limited by the
+    suboptimal ability to balance the learning of generalized and domain-specific
+    features. To address this issue, this paper presents a novel dual-prototype guided
+    FL framework named FedOrthrus, which decomposes the prototype into two components:
+    i) the generalized prototype to capture cross-client domain-invariant features,
+    and ii) the domain-specific prototype to extract the specific features of each
+    domain. Specifically, the cloud server aggregates generalized prototypes to capture
+    shared semantics across clients, thereby guiding each client to learn domain-invariant
+    representations. Meanwhile, a clustering strategy is employed to adaptively construct
+    domain-specific prototypes, ensuring that the representational capacity allocated
+    to each domain is balanced according to its semantic complexity. Moreover, FedOrthrus
+    employs a distribution-aware prototype construction scheme to dynamically assign
+    the size of each part of prototypes, which enhances adaptability to different
+    levels of domain heterogeneity. The experimental results on three datasets demonstrate
+    that our FedOrthrus can achieve up to 14.56% and 3.96% accuracy improvement compared
+    to traditional and state-of-the-art prototype-based FL methods. Our code is available
+    at https://github.com/AAuZZ/FedOrthrus.'
+  related_code: https://github.com/AAuZZ/FedOrthrus
 - author: Xiaxia He, Boyue Wang, Junbin Gao, Yongli Hu, Baocai Yin
   title: 'MFC: Mixed Federated Clustering based on Cross-modal Feature Decoupling.'
   venue: KDD
@@ -36420,7 +36442,26 @@ federate%20venue%3AKDD%3A:
   doi: 10.1145/3770854.3780327
   ee: https://doi.org/10.1145/3770854.3780327
   url: https://dblp.org/rec/conf/kdd/HeWGHY26
-  abstract: ''
+  abstract: Existing federated clustering methods typically assume that either all
+    clients supply the same type of single-modal/multi-modal data, or that different
+    clients provide various modalities describing the same object. However, a prevalent
+    real-world scenario involves clients contributing data from diverse and unrelated
+    modalities. Addressing the challenge of uncovering clustering patterns from such
+    heterogeneous modality data distributed across distinct clients is crucial. In
+    this paper, we propose a novel cross-modal feature decoupling-based mixed federated
+    clustering model. To address client heterogeneity, we introduce a cross-modal
+    feature decoupling module for each client, designed to decouple modality-agnostic
+    and modality-specific features through distinct encoders.Only the modality-agnostic
+    encoder parameters and clustering centers of each client are transmitted to the
+    server. This enables the server to aggregate various modality-agnostic encoders,
+    effectively discovering the global clustering structure while avoiding interference
+    from modality-specific noise. Moreover, we develop a global consistent complementary
+    clustering module to integrate the complementary clustering centers from various
+    clients. The global clustering centers are then dispatched back to clients to
+    guide and calibrate their local clustering models. Experimental results on three
+    public datasets show the superiority of the proposed model compared to classic
+    federated clustering methods.
+  related_code: ''
 - author: Wenhao Li, Christos Anagnostopoulos 0001, Shameem A Puthiya Parambath, Kevin
     Bryson 0001
   title: 'FedKDMR: Robust Federated Learning via Joint Knowledge Distillation &amp;
@@ -36461,7 +36502,30 @@ federate%20venue%3AKDD%3A:
   doi: 10.1145/3770854.3780182
   ee: https://doi.org/10.1145/3770854.3780182
   url: https://dblp.org/rec/conf/kdd/LiJWDQ26
-  abstract: ''
+  abstract: 'Multi-view data is widely present in the real world. Multi-view clustering
+    is an unsupervised method for capturing the grouping structure of such data. However,
+    multi-view clustering struggles to meet the requirements of real-world scenarios,
+    such as distributed storage of different views and data protection needs. These
+    requirements align with the setting of vertical federated clustering. However,
+    vertical federated clustering still faces two challenges: (1) Under the constraints
+    of privacy protection mechanisms, how to theoretically analyze the clustering
+    consistency between the data uploaded by clients to the server and the original
+    client data is challenging. (2) The feature space differences among different
+    clients make cross-view information sharing and fusion difficult. To address the
+    first challenge, we provide a theoretical analysis of the upper bound of the loss
+    of k-means for transformation matrix mapping, revealing the relationship between
+    the k-means loss of the transformed data and the original data. We then propose
+    a vertical federated clustering method (V-HDKM). In this method, clients handle
+    the second challenge by transposing the feature matrix. Guided by the projected
+    k-means loss bound, we expand the feature space and perform k-means clustering
+    to obtain feature cluster centers, which are then uploaded to the server. The
+    server aggregates the global centers and feeds back the optimized results, achieving
+    cross-view knowledge fusion through iterative interactions. Experimental results
+    show that V-HDKM significantly improves local clustering performance and performances
+    better than other seven vertical federated mthods on 20 multi-view datasets. Furthermore,
+    sensitivity analysis on 8 UCI datasets with respect to the number of clients demonstrates
+    the stability of the method. The code is available at https://github.com/jiangjh/V-HDKM.'
+  related_code: https://github.com/jiangjh/V-HDKM
 - author: Zihan Tan, Guancheng Wan, Wenke Huang 0003, Bin Yang 0026, Mang Ye
   title: 'FedPRE: Robust Federated Graph Learning against Topological Corruption.'
   venue: KDD
@@ -36472,7 +36536,24 @@ federate%20venue%3AKDD%3A:
   doi: 10.1145/3770854.3780330
   ee: https://doi.org/10.1145/3770854.3780330
   url: https://dblp.org/rec/conf/kdd/TanWHYY26
-  abstract: ''
+  abstract: 'Federated Graph Learning (FGL) has emerged as a compelling paradigm for
+    distributed Graph Neural Networks (GNNs) training, prioritizing data privacy preservation.
+    However, due to the limitations of data collection and storage conditions, FGL
+    suffers from data corruption in real-world applications. While Federated Learning
+    (FL) and FGL studies have addressed label corruption, the challenge of graph topological
+    corruption remains unexamined. Specifically, this phenomenon significantly disrupts
+    node connectivity patterns of graphs, leading GNNs to adopt flawed feature propagation
+    paradigms. Existing methods with poor robustness are inevitably constrained due
+    to the absence of targeted strategies for addressing the issues of global contaminated
+    collaboration and local vulnerability. To tackle this challenge, we conduct the
+    first comprehensive investigation of robust FGL against topological corruption
+    and propose FedPRE. It comprises: (1) Feature Propagation Robustness Evaluation
+    (FPRE), which evaluates client GNNs feature propagation robustness and adjusts
+    their contribution during aggregation. (2) Topological Corruption-Resistant Enhancement
+    (TCRE), which enhances robustness against corruption during local training. Extensive
+    experiments validate the robustness and effectiveness of FedPRE against topological
+    corruption. The code is available at https://github.com/OakleyTan/FedPRE.'
+  related_code: https://github.com/OakleyTan/FedPRE
 - author: Xiuling Wang, Xin Huang 0001, Haibo Hu 0001, Jianliang Xu
   title: Communication-efficient Federated Graph Classification via Generative Diffusion
     Modeling.
@@ -36547,7 +36628,25 @@ federate%20venue%3AKDD%3A:
   doi: 10.1145/3770854.3780170
   ee: https://doi.org/10.1145/3770854.3780170
   url: https://dblp.org/rec/conf/kdd/YanLXMW26
-  abstract: ''
+  abstract: Compression is an efficient way to relieve the tremendous communication
+    overhead of federated learning (FL) systems. However, for the existing works,
+    the information loss under compression will lead to unexpected model/gradient
+    deviation for the FL training, significantly degrading the training performance,
+    especially under the challenges of data heterogeneity and model obsolescence.
+    To strike a delicate trade-off between model accuracy and traffic cost, we propose
+    Caesar,, a novel FL framework with a low-deviation compression approach. For the
+    global model download, we design a greedy method to optimize the compression ratio
+    for each device based on the staleness of the local model, ensuring a precise
+    initial model for local training. Regarding the local gradient upload, we utilize
+    the device's local data properties (i.e., sample volume and label distribution)
+    to quantify its local gradient's importance, which then guides the determination
+    of the gradient compression ratio. We have implemented Caesar, on two physical
+    platforms with 40 smartphones and 80 NVIDIA Jetson devices. Extensive results
+    show that Caesar, can reduce the traffic costs by about 25.54%þicksim37.88% when
+    achieving the same target accuracy compared to the compression-based baselines,
+    while incurring only a 0.68% degradation in final test accuracy relative to the
+    full-precision communication.
+  related_code: ''
 - author: Xiaokai Zhou, Xiao Yan 0002, Xinyan Li, Yuxiang Wang, Quanqing Xu, Chuang
     Hu, Tieyun Qian, Jiawei Jiang 0001
   title: 'HAL: Accurate, Private, and Efficient Sample Alignment for Multimodal Federated
@@ -36560,7 +36659,27 @@ federate%20venue%3AKDD%3A:
   doi: 10.1145/3770854.3780223
   ee: https://doi.org/10.1145/3770854.3780223
   url: https://dblp.org/rec/conf/kdd/ZhouYLWXHQJ26
-  abstract: ''
+  abstract: Vertical multimodal federated learning (VMFL) enables multiple clients
+    holding data from different modalities to conduct collaboratively model training.
+    Existing methods typically assume that multimodal data samples (i.e., text and
+    image) from the same entity (i.e., person) are paired across the clients (i.e.,
+    aligned). However, this assumption rarely holds in practice, as data is often
+    collected independently with no shared identifiers. To address this challenge,
+    we propose hashing-based alignment (HAL), a new VMFL framework that works without
+    pre-aligned samples. HAL consists of two key components. The first component is
+    an efficient and privacy-preserving method to identify similar samples from different
+    modalities as aligned pairs. It adopts locality sensitive hashing (LSH) for the
+    efficient retrieval of similar samples, introduces a shift-orthogonal hashing
+    scheme to tackle the gaps between different modalities, and uses a bloom-style
+    method for secure Hamming distance estimation. We prove that the shift-orthogonal
+    hashing reduces distance estimation errors and secure Hamming distance estimation
+    satisfies differential privacy. The second component is a neighbor-aware fusion
+    strategy, which applies cross-attention to aggregate informative signals from
+    the aligned samples without relying on explicit similarity scores. Experimental
+    results on two real-world datasets show that compared with five state-of-the-art
+    (SOTA) baselines, HAL improves the cross-modal retrieval accuracy by over 63%,
+    while also achieving up to 154× speedup.
+  related_code: ''
 federate%20venue%3AWSDM%3A:
 - author: Wei Yuan, Hongzhi Yin, Fangzhao Wu, Shijie Zhang, Tieke He, Hao Wang
   title: Federated Unlearning for On-Device Recommendation.
@@ -48311,6 +48430,57 @@ federate%20venue%3AACL%3A:
     to build more scalable and privacy-preserving GUI agents for real-world deployment.
     Our code and data are publicly available at https://github.com/wwh0411/FedGUI..'
   related_code: https://github.com/wwh0411/FedGUI
+- author: Daniel Cieslak, Andrzej Czyzewski
+  title: Does Locality Cost in Polish Medical Text Classification? Duplicate-Aware
+    Evaluation of Federated Learning.
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/acl/CieslakC26
+  doi: ''
+  ee: https://aclanthology.org/2026.acl-srw.44/
+  url: https://dblp.org/rec/conf/acl/CieslakC26
+  abstract: ''
+- author: Kris Prasad, Md Abdullah Al Hafiz Khan
+  title: 'FedPAGR: Federated Prototype Alignment via Geometric Refinement for Heterogeneous
+    Architectures.'
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/acl/PrasadK26
+  doi: ''
+  ee: https://aclanthology.org/2026.acl-srw.37/
+  url: https://dblp.org/rec/conf/acl/PrasadK26
+  abstract: ''
+- author: Tinnakit Udsa, Can Udomcharoenchaikit, Patomporn Payoungkhamdee, Sarana
+    Nutanong, Norrathep Rattanavipanon
+  title: Exploring Cross-Client Memorization of Training Data in Large Language Models
+    for Federated Learning.
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/acl/UdsaUPNR26
+  doi: ''
+  ee: https://aclanthology.org/2026.acl-short.56/
+  url: https://dblp.org/rec/conf/acl/UdsaUPNR26
+  abstract: 'Federated learning (FL) enables collaborative training without raw data
+    sharing, but still risks training data memorization. Existing FL memorization
+    detection techniques focus on one sample at a time, underestimating more subtle
+    risks of cross-sample memorization. In contrast, recent work on centralized learning
+    (CL) has introduced fine-grained methods to assess memorization across all samples
+    in training data, but these assume centralized access to data and cannot be applied
+    directly to FL. We bridge this gap by proposing a framework that quantifies both
+    intra- and inter-client memorization in FL using fine-grained cross-sample memorization
+    measurement across all clients. Based on this framework, we conduct two studies:
+    (1) measuring subtle memorization across clients and (2) examining key factors
+    that influence memorization, including decoding strategies, prefix length, and
+    FL algorithms. Our findings reveal that FL models do memorize client data, particularly
+    intra-client data, more than inter-client data, with memorization influenced by
+    training and inferencing factors.'
+  related_code: ''
 federate%20venue%3AEMNLP%3A:
 - author: Yatin Chaudhary, Pranav Rai, Matthias Schubert, Hinrich Schütze, Pankaj
     Gupta 0003
@@ -80626,6 +80796,18 @@ collaborat%20learn%20venue%3AACL%3A:
   ee: https://aclanthology.org/2026.findings-acl.799/
   url: https://dblp.org/rec/conf/acl/LiuLLLSWMC26
   abstract: ''
+- author: Jinjia Feng, Wenda Wang 0004, Zhewei Wei
+  title: 'MotifAgent: Learning Molecular Assembly through Multi-Agent Collaboration
+    for Chemical Language Understanding.'
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/acl/FengWW26
+  doi: 10.18653/V1/2026.FINDINGS-ACL.2023
+  ee: https://doi.org/10.18653/v1/2026.findings-acl.2023
+  url: https://dblp.org/rec/conf/acl/FengWW26
+  abstract: ''
 collaborat%20learn%20venue%3ANAACL-HLT%3A:
 - author: Armanda Lewis
   title: Multimodal large language models for inclusive collaboration learning tasks.
@@ -90258,6 +90440,29 @@ model%20merg%20venue%3AACL%3A:
     scattered patterns to focused localization on task-relevant visual regions. Our
     repository is on https://github.com/wzj1718/PlaM.'
   related_code: https://github.com/wzj1718/PlaM
+- author: Tiancheng Hu, Benjamin Minixhofer, Nigel Collier
+  title: 'Navigating the Alignment-Calibration Trade-off: A Pareto-Superior Frontier
+    via Model Merging.'
+  venue: ACL
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: open
+  key: conf/acl/HuMC26
+  doi: 10.18653/V1/2026.FINDINGS-ACL.2104
+  ee: https://doi.org/10.18653/v1/2026.findings-acl.2104
+  url: https://dblp.org/rec/conf/acl/HuMC26
+  abstract: 'The "alignment tax" of post-training is typically framed as a drop in
+    task accuracy.We show it also involves a severe loss of calibration, making models
+    overconfident, less reliable, and model outputs less diverse.We demonstrate that
+    this trade-off can be navigated effectively via a simple post-hoc intervention:
+    interpolating between a model''s weights before and after alignment.Crucially,
+    this is not a strict trade-off.We find that the process consistently reveals Pareto-optimal
+    interpolations-models that improve accuracy beyond both parents while substantially
+    recovering the calibration lost during alignment.Our work demonstrates that simple
+    model merging provides a computationally efficient method for mitigating the full
+    scope of the alignment tax, yielding models that are more capable and more reliable.
+    1'
+  related_code: ''
 model%20merg%20venue%3ANAACL-HLT%3A:
 - author: Swarnadeep Saha, Omer Levy, Asli Celikyilmaz, Mohit Bansal, Jason Weston,
     Xian Li 0003
