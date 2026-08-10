@@ -48082,6 +48082,32 @@ federate%20streamid%3Ajournals%2Fijcv%3A:
     significant performance improvements over state-of-the-art methods. Code is available
     at: https://github.com/CUHK-AIM-Group/FedPD'
   related_code: https://github.com/CUHK-AIM-Group/FedPD
+- author: Junyan Ouyang, Siqi Du, Rui Han 0001, Chi Harold Liu, Jianxin Zhao, Xiaoning
+    Wu, Lydia Y. Chen
+  title: Adaptive Differential Privacy Noise Injection for Decentralized Federated
+    Learning of Visual Recognition Tasks.
+  venue: Int. J. Comput. Vis.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ijcv/OuyangDHLZWC26
+  doi: 10.1007/S11263-026-02969-Y
+  ee: https://doi.org/10.1007/s11263-026-02969-y
+  url: https://dblp.org/rec/journals/ijcv/OuyangDHLZWC26
+  abstract: ''
+- author: Chen Zhang, Ge Su, Huaxiao Zhou, Lu Hao, Feng Zhu 0004, Jintai Chen, Yuxiang
+    Cai, Jianwei Yin, Hongxia Xu
+  title: 'Federated Learning Meets Test-Time Adaptation: Methods, Challenges, and
+    Future Directions.'
+  venue: Int. J. Comput. Vis.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ijcv/ZhangSZHZCCYX26
+  doi: 10.1007/S11263-026-02937-6
+  ee: https://doi.org/10.1007/s11263-026-02937-6
+  url: https://dblp.org/rec/journals/ijcv/ZhangSZHZCCYX26
+  abstract: ''
 federate%20venue%3AACL%3A:
 - author: Zheng Xu 0002, Yanxiang Zhang, Galen Andrew, Christopher A. Choquette-Choo,
     Peter Kairouz, H. Brendan McMahan, Jesse Rosenstock, Yuanbo Zhang
@@ -80839,6 +80865,40 @@ collaborat%20learn%20streamid%3Ajournals%2Fijcv%3A:
   ee: https://doi.org/10.1007/s11263-018-1112-4
   url: https://dblp.org/rec/journals/ijcv/ZhangHZM19
   abstract: ''
+- author: Hongchen Luo, Wei Zhai, Jiao Wang 0002, Yang Cao 0010, Zheng-Jun Zha
+  title: Visual-Geometric Collaborative Guidance for Affordance Learning.
+  venue: Int. J. Comput. Vis.
+  year: '2026'
+  type: Journal Articles
+  access: closed
+  key: journals/ijcv/LuoZWCZ26
+  doi: 10.1007/S11263-026-02950-9
+  ee: https://doi.org/10.1007/s11263-026-02950-9
+  url: https://dblp.org/rec/journals/ijcv/LuoZWCZ26
+  abstract: 'By modeling the contact relationships between human body parts and local
+    object regions from images, potential cues underlying human–object interactions
+    can be revealed, thereby alleviating the uncertainty in affordance learning caused
+    by the ambiguity of possible actions. However, existing methods often follow a
+    “contact region segmentation–transfer” paradigm that relies solely on appearance-level
+    mappings, neglecting the semantic and geometric consistency of human–object interactions.
+    As a result, when facing significant variations in objects or diverse collaborative
+    relationships among body parts, the model’s perception and prediction capabilities
+    are degraded. To this end, we propose a visual-geometric collaborative guided
+    affordance learning network that jointly leverages visual and geometric cues to
+    model the complex relationships in human–object interactions and the contact feature
+    representation. Particularly, a semantic-pose heuristic perception module is devised
+    to exploit both semantic and geometric cues to guide the network to focus on interaction-relevant
+    regions, improving contact-region perception under various interaction scenarios.
+    Meanwhile, a geometric-apparent alignment transfer module is introduced to jointly
+    align local regions of apparent and structural similarity, eliminating the transport
+    difficulties posed by intra-class correspondence ambiguity. Furthermore, we construct
+    a larger and more diverse Contact & Object-Part Affordance dataset, consisting
+    of 55,047 images covering 61 object categories and 35 affordance types, enabling
+    a more comprehensive evaluation of the model’s perception and prediction capabilities
+    across complex interaction scenarios. Experimental results demonstrate that our
+    method outperforms the representative models regarding objective metrics and visual
+    quality. Project: github.com/lhc1224/VCR-Net.'
+  related_code: ''
 collaborat%20learn%20venue%3AACL%3A:
 - author: Shuzheng Si, Helan Hu, Haozhe Zhao, Shuang Zeng, Kaikai An, Zefan Cai, Baobao
     Chang
