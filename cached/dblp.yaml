@@ -59532,7 +59532,25 @@ federate%20venue%3AINFOCOM%3A:
   doi: 10.1109/INFOCOM59046.2026.11571624
   ee: https://doi.org/10.1109/INFOCOM59046.2026.11571624
   url: https://dblp.org/rec/conf/infocom/YeLHWDW26
-  abstract: ''
+  abstract: Federated learning (FL) enables multiple clients to collaboratively train
+    a machine learning model without sharing their local data. However, the distributed
+    nature of FL makes it vulnerable to backdoor attacks from malicious clients. Most
+    existing attack methods often assume that attackers can inject backdoors in every
+    training round - a scenario that is both unrealistic and inefficient in real-world
+    FL deployment. In this paper, we investigate why backdoor attacks become less
+    effective under low-frequency injection and propose a novel attack paradigm for
+    FL, called REinforced Memorization-based INterval backDoor attack (REMIND). REMIND
+    optimizes the backdoor trigger via task alignment and feature alignment. Task
+    alignment aligns backdoor and main task objectives to resist benign update suppression
+    during non-attack rounds, while feature alignment guides poisoned samples to match
+    the activation trajectory of target-class samples. This dual alignment enhances
+    the backdoor's persistence and narrows the divergence between malicious and benign
+    updates. With strong attack success rates established, we further analyze the
+    advantages of low-frequency backdoor attacks, particularly their ability to improve
+    robustness against defense mechanisms. Extensive evaluations on four benchmark
+    datasets show that REMIND consistently outperforms eight state-of-the-art attack
+    baselines under nine defense strategies.
+  related_code: ''
 - author: Qingli Zeng, Yinjin Fu, Farid Naït-Abdesselam
   title: 'FedGraph-ID: A Federated Graph Learning Framework for Intrusion Detection
     in UAV Networks Under Adversarial Settings.'
