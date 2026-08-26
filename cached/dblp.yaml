@@ -53501,6 +53501,197 @@ federate%20venue%3AICDE%3A:
     baselines.
   abstract_cn: 鉴于隐私保护问题日益受到关注，如何在保证隐私的前提下，从分布式数据库中构建机器学习模型，这一研究方向愈发热门。垂直联邦学习（VFL）能够在数据特征分散于不同参与方的分布式数据库中时，以隐私保护的方式训练机器学习模型。本文研究了VFL中的参与者选择问题（PSP），即在给定参与者数量的约束下，选取若干参与者进行模型训练，同时最大化模型精度。与使用所有参与者进行训练相比，PSP能够过滤掉对模型质量贡献甚微的搭便车者，并通过减少参与者的数量来缩短训练时间。为获得较高的模型精度，我们将PSP建模为一个最大化数据样本似然性的参与者子集选择问题。随后，我们以k近邻（KNN）分类器作为代理模型，将该似然性表示为所选参与者的一个函数，并证明该函数具有次模性。次模性有利于捕捉各参与方之间的特征多样性，从而允许在每一步贪婪地选择边际增益最大的参与者。然而，该选择过程需要以查找数据样本的前k个近邻作为基本操作；而在VFL场景下，这一操作涉及加密通信，开销较大。为此，我们对著名的top-k查询算法——法金算法——进行了适配，以减少加密通信的次数。我们将在五个分布式节点上部署所提出的解决方案VFPS-SM，并利用10个数据集和3种模型开展实验，评估其性能。实验结果表明，与当前最先进的基线方法相比，VFPS-SM可将端到端运行时间缩短多达35倍、参与者选择时间缩短365倍，并使模型精度提升6.0%。
   related_code: ''
+- author: Minxiao Chen, Haitao Yuan 0002, Haoning Wang, Nan Jiang, Zhihan Zheng, Ao
+    Zhou 0001, Shangguang Wang
+  title: 'FedCurrMM: A Federated Map Matching Framework with Curriculum-Aware Client
+    Selection.'
+  venue: ICDE
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/icde/ChenYWJZZW26
+  doi: 10.1109/ICDE65706.2026.00116
+  ee: https://doi.org/10.1109/ICDE65706.2026.00116
+  url: https://dblp.org/rec/conf/icde/ChenYWJZZW26
+  abstract: Federated map matching aims to align GPS trajectories collected by multiple
+    decentralized clients to road networks in a privacy-preserving manner, and remains
+    an unexplored yet critical problem for collaboration across clients. However,
+    this task is highly challenging due to severe client heterogeneity, which hinder
+    efficient and robust model convergence. This paper presents a novel federated
+    learning framework that achieves high accuracy, communication efficiency, and
+    robustness in heterogeneous environments. At the model-level, we design Gel-HMM,
+    a graph-enhanced, learnable Hidden Markov Model that decouples client-specific
+    information through specific graph structures and supports interpretable matching.
+    At the framework-level, we propose a curriculum-aware client selection strategy
+    that captures global learning dynamics and adaptively guides client participation.
+    Furthermore, we develop a dual-speed parallel optimization scheme to decouple
+    the co-training of the client matching model and the server-side selector. An
+    adaptive knowledge distillation mechanism is also introduced to mitigate data
+    quality variance across clients while preserving privacy. Extensive experiments
+    on two real-world datasets demonstrate that our method significantly outperforms
+    state-of-the-art baselines, with an average improvement of 20% on accuracy and
+    a 60% reduction in communication cost.
+  related_code: ''
+- author: Zhenkai Li, Ming Hu 0003, Chentao Jia, Yining Sun, Zhufeng Lu, Mingyang
+    Yu, Yanxin Yang, Xiaofei Xie, Mingsong Chen 0001
+  title: 'AdaFedRec: Adaptive Heterogeneous Federated Recommender Systems Across Multi-Device
+    Users.'
+  venue: ICDE
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/icde/LiHJSLYYXC26
+  doi: 10.1109/ICDE65706.2026.00070
+  ee: https://doi.org/10.1109/ICDE65706.2026.00070
+  url: https://dblp.org/rec/conf/icde/LiHJSLYYXC26
+  abstract: Although Federated Learning (FL), as a distributed machine learning paradigm,
+    is promising for privacy-preserving model training in recommender systems, it
+    suffers from low training performance due to heterogeneous hardware resources
+    across user devices, especially among users with multiple devices. Specifically,
+    i) the limited hardware capabilities of some user devices prevent them from participating
+    in training large, highperformance models, while the limited number of users with
+    high-performance devices results in insufficient data for training the large model.
+    ii) Recommender systems are often deployed on multiple heterogeneous devices (e.g.,
+    personal computers and mobile phones) of each user, which makes it challenging
+    to migrate personalized features of users for heterogeneous recommender models
+    training across various uncertain devices. To address this issue, this paper presents
+    a novel heterogeneous FedRec framework, AdaFedRec, that adaptively assigns heterogeneous
+    models for local training based on the available resources of user devices and
+    employs an adaptive heterogeneous model migration mechanism across multiple devices
+    of a specific user. Specifically, AdaFedRec adopts an encoder-decoder-based heterogeneous
+    model generation strategy for collaborative model training among heterogeneous
+    devices. Additionally, AdaFedRec incorporates a knowledge-diffusion-based model-migration
+    mechanism for training models across users' heterogeneous devices. The experimental
+    results demonstrate that AdaFedRec achieves the best results across all datasets.
+    Our code can be accessed at https://github.com/Iridescentttttt/AdaFedRec.
+  related_code: https://github.com/Iridescentttttt/AdaFedRec
+- author: Zhiyu Liang, Zheng Liang 0002, Hongzhi Wang 0001, Bo Zheng 0012
+  title: 'FedDict: Towards Practical Federated Dictionary-Based Time Series Classification
+    (Extended Abstract).'
+  venue: ICDE
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/icde/LiangLWZ26
+  doi: 10.1109/ICDE65706.2026.00351
+  ee: https://doi.org/10.1109/ICDE65706.2026.00351
+  url: https://dblp.org/rec/conf/icde/LiangLWZ26
+  abstract: The dictionary-based approach is a representative type of time series
+    classification (TSC) solution due to its high accuracy, efficiency, and good interpretability.
+    However, existing studies focus on the centralized scenario in which data from
+    multiple sources are gathered. Considering that in many practical applications,
+    data owners are reluctant to share their data due to privacy concerns, we study
+    an unexplored problem involving collaboratively building the dictionary-based
+    model over the data owners without disclosing their private data (i.e., in the
+    federated scenario). We propose FedDict, a novel dictionary-based TSC approach
+    customized for the federated setting to benefit from the advantages of centralized
+    algorithms. To further improve performance and practicality, we propose a novel
+    federated optimization algorithm to train logistic regression classifiers using
+    dictionary features. The algorithm does not rely on any secure broker and is more
+    accurate and efficient than existing solutions without hyper-parameter tuning.
+    We also propose two contract algorithms for federated dictionary building, such
+    that the user can flexibly balance the running time and the TSC accuracy through
+    a pre-defined time limit. Extensive experiments on a total of 117 highly heterogeneous
+    datasets validate the effectiveness of our methods and the superiority over existing
+    solutions.
+  related_code: ''
+- author: Yuxiang Wang 0014, Yongxin Tong, Zimu Zhou, Ziyuan He, Ruixi Hu, Ke Xu
+  title: Federated Retrieval Over Embedding-Heterogeneous Vector Databases.
+  venue: ICDE
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/icde/WangTZHHX26
+  doi: 10.1109/ICDE65706.2026.00033
+  ee: https://doi.org/10.1109/ICDE65706.2026.00033
+  url: https://dblp.org/rec/conf/icde/WangTZHHX26
+  abstract: Vector databases are increasingly used to manage unstructured data by
+    mapping them into high-dimensional embeddings and enabling efficient similarity
+    retrieval. Many realworld applications, such as legal document retrieval and medical
+    question answering, require embedding-based retrieval in federated environments
+    where data are distributed across autonomous silos. We formulate this setting
+    as Federated Approximate Nearest Neighbor Search (FANNS), where a server issues
+    a query along with a query embedding model, aiming to retrieve the top- $k$ nearest
+    objects from datasets across all silos. A key challenge in FANNS is embedding
+    heterogeneity, where silos and the server employ different embedding models, a
+    problem overlooked in prior research. To address this challenge, we exploit the
+    nonIID nature of federated data and propose two novel adaptive algorithms for
+    FANNS queries. The first is a competition-based method that dynamically adjusts
+    retrieval sizes across silos, though it can be sensitive to misleading candidates.
+    The second is a contribution-based method that samples promising silos based on
+    their accumulated contributions, and we provide theoretical guarantees on its
+    latency reduction. Evaluations on four datasets show that our method achieves
+    over 90% retrieval accuracy and $\mathbf{2. 3} \times$ to $\mathbf{6. 2} \times$
+    speedups over existing solutions.
+  related_code: ''
+- author: Junyang Wang, Lan Zhang 0002, Yihang Cheng 0002, Mu Yuan, Tian Wang 0001,
+    Zhihui Fu, Jun Wang
+  title: 'TopFGL: A Topology-Aware and Distributionagnostic Federated Learning Framework
+    Tackling Topological Heterogeneity on Graph Data.'
+  venue: ICDE
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/icde/WangZCYWFW26
+  doi: 10.1109/ICDE65706.2026.00044
+  ee: https://doi.org/10.1109/ICDE65706.2026.00044
+  url: https://dblp.org/rec/conf/icde/WangZCYWFW26
+  abstract: While the modern internet generates graph data at an unprecedented scale,
+    stringent privacy regulations like GDPR have fragmented it into silos, creating
+    an urgent need for distributed learning paradigms. Federated Graph Learning (FGL)
+    meets this demand, enabling collaborative training across graph silos. A core
+    challenge for FGL is that the graphs among participants are topologically heterogeneous
+    due to diverse sources and methods of structure collection, which leads to significant
+    performance degradation. However, recent works tackling heterogeneity require
+    clients to share class-wise intermediate information derived from local embeddings,
+    which could increase risks of label and structure leakage. Moreover, they are
+    often computationally expensive and narrowly tailored for a single type of heterogeneity,
+    which hinders their applicability in efficiency-demanding and distribution-variant
+    practical scenarios. To this end, we present TopFGL, the first topologyaware and
+    distribution-agnostic framework to tackle heterogeneity without intermediate information
+    sharing. TopFGL trains a topology learner in each client to learn local topological
+    patterns, and globally aggregates all learners along with the main task models.
+    We propose a multi-level topology extraction scheme to adapt to diverse distributions,
+    along with a streamlined training pipeline that reduces redundant computations.
+    Building upon the learners, we propose a server-side topological similarity-based
+    aggregation algorithm to share similar optimization directions across clients.
+    A client-side dual-model guided topology augmentation approach is also proposed
+    to supplement neighborhood connections for topology-insufficient nodes, improving
+    adaptability to imbalanced distributions. Experiments on 11 datasets with 3 topological
+    distributions across 3 \~{} 100 client counts show that TopFGL achieves up to
+    5.6% accuracy improvement along with 50% time cost reduction compared to state-of-the-art
+    baselines.
+  related_code: ''
+- author: Yuemin Zhang, Qingqing Ye 0001, Junxu Liu, Wei Dong 0007
+  title: Answering Federated Range Queries with Local Differential Privacy.
+  venue: ICDE
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/icde/ZhangYLD26
+  doi: 10.1109/ICDE65706.2026.00216
+  ee: https://doi.org/10.1109/ICDE65706.2026.00216
+  url: https://dblp.org/rec/conf/icde/ZhangYLD26
+  abstract: Answering range queries under local differential privacy (LDP) is a well-studied
+    problem, which enables service providers to gain insights into decentralized data
+    distributions. However, existing approaches operate exclusively in a single-party
+    setting and prove challenging to extend to practical cross-party environments.
+    In this paper we study the problem of federated range queries under LDP, which
+    addresses cross-party range queries in decentralized settings. Applying LDP to
+    federated range queries amplifies statistical heterogeneity challenges, as utility
+    deterioration stems from not only the accumulated LDP noise, but also the unrealistic
+    uniform- or linear-distribution assumption in existing methods. Our solution,
+    the private cubic spline (PrivCS) mechanism, employs a hierarchical interval tree
+    structure to model the underlying data distribution and accurately answer arbitrary
+    range queries, effectively addressing the problem while satisfying $\epsilon$-LDP.
+    Additionally, we introduce the collaborative frequency filtering aggregation that
+    adaptively calibrates and masks frequency estimates by leveraging relationships
+    among across-party frequencies and analyzing pruning bias, thereby reducing the
+    cumulative noise. To the best of our knowledge, this is the first study to explore
+    federated range queries in cross-party scenarios, under the stringent LDP guarantee.
+    Comprehensive experiments on both real-world and synthetic datasets demonstrate
+    the effectiveness of our mechanism.
+  related_code: ''
 federate%20streamid%3Ajournals%2Fpvldb%3A:
 - author: Yuexiang Xie, Zhen Wang, Dawei Gao, Daoyuan Chen, Liuyi Yao, Weirui Kuang,
     Yaliang Li, Bolin Ding, Jingren Zhou
@@ -82259,6 +82450,37 @@ collaborat%20learn%20venue%3AICDE%3A:
     of homomorphically encrypted data in less than two minutes.
   abstract_cn: 同态加密（HE）能够在不解密的情况下对密文数据进行计算，从而在不损害数据可用性的同时最大限度地保护用户隐私。得益于近年来密码学家的诸多突破，同态加密的效率已得到显著提升，基于同态加密数据的机器学习也已成为可能。已有不少研究探索了基于同态加密的机器学习，但其中大多数仅限于外包场景，即所有数据均来自单一数据所有者。为此，我们提出了HomoPAI——一个基于同态加密的
     secure 协作式机器学习系统，支持更具前景的多数据所有者场景，实现多方数据的安全联合处理。此外，我们还将该系统与流行的MPI框架相集成，以实现并行化的同态加密计算。实验结果表明，我们的系统可在不到两分钟内对数百万条同态加密数据训练出一个逻辑回归模型。
+  related_code: ''
+- author: Zhaomin Wu, Ziyang Wang, Bingsheng He
+  title: 'WikiDBGraph: A Data Management Benchmark Suite for Collaborative Learning
+    Over Database Silos.'
+  venue: ICDE
+  year: '2026'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/icde/WuWH26
+  doi: 10.1109/ICDE65706.2026.00178
+  ee: https://doi.org/10.1109/ICDE65706.2026.00178
+  url: https://dblp.org/rec/conf/icde/WuWH26
+  abstract: Relational databases are often fragmented across organizations, creating
+    data silos that hinder distributed data management and mining. Collaborative learning
+    (CL)-techniques that enable multiple parties to train models jointly without sharing
+    raw data-offers a principled approach to this challenge. However, existing CL
+    frameworks (e.g., federated and split learning) remain limited in real-world deployments.
+    Current CL benchmarks and algorithms primarily target the learning step under
+    assumptions of isolated, aligned, and joinable databases, and they typically neglect
+    the end-to-end data management pipeline, especially preprocessing steps such as
+    table joins and data alignment. In contrast, our analysis of the real-world corpus
+    WikiDBs shows that databases are interconnected, unaligned, and sometimes unjoinable,
+    exposing a significant gap between CL algorithm design and practical deployment.
+    To close this evaluation gap, we build WikiDBGraph, a large-scale dataset constructed
+    from 100,000 real-world relational databases linked by 17 million weighted edges.
+    Each node (database) and edge (relationship) is annotated with 13 and 12 properties,
+    respectively, capturing a hybrid of instance- and feature-level overlap across
+    databases. Experiments on WikiDBGraph demonstrate both the effectiveness and limitations
+    of existing CL methods under realistic conditions, highlighting previously overlooked
+    gaps in managing real-world data silos and pointing to concrete directions for
+    practical deployment of collaborative learning systems.
   related_code: ''
 collaborat%20learn%20streamid%3Ajournals%2Fpvldb%3A:
 - author: Joaquin Vanschoren
